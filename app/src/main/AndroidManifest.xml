@@ -10,7 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CLUBIN">
         <activity
+            android:name=".view.InscriptionPasswordActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.InscriptionEmailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
+        <activity
+            android:name=".view.InscriptionNameActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".view.InscriptionAgeActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".view.PasswordResetNewPasswordActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".view.PasswordResetCodeActitvity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".view.PasswordResetEmailActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.CLUBIN.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
