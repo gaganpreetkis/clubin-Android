@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".view.PasswordResetEmailActivity">
+    tools:context=".passwordreset.PasswordResetEmailActivity">
 
 
     <TextView
@@ -76,7 +76,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:backgroundTint="@color/green"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="@string/inscription_age_button"
         android:textAllCaps="false"
         android:textColor="@color/black" />

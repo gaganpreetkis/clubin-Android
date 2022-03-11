@@ -30,6 +30,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
+        dataBinding = true
         viewBinding true
     }
 }
@@ -45,4 +46,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+
+    //text size
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    //view padding, margin
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+
+    //dot indicator
+    implementation "com.tbuonomo:dotsindicator:$dotIndicatorVersion"
 }

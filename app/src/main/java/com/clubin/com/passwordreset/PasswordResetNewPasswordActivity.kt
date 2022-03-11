@@ -1,19 +1,20 @@
-package com.clubin.com.view
+package com.clubin.com.passwordreset
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.clubin.com.R
+import com.clubin.com.login.view.LoginActivity
 
-class InscriptionNameActivity : AppCompatActivity() {
+class PasswordResetNewPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inscription_name)
+        setContentView(R.layout.activity_password_reset_new_password)
 
         val button: Button = findViewById(R.id.button)
         button.setOnClickListener {
-            intent = Intent(applicationContext, InscriptionEmailActivity::class.java)
+            intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
         }
     }

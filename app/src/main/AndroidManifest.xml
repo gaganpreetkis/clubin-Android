@@ -10,38 +10,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CLUBIN">
         <activity
-            android:name=".view.InscriptionPasswordActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
+            android:name=".login.view.LoginActivity"
             android:exported="false"
-            />
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.InscriptionEmailActivity"
+            android:name=".onboarding.view.OnboardingActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.InscriptionNameActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="false" />
+            android:name=".inscription.InscriptionPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.InscriptionAgeActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="false" />
+            android:name=".inscription.InscriptionEmailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.PasswordResetNewPasswordActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="false" />
+            android:name=".inscription.InscriptionNameActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.PasswordResetCodeActitvity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="false" />
+            android:name=".inscription.InscriptionAgeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".view.PasswordResetEmailActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="false" />
+            android:name=".passwordreset.PasswordResetNewPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
+        <activity
+            android:name=".passwordreset.view.PasswordResetCodeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
+        <activity
+            android:name=".passwordreset.PasswordResetEmailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.CLUBIN.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.CLUBIN.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

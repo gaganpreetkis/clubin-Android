@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CLUBIN</string>
 
-    <string name="to_join"><u>Se connecter</u>u></string>
+    <string name="to_join"><u>Se connecter</u></string>
 
     <!-- Onboarding -->
     <string name="onboarding_one_title">Blueberry</string>
@@ -366,7 +366,7 @@
 
     <!-- InscriptionEmailView -->
     <string name="inscription_email_title">Quelle est votre adresse e-mail ?</string>
-    <string name="email_placeholder">Email</string>
+    <string name="email_placeholder">E-mail</string>
     <string name="inscription_email_wrong">Merci de renseigner un e-mail valide ou non utilisé
     </string>
     <string name="inscription_email_correct">Cette adresse vous servira à vous connecter.</string>
@@ -374,9 +374,30 @@
 
     <!-- InscriptionPasswordView -->
     <string name="inscription_password_title">Créer un mot de passe</string>
-    <string name="password_placeholder">Password</string>
+    <string name="password_placeholder">Mot de passe</string>
     <string name="confirm_password_placeholder">Confirm Password</string>
     <string name="inscription_password_details">Minimum 8 caractères.\nVous pourrez le changer plus tard
     </string>
     <string name="inscription_password_button">Terminer</string>
+
+    <!-- onboarding -->
+    <string name="onboarding_heading">Terminer</string>
+    <string name="onboarding_message">Terminer</string>
+    <string name="button_text">Start</string>
+    <string name="next">Next</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!-- Login -->
+    <string name="login_title">Se connecter</string>
+    <string name="login_message"></string>
+    <string name="login_details"><u>Mot de passe oublié ?</u></string>
+    <string name="login_button">Se connecter</string>
 </resources>

@@ -11,5 +11,8 @@
     <color name="blue">#4C9FBE</color>
     <color name="grey">#3C3C3C</color>
     <color name="purple_button">#037AFF</color>
-    #037AFF
+    <color name="darkBlue">#1D67CF</color>
+    <color name="light_white">#99FFFFFF</color>
+
+
 </resources>
