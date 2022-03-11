@@ -4,16 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
 import com.clubin.com.R
 import com.clubin.com.databinding.ActivityOnboardingBinding
 import com.clubin.com.inscription.InscriptionAgeActivity
-import com.clubin.com.inscription.InscriptionNameActivity
 import com.clubin.com.onboarding.adapter.OnboardingPagerAdapter
 import com.clubin.com.onboarding.model.ViewPagerDM
 import com.clubin.com.onboarding.viewmodel.OnboardingVM
-import com.clubin.com.passwordreset.PasswordResetEmailActivity
 import com.clubin.com.utills.CommonUtilities
 
 class OnboardingActivity : AppCompatActivity() {
@@ -27,34 +25,42 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_onboarding)
-        vm = ViewModelProviders.of(this)[OnboardingVM::class.java]
+        vm = ViewModelProvider(this).get(OnboardingVM::class.java)
         binding?.mview = vm
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.blueberry,
                 R.string.onboarding_one_title,
-                R.string.onboarding_one_headline
+                R.string.onboarding_one_headline,
+                R.color.black,
+                R.color.ColorBlueberryDark
             )
         )
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.strawberry,
                 R.string.onboarding_two_title,
-                R.string.onboarding_two_headline
+                R.string.onboarding_two_headline,
+                R.color.ColorStrawberryLight,
+                R.color.ColorStrawberryDark
             )
         )
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.lemon,
                 R.string.onboarding_three_title,
-                R.string.onboarding_three_headline
+                R.string.onboarding_three_headline,
+                R.color.ColorLemonLight,
+                R.color.ColorLemonDark
             )
         )
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.plum,
                 R.string.onboarding_four_title,
-                R.string.onboarding_four_headline
+                R.string.onboarding_four_headline,
+                R.color.ColorPlumLight,
+                R.color.ColorPlumDark
             )
         )
 
@@ -62,7 +68,9 @@ class OnboardingActivity : AppCompatActivity() {
             ViewPagerDM(
                 R.drawable.lime,
                 R.string.onboarding_five_title,
-                R.string.onboarding_five_headline
+                R.string.onboarding_five_headline,
+                R.color.ColorLimeLight,
+                R.color.ColorLimeDark
             )
         )
 
@@ -70,7 +78,9 @@ class OnboardingActivity : AppCompatActivity() {
             ViewPagerDM(
                 R.drawable.pomegranate,
                 R.string.onboarding_six_title,
-                R.string.onboarding_six_headline
+                R.string.onboarding_six_headline,
+                R.color.ColorPomegranateLight,
+                R.color.ColorPomegranateDark
             )
         )
 

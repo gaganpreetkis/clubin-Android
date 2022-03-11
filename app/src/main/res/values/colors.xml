@@ -14,5 +14,29 @@
     <color name="darkBlue">#1D67CF</color>
     <color name="light_white">#99FFFFFF</color>
 
-
+    <!--Fruits-->
+    <color name="ColorAppleDark">#F00031</color>
+    <color name="ColorAppleLight">#F46781</color>
+    <color name="ColorBlueberryDark">#3665FE</color>
+    <color name="ColorCherryDark">#6CB102</color>
+    <color name="ColorCherryLight">#CDFF3C</color>
+    <color name="ColorGooseberryDark">#557A04</color>
+    <color name="ColorGooseberryLight">#D5DF54</color>
+    <color name="ColorGrapefruitDark">#F26D21</color>
+    <color name="ColorGrapefruitLight">#F5B06E</color>
+    <color name="ColorLemonDark">#F39809</color>
+    <color name="ColorLemonLight">#F7F334</color>
+    <color name="ColorLimeDark">#1C8533</color>
+    <color name="ColorLimeLight">#5EF154</color>
+    <color name="ColorMangoLight">#F7E74B</color>
+    <color name="ColorPearDark">#D06319</color>
+    <color name="ColorPearLight">#F5B54B</color>
+    <color name="ColorPlumDark">#F00031</color>
+    <color name="ColorPlumLight">#F36181</color>
+    <color name="ColorPomegranateDark">#C90097</color>
+    <color name="ColorPomegranateLight">#F46E88</color>
+    <color name="ColorStrawberryDark">#F00047</color>
+    <color name="ColorStrawberryLight">#F4688A</color>
+    <color name="ColorWatermelonDark">#318A27</color>
+    <color name="ColorWatermelonLight">#76F764</color>
 </resources>
