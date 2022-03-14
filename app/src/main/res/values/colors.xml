@@ -39,4 +39,8 @@
     <color name="ColorStrawberryLight">#F4688A</color>
     <color name="ColorWatermelonDark">#318A27</color>
     <color name="ColorWatermelonLight">#76F764</color>
+    <color name="dull_green">#2A7B87</color>
+    <color name="pink_red_dark">#CA003B</color>
+    <color name="dull_white">#A4A4A4</color>
+    <color name="bright_green">#3DC181</color>
 </resources>

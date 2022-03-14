@@ -47,7 +47,7 @@
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Inscription"
             android:exported="true"
             android:theme="@style/Theme.CLUBIN.NoActionBar">
             <intent-filter>

@@ -32,9 +32,9 @@ class OnboardingPagerAdapter(context: Context, pagerList:ArrayList<ViewPagerDM>)
         val heading1 = view.findViewById(R.id.tv_heading) as TextView
         val heading2 = view.findViewById(R.id.tv_text) as TextView
         val center_heading = view.findViewById(R.id.center_heading) as TextView
-        imageView.setBackgroundResource(pager.get(position).image!!)
-        heading1.setText(pager.get(position).text1!!)
-        heading2.setText(pager.get(position).text2!!)
+        pager[position].image?.let { imageView.setBackgroundResource(it) }
+        heading1.text = pager[position].text1 ?: ""
+        heading2.text = pager[position].text2 ?: ""
       /*  if(position==pager.size-1)
         {
             center_heading.visibility=View.VISIBLE

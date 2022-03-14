@@ -18,7 +18,7 @@ class OnboardingActivity : AppCompatActivity() {
     var binding: ActivityOnboardingBinding? = null
     var vm: OnboardingVM? = null
     var whichScreen: String? = null
-    var pos:Int?=0
+    var pos: Int? = 0
     var pager_itemList = ArrayList<ViewPagerDM>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +30,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.blueberry,
-                R.string.onboarding_one_title,
-                R.string.onboarding_one_headline,
+                getString(R.string.onboarding_one_title),
+                getString(R.string.onboarding_one_headline),
                 R.color.black,
                 R.color.ColorBlueberryDark
             )
@@ -39,8 +39,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.strawberry,
-                R.string.onboarding_two_title,
-                R.string.onboarding_two_headline,
+                getString(R.string.onboarding_two_title),
+                getString(R.string.onboarding_two_headline),
                 R.color.ColorStrawberryLight,
                 R.color.ColorStrawberryDark
             )
@@ -48,8 +48,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.lemon,
-                R.string.onboarding_three_title,
-                R.string.onboarding_three_headline,
+                getString(R.string.onboarding_three_title),
+                getString(R.string.onboarding_three_headline),
                 R.color.ColorLemonLight,
                 R.color.ColorLemonDark
             )
@@ -57,8 +57,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.plum,
-                R.string.onboarding_four_title,
-                R.string.onboarding_four_headline,
+                getString(R.string.onboarding_four_title),
+                getString(R.string.onboarding_four_headline),
                 R.color.ColorPlumLight,
                 R.color.ColorPlumDark
             )
@@ -67,8 +67,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.lime,
-                R.string.onboarding_five_title,
-                R.string.onboarding_five_headline,
+                getString(R.string.onboarding_five_title),
+                getString(R.string.onboarding_five_headline),
                 R.color.ColorLimeLight,
                 R.color.ColorLimeDark
             )
@@ -77,8 +77,8 @@ class OnboardingActivity : AppCompatActivity() {
         pager_itemList.add(
             ViewPagerDM(
                 R.drawable.pomegranate,
-                R.string.onboarding_six_title,
-                R.string.onboarding_six_headline,
+                getString(R.string.onboarding_six_title),
+                getString(R.string.onboarding_six_headline),
                 R.color.ColorPomegranateLight,
                 R.color.ColorPomegranateDark
             )
@@ -100,14 +100,12 @@ class OnboardingActivity : AppCompatActivity() {
             }
 
             override fun onPageSelected(position: Int) {
-                if(position==pager_itemList.size-1){
-                    whichScreen="last"
+                if (position == pager_itemList.size - 1) {
+                    whichScreen = "last"
                     binding?.btnNext!!.setText(resources.getText(R.string.button_text))
-                }
-                else
-                {
-                    whichScreen="non-last"
-                    pos=position
+                } else {
+                    whichScreen = "non-last"
+                    pos = position
                     binding?.btnNext!!.setText(resources.getText(R.string.button_text))
                 }
             }
@@ -116,17 +114,17 @@ class OnboardingActivity : AppCompatActivity() {
 
 
         binding?.btnNext!!.setOnClickListener {
-         //   if (whichScreen == "last") {
-                CommonUtilities.fireActivityIntent(
-                    this,
-                    Intent(this, InscriptionAgeActivity::class.java),
-                    isFinish = false,
-                    isForward = true
-                )
-          //  }
-           /* else{
-                binding!!.viewpager.setCurrentItem(pos!!.plus(1),true)
-            }*/
+            //   if (whichScreen == "last") {
+            CommonUtilities.fireActivityIntent(
+                this,
+                Intent(this, InscriptionAgeActivity::class.java),
+                isFinish = false,
+                isForward = true
+            )
+            //  }
+            /* else{
+                 binding!!.viewpager.setCurrentItem(pos!!.plus(1),true)
+             }*/
         }
 
     }
