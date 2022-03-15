@@ -56,6 +56,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabbar.TabBarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CLUBIN.NoActionBar" />
     </application>
 
 </manifest>
