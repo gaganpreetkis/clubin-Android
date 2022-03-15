@@ -44,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:background="@color/black_background"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/view_title">
 
@@ -61,6 +60,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/SecondView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
@@ -73,17 +73,163 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_120sdp"
-                android:orientation="vertical"></LinearLayout>
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:background="@drawable/solid_red"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Gestes de premiers secours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_120sdp"
-                android:orientation="vertical"></LinearLayout>
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/solid_violet"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Vol - Casse ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Que faire en cas de Vol ou Casse ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
 
+            <LinearLayout
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:background="@drawable/solid_yellow"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Incendie"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Les mesures à suivre"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/solid_blue"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Litiges / Violence"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:gravity="start"
+                    android:text="Que faire en cas de problème avec une/des personnes dans la soirée ?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/SecondView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:gravity="center_horizontal"
+            android:text="Centre de sécurité"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/solid_pink"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center"
+                android:text="La Sécurité selon Clubin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="start"
+                android:text="Obtenez l’assistance, les outils et les informations dont vous avez besoin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

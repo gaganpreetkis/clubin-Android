@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".profile.ProfileDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_instagram_symbol" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_facebook" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="ugo_l"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22ssp" />
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewName"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_baseline_key"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:text="Ugo Lafosse, 22"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:id="@+id/textViewAddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAddress"
+                    android:background="@drawable/solid_white"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Modifier mon profil"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAddress2"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/solid_dark_blue"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Tâches restantes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_outline_cancel" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_alternates_regular"
+        android:text="BIO: Digital goodies designer @pixsellz. Everything is designed."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBio">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="4.6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/textRating"
+
+                android:src="@drawable/ic_baseline_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRating"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="Etoiles"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textOrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="4.6"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp"></TextView>
+
+            <ImageView
+                android:id="@+id/starImageView"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/textOrg"
+
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textOrg"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="Organisés"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="4.6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignRight="@+id/textPart"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/ic_outline_cancel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPart"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="Participés"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
