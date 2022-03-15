@@ -70,7 +70,7 @@
                     android:layout_below="@+id/textViewName"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:drawableLeft="@drawable/ic_baseline_key"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:fontFamily="@font/montserrat_alternates_regular"
                     android:text="Ugo Lafosse, 22"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp" />
@@ -133,7 +133,7 @@
         android:id="@+id/textViewBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
         android:fontFamily="@font/montserrat_alternates_regular"
         android:text="BIO: Digital goodies designer @pixsellz. Everything is designed."
         android:textColor="@color/white"
@@ -141,12 +141,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topView"
-        tools:layout_editor_absoluteX="0dp" />
+  />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/textViewBio">
 
@@ -167,11 +166,11 @@
                 android:textSize="@dimen/_22sdp"></TextView>
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentTop="true"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@+id/textRating"
-
                 android:src="@drawable/ic_baseline_star" />
 
             <TextView
@@ -197,15 +196,14 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/montserrat_alternates_semibold"
-                android:text="4.6"
-
+                android:text="20"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_22sdp"></TextView>
 
             <ImageView
                 android:id="@+id/starImageView"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_toRightOf="@+id/textOrg"
 
@@ -235,15 +233,16 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/montserrat_alternates_semibold"
-                android:text="4.6"
+                android:text="32"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_22sdp"></TextView>
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:layout_alignRight="@+id/textPart"
-                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/textPart"
                 android:src="@drawable/ic_outline_cancel" />
 
             <TextView

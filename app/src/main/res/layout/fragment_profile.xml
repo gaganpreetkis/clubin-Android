@@ -39,7 +39,7 @@
                     android:id="@+id/textViewAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:fontFamily="@font/montserrat_alternates_regular"
                     android:text="Ugo Lafosse, 22 ans"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp" />
@@ -48,7 +48,7 @@
                     android:id="@+id/textViewAddress2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:fontFamily="@font/montserrat_alternates_regular"
                     android:text="Membre Clubin depuis 2020"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
@@ -67,6 +67,7 @@
             android:background="@color/grey" />
 
         <LinearLayout
+            android:id="@+id/view_center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"

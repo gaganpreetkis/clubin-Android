@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.clubin.com.R
 import com.clubin.com.fragment.event.view.EventFragment
+import com.clubin.com.profile.ProfileFragment
 
 class TabBarActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -42,7 +43,12 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener {
 
         eventTab.performClick()
     }
-
+    companion object {
+        var mInstance: TabBarActivity? = null
+        fun getInstance(): TabBarActivity {
+            return mInstance!!
+        }
+    }
     private fun setupFindViewById() {
         container = findViewById(R.id.container)
 
@@ -99,11 +105,14 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener {
             }
             profileTab -> {
                 setupTabs(3)
+                addFragment(ProfileFragment(), false)
             }
         }
     }
 
-    fun addFragment(frag: Fragment, addToBackStack: Boolean) {
+
+
+    public fun addFragment(frag: Fragment, addToBackStack: Boolean) {
         /*if (!isFinishing) {
             util.hideKeyboard(this)
         }*/
@@ -121,7 +130,7 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener {
         if (addToBackStack) trans.addToBackStack(frag::class.java.simpleName)
 
         trans.commit()
-        supportFragmentManager.executePendingTransactions()
+        supportFragmentManager!!.executePendingTransactions()
     }
 
     fun removeFragment() {
