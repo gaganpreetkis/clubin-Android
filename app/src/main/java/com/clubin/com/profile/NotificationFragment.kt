@@ -1,0 +1,92 @@
+package com.clubin.com.profile
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.clubin.com.R
+
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+
+class NotificationFragment : Fragment() {
+    private var param1: String? = null
+    private var param2: String? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_notification, container, false)
+    }
+
+    companion object {
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            NotificationFragment().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
+                }
+            }
+    }
+}
+/*
+Screen :
+MenuNotificationsView
+
+opens on click :: --- MenuView - Notifications
+
+nav title: Notifications
+
+view 1::
+"In-App", LabelImage: "bell.badge"
+------(style: .Medium, ofSize: 15)
+
+Pour activer/désactiver l'affichage des notifications In-App, rendez-vous dans Réglages > Clubin > Notifications.
+-----(style: .Medium, ofSize: 12), accent color
+
+Réservation / Annulation
+---(style: .Bold, ofSize: 14)
+
+Vous informe quand quelqu'un réserve votre évènement, ou en cas d'annulation vous concernant.
+----(style: .Medium, ofSize: 12)
+
+Paiement
+Vous informe de vos réceptions de paiement.
+
+
+View 2:
+
+labelText: "E-mail", LabelImage: "envelope.badge"
+
+Places
+Vous envoie votre réservation par e-mail.
+
+Factures
+Vous transmets par e-mail un compte rendu de vos factures.
+
+Clubin
+Recevez les dernières exclusivités Clubin (2 offres par mois). Vous pouvez vous désabonnez à tout moment directement depuis le mail de notre Newsletter.
+
+View 3:
+
+labelText: "SMS", LabelImage: "message")
+
+Ce sont des informations importantes qui vous seront directement envoyés par SMS.
+---accent,   (style: .Medium, ofSize: 12)
+
+Réservations
+Confirmation de réservation avec rappel des informations clés.
+
+Important / Annulation
+Informations importantes, par exemple l'annulation d'un évènement.*/
+

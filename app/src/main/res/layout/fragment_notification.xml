@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".profile.NotificationFragment">
+
+    <LinearLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_back_white"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:gravity="center_horizontal"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/View_InApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@color/black_background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_title">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_background"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="In-App"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_notifications" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Pour activer/désactiver l'affichage des notifications In-App, rendez-vous dans Réglages > Clubin > Notifications."
+            android:textColor="@color/link_green"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Réservation / Annulation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Vous informe quand quelqu'un réserve votre évènement,
+            ou en cas d'annulation vous concernant."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Paiement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Vous informe de vos réceptions de paiement."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/View_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@color/black_background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/View_InApp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_background"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="E-mail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_outline_mark_email_unread" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Places"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Vous envoie votre réservation par e-mail."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Factures"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Vous transmets par e-mail un compte rendu de vos factures."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Clubin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Recevez les dernières exclusivités Clubin (2 offres par mois). Vous pouvez vous désabonnez à tout moment directement depuis le mail de notre Newsletter."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/View_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@color/black_background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/View_email">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_background"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="sms"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_mark_chat_unread" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Ce sont des informations importantes qui vous seront directement envoyés par SMS."
+            android:textColor="@color/link_green"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Réservation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Confirmation de réservation avec rappel des informations clés."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Important / Annulation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Informations importantes, par exemple l'annulation d'un évènement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -357,8 +357,8 @@
 
     <!-- InscriptionNameView -->
     <string name="inscription_name_title">Comment vous appelez-vous ?</string>
-    <string name="first_name_placeholder">First Name</string>
-    <string name="last_name_placeholder">Last Name</string>
+    <string name="first_name_placeholder">Prénom</string>
+    <string name="last_name_placeholder">Nom</string>
     <string name="inscription_name_details">Merci de renseigner votre vrai nom afin de permettre la
            vérification de votre profil et d\'améliorer l\'experience utilisateur.
     </string>
@@ -375,7 +375,7 @@
     <!-- InscriptionPasswordView -->
     <string name="inscription_password_title">Créer un mot de passe</string>
     <string name="password_placeholder">Mot de passe</string>
-    <string name="confirm_password_placeholder">Confirm Password</string>
+    <string name="confirm_password_placeholder">Vérifier votre mot de passe</string>
     <string name="inscription_password_details">Minimum 8 caractères.\nVous pourrez le changer plus tard
     </string>
     <string name="inscription_password_button">Terminer</string>
@@ -400,4 +400,6 @@
     <string name="login_message"></string>
     <string name="login_details"><u>Mot de passe oublié ?</u></string>
     <string name="login_button">Se connecter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
