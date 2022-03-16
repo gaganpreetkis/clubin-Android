@@ -2,7 +2,9 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="220dp"
-    android:layout_height="220dp">
+    android:layout_height="220dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -119,6 +121,7 @@
                 android:src="@android:drawable/star_on" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/concertButton"
                 android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:layout_below="@id/organizerName"
@@ -145,8 +148,8 @@
             android:layout_height="80dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
             app:cardCornerRadius="40dp">
 
             <ImageView

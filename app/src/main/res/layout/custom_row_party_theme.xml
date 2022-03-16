@@ -2,7 +2,9 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="220dp">
+    android:layout_height="220dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="15dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -74,7 +76,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="96dp"
             android:layout_alignParentBottom="true"
             android:background="#90000000"
             android:paddingVertical="6dp"
@@ -145,11 +147,12 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/organizerName"
                     android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/clock"
                         app:tint="@color/white" />
@@ -197,12 +200,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/durationContainer"
-                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/people"
                         app:tint="@color/white" />
@@ -232,14 +235,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/placesMemberContainer"
-                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/people"
+                        android:src="@drawable/ticket"
                         app:tint="@color/white" />
 
                     <androidx.appcompat.widget.AppCompatTextView

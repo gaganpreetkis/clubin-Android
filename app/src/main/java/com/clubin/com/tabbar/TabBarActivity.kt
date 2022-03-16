@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.clubin.com.R
 import com.clubin.com.fragment.event.view.EventFragment
+import com.clubin.com.fragment.hosts.view.HostsFragment
 import com.clubin.com.profile.ProfileFragment
 
 class TabBarActivity : AppCompatActivity(), View.OnClickListener {
@@ -99,6 +100,7 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener {
             }
             hostTab -> {
                 setupTabs(1)
+                addFragment(HostsFragment(), false)
             }
             billetsTab -> {
                 setupTabs(2)
