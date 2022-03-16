@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context=".profile.PaymentFragment">
+    tools:context=".fragment.profile.PaymentFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,6 +41,7 @@
         android:layout_height="@dimen/_40sdp" />
 
     <LinearLayout
+        android:padding="@dimen/_5sdp"
         android:id="@+id/View_Virements"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
@@ -75,6 +76,7 @@
         android:background="@color/grey" />
 
     <LinearLayout
+        android:padding="@dimen/_5sdp"
         android:id="@+id/View_Historique"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
@@ -110,6 +112,7 @@
         android:background="@color/grey" />
 
     <LinearLayout
+        android:padding="@dimen/_5sdp"
         android:id="@+id/View_Préférences"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"

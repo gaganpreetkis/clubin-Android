@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context=".profile.RateReviewFragment">
+    tools:context=".fragment.profile.RateReviewFragment">
 
 
     <LinearLayout
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:fontFamily="@font/montserrat_alternates_medium"
+        android:fontFamily="@font/montserrat_alternates_regular"
         android:text="Laisser nous un commentaire (facultatif)"
         android:textColor="@color/text_light_white"
         android:textSize="@dimen/_16ssp" />

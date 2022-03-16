@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.clubin.com.R
 import com.clubin.com.fragment.event.view.EventFragment
 import com.clubin.com.fragment.hosts.view.HostsFragment
-import com.clubin.com.profile.ProfileFragment
+import com.clubin.com.fragment.profile.ProfileFragment
 
 class TabBarActivity : AppCompatActivity(), View.OnClickListener {
 

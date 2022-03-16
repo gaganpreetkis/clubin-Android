@@ -1,4 +1,4 @@
-package com.clubin.com.profile
+package com.clubin.com.fragment.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
