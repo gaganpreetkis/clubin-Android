@@ -5,58 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".fragment.profile.NotificationFragment">
+    tools:context=".fragment.profile.ConfidentialFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_back_white"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:gravity="center_horizontal"
+            android:text="Confidentialité"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp" />
+    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ll_title">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/view_title"
+                android:id="@+id/ll_first_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_5sdp"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="6dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:src="@drawable/ic_arrow_back_white"
-                    android:textSize="@dimen/_16ssp" />
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/solid_black_background"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_title">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_bold"
-                    android:gravity="center_horizontal"
-                    android:text="Notifications"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:gravity="start"
+                    android:text="@string/message_1"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_20ssp" />
+                    android:textSize="@dimen/_14ssp" />
 
-                <View
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_20sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="start"
+                    android:text="@string/message_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/View_InApp"
+                android:id="@+id/ll_localisation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_15sdp"
                 android:background="@drawable/solid_black_background"
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp"
-                app:layout_constraintTop_toBottomOf="@+id/view_title">
+                app:layout_constraintTop_toBottomOf="@+id/ll_first_view">
 
 
                 <LinearLayout
@@ -69,10 +101,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="In-App"
+                        android:text="Localisation"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
@@ -81,7 +112,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:src="@drawable/ic_baseline_notifications" />
+                        android:src="@drawable/ic_baseline_fmd_good" />
 
                 </LinearLayout>
 
@@ -89,17 +120,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Pour activer/désactiver l'affichage des notifications In-App, rendez-vous dans Réglages > Clubin > Notifications."
+                    android:text="Pour activer/désactiver la localisation, rendez-vous dans Réglages > Clubin > Notifications."
                     android:textColor="@color/link_green"
                     android:textSize="@dimen/_12ssp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="EN ACTIVANT LA LOCALISATION VOUS AUTORISEZ"
+                    android:textColor="@color/text_light_white"
+                    android:textSize="@dimen/_12ssp" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
                     android:background="@color/grey" />
 
                 <TextView
@@ -108,63 +149,28 @@
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Réservation / Annulation"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
                     android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Vous informe quand quelqu'un réserve votre évènement,
-            ou en cas d'annulation vous concernant."
+                    android:text="L'utilisation des données de géolocalisation précise"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:background="@color/grey" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Paiement"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Vous informe de vos réceptions de paiement."
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/View_email"
+                android:id="@+id/ll_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_15sdp"
                 android:background="@drawable/solid_black_background"
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp"
-                app:layout_constraintTop_toBottomOf="@+id/View_InApp">
+                app:layout_constraintTop_toBottomOf="@+id/ll_localisation">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black_background"
                     android:orientation="horizontal"
                     tools:layout_editor_absoluteX="6dp">
 
@@ -172,10 +178,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="E-mail"
+                        android:text="Data"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
@@ -184,34 +189,26 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:src="@drawable/ic_outline_mark_email_unread" />
+                        android:src="@drawable/ic_baseline_cell_tower" />
 
                 </LinearLayout>
 
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Places"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Vous envoie votre réservation par e-mail."
-                    android:textColor="@color/white"
+                    android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
+                    android:textColor="@color/text_light_white"
                     android:textSize="@dimen/_12ssp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
                     android:background="@color/grey" />
 
                 <TextView
@@ -219,26 +216,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Factures"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:text="Analysez activement les caractéristiques du terminal pour l'identification"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Vous transmets par e-mail un compte rendu de vos factures."
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
                     android:background="@color/grey" />
 
                 <TextView
@@ -246,38 +233,44 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Clubin"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:text="Créer un profil pour afficher un contenu personnalisé"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/grey" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Recevez les dernières exclusivités Clubin (2 offres par mois). Vous pouvez vous désabonnez à tout moment directement depuis le mail de notre Newsletter."
+                    android:text="Stocker et/ou accéder accéder à des informations sur un terminal"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
+                    android:textSize="@dimen/_14ssp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/View_sms"
+                android:id="@+id/ll_market"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_15sdp"
                 android:background="@drawable/solid_black_background"
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp"
-                app:layout_constraintTop_toBottomOf="@+id/View_email">
+                app:layout_constraintTop_toBottomOf="@+id/ll_data">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/solid_black_background"
                     android:orientation="horizontal"
                     tools:layout_editor_absoluteX="6dp">
 
@@ -285,10 +278,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="sms"
+                        android:text="Marketing"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
@@ -297,25 +289,26 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:src="@drawable/ic_baseline_mark_chat_unread" />
+                        android:src="@drawable/ic_baseline_cell_tower" />
 
                 </LinearLayout>
 
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Ce sont des informations importantes qui vous seront directement envoyés par SMS."
-                    android:textColor="@color/link_green"
+                    android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
+                    android:textColor="@color/text_light_white"
                     android:textSize="@dimen/_12ssp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
                     android:background="@color/grey" />
 
                 <TextView
@@ -323,27 +316,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Réservation"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:text="Développer et améliorer les produits"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Confirmation de réservation avec rappel des informations clés."
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
                     android:background="@color/grey" />
 
                 <TextView
@@ -351,22 +333,34 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Important / Annulation"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:text="Mesurer les performances du contenu"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/grey" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/montserrat_alternates_regular"
-                    android:text="Informations importantes, par exemple l'annulation d'un évènement"
+                    android:text="Sélectionner du contenu personnalisé"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
+                    android:textSize="@dimen/_14ssp" />
+
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

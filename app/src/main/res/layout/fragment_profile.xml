@@ -65,9 +65,12 @@
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="@dimen/_70sdp"
-                        android:layout_height="@dimen/_70sdp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_singer"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:src="@mipmap/ic_launcher" />
                 </LinearLayout>
 
                 <View
@@ -414,8 +417,8 @@
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/montserrat_alternates_semibold"
                     android:text="V1.0"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp" />
+                    android:textColor="@color/text_light_white"
+                    android:textSize="@dimen/_12ssp" />
 
             </LinearLayout>
 

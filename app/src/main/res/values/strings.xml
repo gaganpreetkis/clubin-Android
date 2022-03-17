@@ -400,6 +400,21 @@
     <string name="login_message"></string>
     <string name="login_details"><u>Mot de passe oublié ?</u></string>
     <string name="login_button">Se connecter</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--  Confidentialité-->
+    <string name="confidential_title">Confidentialité</string>
+    <string name="message_1">Nous respectons vos données</string>
+    <string name="message_2">
+       <font color="#ffffff">Le respect de vos données est essentiel. Nos partenaires et
+nous utilisons des informationn non sensibles de votre appareil (dont ID publicitaires, adresses MAC ou IP, données de géolocalisation)
+           et profil utilisateur (dont donnnées démographiques lorsque cette information est disponible)
+           afin d\'améliorer votre expérience sur notre service, assurer son bon fonctionnement
+ et vous proposer des contenus personnalisés. Pour en savoir plus sur les données personnelles que
+           nous utilisons et les traitements que nous réalisons, vous pouvez consulter notre</font>
+        <font color="#1D67CF">Politique de confidentialité.</font>
+    </string>
+
+
 </resources>

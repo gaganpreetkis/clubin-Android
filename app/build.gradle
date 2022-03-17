@@ -57,6 +57,7 @@ dependencies {
 
     //dot indicator
     implementation "com.tbuonomo:dotsindicator:$dotIndicatorVersion"
-
+    //circle image
+    implementation "de.hdodenhof:circleimageview:$circleImageViewVersion"
     implementation 'com.applandeo:material-calendar-view:1.7.0'
 }

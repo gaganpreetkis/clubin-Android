@@ -1,17 +1,15 @@
 package com.clubin.com.fragment.profile
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.clubin.com.R
-
+import com.clubin.com.databinding.ContactUsFragmentDataBinding
+import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class ContactUsFragment : Fragment() {
+class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>(R.layout.fragment_contact_us), ContactUsFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -23,21 +21,22 @@ class ContactUsFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact_us, container, false)
+    override fun injectDaggerComponent() {
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ContactUsFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onDataBindingCreated() {
+        binding.callback = this
+
+        initListeners();
+    }
+
+    private fun initListeners() {
+        binding.llTopView.setOnClickListener {
+
+        }
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed();
+        }
     }
 }
 /*
