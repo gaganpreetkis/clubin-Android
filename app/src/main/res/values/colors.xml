@@ -47,5 +47,8 @@
     <color name="pink_red_dark">#CA003B</color>
     <color name="dull_white">#A4A4A4</color>
     <color name="bright_green">#3DC181</color>
+    <color name="bright_green_new">#34CE9B</color>
     <color name="grey_with_opacity">#161518</color>
+    <color name="btn_pink">#D20062</color>
+    <color name="btn_orange">#F13825</color>
 </resources>
