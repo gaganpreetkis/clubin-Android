@@ -38,7 +38,7 @@ class CardBanFragment : BaseDataBindingFragment<CardBanFragmentDataBinding>
         binding.callback = this
 
         binding.ivBack.setOnClickListener {
-            onBackPress();
+            requireActivity().onBackPressed()
         }
         binding.buttonSubmit.setOnClickListener {
             binding.buttonSubmit.text = "Sauvegarder"

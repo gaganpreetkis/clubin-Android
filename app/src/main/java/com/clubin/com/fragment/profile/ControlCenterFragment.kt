@@ -28,7 +28,7 @@ class ControlCenterFragment : BaseDataBindingFragment<ControlCenterFragmentDataB
 
     override fun onDataBindingCreated() {
         binding.ivBack.setOnClickListener {
-            onBackPress()
+            requireActivity().onBackPressed()
         }
 
     }

@@ -47,6 +47,9 @@ class RateReviewFragment : BaseDataBindingFragment<RateReviewFragmentDataBinding
     }
 
     override fun onDataBindingCreated() {
+        binding.tvBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
 
     }
 }

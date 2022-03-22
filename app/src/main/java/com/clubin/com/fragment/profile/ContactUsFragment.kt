@@ -37,7 +37,7 @@ class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>
 
         }
         binding.ivBack.setOnClickListener {
-            onBackPress();
+            requireActivity().onBackPressed()
         }
     }
 }

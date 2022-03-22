@@ -32,6 +32,9 @@ class PaymentHistoryFragment : BaseDataBindingFragment<PaymentHistoryFragmentDat
     }
 
     override fun onDataBindingCreated() {
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
 
     }
 

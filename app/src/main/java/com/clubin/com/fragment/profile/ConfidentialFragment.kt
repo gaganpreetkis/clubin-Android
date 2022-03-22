@@ -35,7 +35,7 @@ class ConfidentialFragment :  BaseDataBindingFragment<ConfidentialFragmentDataBi
      override fun onDataBindingCreated() {
 
          binding.ivBack.setOnClickListener {
-             onBackPress()
+             requireActivity().onBackPressed()
          }
     }
 

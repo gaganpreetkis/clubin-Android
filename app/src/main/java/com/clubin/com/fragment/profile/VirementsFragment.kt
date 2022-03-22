@@ -13,7 +13,8 @@ import com.clubin.com.fragment.profile.callbacks.VirementsFragmentCallback
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class VirementsFragment : BaseDataBindingFragment<VirementsFragmentDataBinding>(R.layout.fragment_virements),
+class VirementsFragment : BaseDataBindingFragment<VirementsFragmentDataBinding>
+    (R.layout.fragment_virements),
     VirementsFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
@@ -31,7 +32,9 @@ class VirementsFragment : BaseDataBindingFragment<VirementsFragmentDataBinding>(
     }
 
     override fun onDataBindingCreated() {
-
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
     }
 
 }

@@ -28,7 +28,7 @@ class ProfileDetailsFragment : BaseDataBindingFragment<ProfileDetailsFragmentDat
 
     override fun onDataBindingCreated() {
         binding.imageViewCancel.setOnClickListener {
-            onBackPress();
+            requireActivity().onBackPressed()
         }
         binding.textViewProfileEdit.setOnClickListener {
             fragmentChange(AccountEditFragment())

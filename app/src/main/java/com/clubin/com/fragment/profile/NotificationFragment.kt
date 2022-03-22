@@ -40,7 +40,7 @@ class NotificationFragment :  BaseDataBindingFragment<NotificationFragmentDataBi
 
     override fun onDataBindingCreated() {
         binding.ivBack.setOnClickListener {
-            onBackPress()
+            requireActivity().onBackPressed()
         }
 
     }

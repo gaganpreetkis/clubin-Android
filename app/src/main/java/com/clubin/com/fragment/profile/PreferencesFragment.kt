@@ -17,7 +17,7 @@ private const val ARG_PARAM2 = "param2"
 
 class PreferencesFragment : BaseDataBindingFragment<PreferencesFragmentDataBinding>
     (R.layout.fragment_preferences),
-    PreferencesFragmentCallback{
+    PreferencesFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -33,20 +33,13 @@ class PreferencesFragment : BaseDataBindingFragment<PreferencesFragmentDataBindi
 
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_preferences, container, false)
-        val complete: LinearLayout = view.findViewById<View>(R.id.ll_complete) as LinearLayout
-        complete.setOnClickListener {
+    override fun onDataBindingCreated() {
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+        binding.llComplete.setOnClickListener {
             fragmentChange(CardBanFragment())
         }
-
-        return view
-    }
-
-
-    override fun onDataBindingCreated() {
-
     }
 }
 

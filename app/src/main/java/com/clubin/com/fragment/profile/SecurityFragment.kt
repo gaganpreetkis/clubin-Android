@@ -9,7 +9,8 @@ import com.clubin.com.fragment.profile.callbacks.SecurityFragmentCallback
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class SecurityFragment : BaseDataBindingFragment<SecurityFragmentDataBinding>(R.layout.fragment_security),
+class SecurityFragment : BaseDataBindingFragment<SecurityFragmentDataBinding>
+    (R.layout.fragment_security),
     SecurityFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
@@ -27,6 +28,9 @@ class SecurityFragment : BaseDataBindingFragment<SecurityFragmentDataBinding>(R.
     }
 
     override fun onDataBindingCreated() {
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         binding.llChangePassword.setOnClickListener {
             fragmentChange(PasswordChangeFragment())
         }

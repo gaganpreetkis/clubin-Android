@@ -35,7 +35,7 @@ class PaymentFragment : BaseDataBindingFragment<PaymentFragmentDataBinding>
     override fun onDataBindingCreated() {
         binding.callback = this
         binding.ivBack.setOnClickListener {
-            onBackPress()
+            requireActivity().onBackPressed()
         }
         binding.llVirements.setOnClickListener {
             fragmentChange(VirementsFragment())
