@@ -7,12 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.clubin.com.R
+import com.clubin.com.databinding.PreferencesFragmentDataBinding
+import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.profile.callbacks.PreferencesFragmentCallback
 
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class PreferencesFragment : Fragment() {
+class PreferencesFragment : BaseDataBindingFragment<PreferencesFragmentDataBinding>
+    (R.layout.fragment_preferences),
+    PreferencesFragmentCallback{
     private var param1: String? = null
     private var param2: String? = null
 
@@ -24,22 +29,24 @@ class PreferencesFragment : Fragment() {
         }
     }
 
+    override fun injectDaggerComponent() {
+
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater!!.inflate(R.layout.fragment_preferences, container, false)
         val complete: LinearLayout = view.findViewById<View>(R.id.ll_complete) as LinearLayout
         complete.setOnClickListener {
-            fragmentChange(CompleteBanFragment());
+            fragmentChange(CardBanFragment());
         }
 
         return view;
     }
 
-    private fun fragmentChange(fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
-            .addToBackStack(null)
-            .commit()
+
+    override fun onDataBindingCreated() {
+
     }
 }
 

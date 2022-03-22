@@ -7,11 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.clubin.com.R
+import com.clubin.com.databinding.PaymentFragmentDataBinding
+import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.profile.callbacks.PaymentFragmentCallback
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class PaymentFragment : Fragment() {
+class PaymentFragment : BaseDataBindingFragment<PaymentFragmentDataBinding>(R.layout.fragment_payment),
+    PaymentFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -23,36 +27,24 @@ class PaymentFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_payment, container, false)
+    override fun injectDaggerComponent() {
 
+    }
 
-        val virement: LinearLayout = view.findViewById<View>(R.id.ll_virements) as LinearLayout
-        virement.setOnClickListener {
+    override fun onDataBindingCreated() {
+        binding.callback = this
+        binding.llVirements.setOnClickListener {
             fragmentChange(VirementsFragment());
         }
-
-        val preferences: LinearLayout = view.findViewById<View>(R.id.ll_préférences) as LinearLayout
-        preferences.setOnClickListener {
+        binding.llPrFRences.setOnClickListener {
             fragmentChange(PreferencesFragment());
         }
-
-        val history: LinearLayout = view.findViewById<View>(R.id.ll_historique) as LinearLayout
-        history.setOnClickListener {
+        binding.llHistorique.setOnClickListener {
             fragmentChange(PaymentHistoryFragment());
         }
-
-        return view;
-
     }
 
-    private fun fragmentChange(fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
-            .addToBackStack(null)
-            .commit()
-    }
+
 }
 
 /*

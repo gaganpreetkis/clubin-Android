@@ -6,11 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.clubin.com.R
+import com.clubin.com.databinding.AccountEditFragmentDataBinding
+import com.clubin.com.databinding.ContactUsFragmentDataBinding
+import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback
+import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class AccountEditFragment : Fragment() {
+class AccountEditFragment : BaseDataBindingFragment<AccountEditFragmentDataBinding>
+    (R.layout.fragment_account_edit), AccountEditFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -22,11 +28,14 @@ class AccountEditFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account_edit, container, false)
+    override fun injectDaggerComponent() {
+
     }
+
+    override fun onDataBindingCreated() {
+
+    }
+
 
 }
 /*
