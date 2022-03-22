@@ -52,7 +52,7 @@
             android:fontFamily="@font/montserrat_alternates_bold"
             android:text="Choisissez l'adresse de\nvotre Event"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -66,37 +66,23 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/alreadyRegisteredRecycler"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="130dp" />
 
-        <androidx.cardview.widget.CardView
+        <androidx.appcompat.widget.SearchView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@color/bright_green_new"
-            app:cardCornerRadius="20dp"
-            app:contentPadding="1dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <androidx.appcompat.widget.SearchView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/black_background"
-                    android:foregroundTint="@color/dull_white"
-                    app:iconifiedByDefault="false"
-                    app:queryHint="Saisir l'adresse de votre évènement."
-                    app:searchHintIcon="@android:drawable/ic_search_category_default"
-                    app:tint="@color/dull_white" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_green_searchview"
+            app:iconifiedByDefault="false"
+            app:queryHint="Saisir l'adresse de votre évènement."
+            app:searchHintIcon="@android:drawable/ic_search_category_default"
+            app:tint="@color/dull_white" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/addressRecycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
 
     </LinearLayout>
 

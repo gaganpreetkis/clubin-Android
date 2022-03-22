@@ -9,8 +9,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.clubin.com.R
 import com.clubin.com.databinding.HostCreationAddressFragmentBinding
+import com.clubin.com.fragment.hosts.adapter.HostCreationAddressRegisteredAdapter
 import com.clubin.com.fragment.hosts.adapter.HostCreationAddressResultAdapter
 import com.clubin.com.fragment.hosts.viewmodel.HostCreationAddressViewModel
 
@@ -20,7 +22,8 @@ class HostCreationAddressFragment : Fragment() {
     val TAG = this::class.java.simpleName
     lateinit var vm: HostCreationAddressViewModel
     lateinit var binding: HostCreationAddressFragmentBinding
-    var adapter: HostCreationAddressResultAdapter? = null
+    var addressAdapter: HostCreationAddressResultAdapter? = null
+    var registeredAdapter: HostCreationAddressRegisteredAdapter? = null
     val list: MutableList<String> = mutableListOf()
 
     override fun onAttach(context: Context) {
@@ -46,12 +49,12 @@ class HostCreationAddressFragment : Fragment() {
         list.add("11 rue de l'harmonie")
         list.add("6 rue de la salpetriere")
 
-        adapter = HostCreationAddressResultAdapter(mContext, list)
+        registeredAdapter = HostCreationAddressRegisteredAdapter(mContext, list)
+        binding.alreadyRegisteredRecycler.layoutManager = LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false)
+        binding.alreadyRegisteredRecycler.adapter = registeredAdapter
+
+        addressAdapter = HostCreationAddressResultAdapter(mContext, list)
         binding.addressRecycler.layoutManager = LinearLayoutManager(mContext)
-        binding.addressRecycler.adapter = adapter
-
-
-
-
+        binding.addressRecycler.adapter = addressAdapter
     }
 }
