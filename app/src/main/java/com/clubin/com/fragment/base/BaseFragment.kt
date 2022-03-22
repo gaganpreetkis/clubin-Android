@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
+import com.clubin.com.R
 
 
 abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragment() {
@@ -17,7 +18,7 @@ abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragme
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         processArguments(arguments)
-        injectDaggerComponent()
+       // injectDaggerComponent()
         registerBackPressListener()
 
     }
@@ -46,6 +47,13 @@ abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragme
         alertDialog?.let {
             alertDialog.dismiss()
         }
+    }
+
+    protected fun fragmentChange(fragment: Fragment) {
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.container, fragment)
+            .addToBackStack(null)
+            .commit()
     }
     // region Navigation
     /**
