@@ -14,7 +14,8 @@ import com.clubin.com.fragment.profile.callbacks.PaymentFragmentCallback
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class PaymentFragment : BaseDataBindingFragment<PaymentFragmentDataBinding>(R.layout.fragment_payment),
+class PaymentFragment : BaseDataBindingFragment<PaymentFragmentDataBinding>
+    (R.layout.fragment_payment),
     PaymentFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
@@ -33,14 +34,17 @@ class PaymentFragment : BaseDataBindingFragment<PaymentFragmentDataBinding>(R.la
 
     override fun onDataBindingCreated() {
         binding.callback = this
+        binding.ivBack.setOnClickListener {
+            onBackPress()
+        }
         binding.llVirements.setOnClickListener {
-            fragmentChange(VirementsFragment());
+            fragmentChange(VirementsFragment())
         }
         binding.llPrFRences.setOnClickListener {
-            fragmentChange(PreferencesFragment());
+            fragmentChange(PreferencesFragment())
         }
         binding.llHistorique.setOnClickListener {
-            fragmentChange(PaymentHistoryFragment());
+            fragmentChange(PaymentHistoryFragment())
         }
     }
 

@@ -1,6 +1,7 @@
 package com.clubin.com.fragment.profile
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -20,7 +21,7 @@ class ProfileFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
         val profileDetails: LinearLayout = view.findViewById<View>(R.id.ll_contactez) as LinearLayout
         profileDetails.setOnClickListener {
             fragmentChange(ContactUsFragment())
@@ -29,7 +30,9 @@ class ProfileFragment : Fragment() {
 
         val profile: LinearLayout = view.findViewById<View>(R.id.ll_profile) as LinearLayout
         profile.setOnClickListener {
-            fragmentChange(ProfileDetailsFragment())
+            //fragmentChange(ProfileDetailsFragment())
+            var intent = Intent(requireActivity().applicationContext, AccountEditActivity::class.java)
+            startActivity(intent)
         }
         val notification: LinearLayout = view.findViewById<View>(R.id.ll_notification) as LinearLayout
         notification.setOnClickListener {
@@ -51,7 +54,7 @@ class ProfileFragment : Fragment() {
         rate.setOnClickListener {
             fragmentChange(RateReviewFragment())
         }
-        return view;
+        return view
     }
 
    private fun fragmentChange(fragment: Fragment) {

@@ -9,7 +9,8 @@ import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>(R.layout.fragment_contact_us),
+class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>
+    (R.layout.fragment_contact_us),
     ContactUsFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
@@ -28,7 +29,7 @@ class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>(
     override fun onDataBindingCreated() {
         binding.callback = this
 
-        initListeners();
+        initListeners()
     }
 
     private fun initListeners() {
@@ -36,7 +37,7 @@ class ContactUsFragment : BaseDataBindingFragment<ContactUsFragmentDataBinding>(
 
         }
         binding.ivBack.setOnClickListener {
-            requireActivity().onBackPressed();
+            onBackPress();
         }
     }
 }

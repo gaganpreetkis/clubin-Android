@@ -10,127 +10,126 @@
             name="callback"
             type="com.clubin.com.fragment.profile.callbacks.PreferencesFragmentCallback" />
     </data>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".fragment.profile.ConfidentialFragment">
 
-    <LinearLayout
-        android:id="@+id/ll_title"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:src="@drawable/ic_arrow_back_white"
-            android:textSize="@dimen/_16ssp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/montserrat_alternates_bold"
-            android:gravity="center_horizontal"
-            android:text="Préférences"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
-
-        <View
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_20sdp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_first_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/ll_title">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_alternates_semibold"
-            android:gravity="start"
-            android:text="Sur quel compte souhaitez-vous recevoir l'argent disponible ?"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_11ssp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_10sdp" />
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".fragment.profile.ConfidentialFragment">
 
         <LinearLayout
-            android:id="@+id/ll_complete"
+            android:id="@+id/ll_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_outline_mark_chat" />
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/ic_arrow_back_white"
+                android:textSize="@dimen/_16ssp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_semibold"
-                android:text="Compte bancaire (par défaut)"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center_horizontal"
+                android:text="Préférences"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_15ssp" />
+                android:textSize="@dimen/_20ssp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_next" />
+            <View
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_10sdp" />
-
         <LinearLayout
-            android:id="@+id/ll_paypal"
+            android:id="@+id/ll_first_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_outline_mark_chat" />
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ll_title">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_weight="1"
                 android:fontFamily="@font/montserrat_alternates_semibold"
-                android:text="Paypal (arrive bientôt)"
+                android:gravity="start"
+                android:text="Sur quel compte souhaitez-vous recevoir l'argent disponible ?"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_15ssp" />
+                android:textSize="@dimen/_11ssp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/ll_complete"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_next" />
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_outline_mark_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="Compte bancaire (par défaut)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/ll_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_outline_mark_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="Paypal (arrive bientôt)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

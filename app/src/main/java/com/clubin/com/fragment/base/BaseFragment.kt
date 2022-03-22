@@ -44,7 +44,7 @@ abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragme
     }
 
     protected fun dismiss() {
-        alertDialog?.let {
+        alertDialog.let {
             alertDialog.dismiss()
         }
     }

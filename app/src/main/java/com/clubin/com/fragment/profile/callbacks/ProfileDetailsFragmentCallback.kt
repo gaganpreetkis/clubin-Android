@@ -1,4 +1,3 @@
 package com.clubin.com.fragment.profile.callbacks
 
-interface ProfileDetailsFragmentCallback {
-}
+interface ProfileDetailsFragmentCallback

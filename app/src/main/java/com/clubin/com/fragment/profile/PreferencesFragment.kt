@@ -35,13 +35,13 @@ class PreferencesFragment : BaseDataBindingFragment<PreferencesFragmentDataBindi
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_preferences, container, false)
+        val view = inflater.inflate(R.layout.fragment_preferences, container, false)
         val complete: LinearLayout = view.findViewById<View>(R.id.ll_complete) as LinearLayout
         complete.setOnClickListener {
-            fragmentChange(CardBanFragment());
+            fragmentChange(CardBanFragment())
         }
 
-        return view;
+        return view
     }
 
 

@@ -32,6 +32,9 @@ class PasswordChangeFragment :  BaseDataBindingFragment<PasswordChangeFragmentDa
     }
 
     override fun onDataBindingCreated() {
+        binding.ivBack.setOnClickListener {
+            onBackPress()
+        }
 
     }
 

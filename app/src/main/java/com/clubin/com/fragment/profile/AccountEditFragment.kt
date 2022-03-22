@@ -1,16 +1,12 @@
 package com.clubin.com.fragment.profile
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.clubin.com.R
 import com.clubin.com.databinding.AccountEditFragmentDataBinding
-import com.clubin.com.databinding.ContactUsFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
 import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback
-import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
+
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -33,9 +29,82 @@ class AccountEditFragment : BaseDataBindingFragment<AccountEditFragmentDataBindi
     }
 
     override fun onDataBindingCreated() {
-
+        showHideViews(false)
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+        binding.ivCancel.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+        binding.textViewEdit.setOnClickListener {
+            showHideViews(true)
+        }
+        binding.rlEmail.setOnClickListener {
+            fragmentChange(EmailChangeFragment())
+        }
+        binding.rlTelephone.setOnClickListener {
+            fragmentChange(TelePhoneEditFragment())
+        }
     }
 
+    private fun showHideViews(isEdit: Boolean) {
+
+        if (!isEdit) {
+            binding.textViewEmail.setTextColor(resources.getColor(R.color.white))
+            binding.textViewEmailValue.setTextColor(resources.getColor(R.color.white))
+            binding.textViewTelephone.setTextColor(resources.getColor(R.color.white))
+            binding.textViewTelephoneValue.setTextColor(resources.getColor(R.color.white))
+
+            binding.textViewEdit.text = "Modifier les informations"
+            binding.textViewFirstNameValue.visibility = View.VISIBLE
+            binding.editTextFirstName.visibility = View.GONE
+
+            binding.textViewLastNameValue.visibility = View.VISIBLE
+            binding.editTextLastName.visibility = View.GONE
+
+            binding.textViewAgeValue.visibility = View.VISIBLE
+            binding.editTextAge.visibility = View.GONE
+
+            binding.textViewBioValue.visibility = View.VISIBLE
+            binding.editTextBio.visibility = View.GONE
+
+            binding.textViewInstaValue.visibility = View.VISIBLE
+            binding.editTextInsta.visibility = View.GONE
+
+            binding.textViewFacebookValue.visibility = View.VISIBLE
+            binding.editTextFacebook.visibility = View.GONE
+
+            binding.textViewSexValue.visibility = View.VISIBLE
+            binding.editTextSex.visibility = View.GONE
+        } else {
+            binding.textViewEmail.setTextColor(resources.getColor(R.color.green))
+            binding.textViewEmailValue.setTextColor(resources.getColor(R.color.green))
+            binding.textViewTelephone.setTextColor(resources.getColor(R.color.green))
+            binding.textViewTelephoneValue.setTextColor(resources.getColor(R.color.green))
+
+            binding.textViewEdit.text = "Sauvegarder les informations"
+            binding.textViewFirstNameValue.visibility = View.GONE
+            binding.editTextFirstName.visibility = View.VISIBLE
+
+            binding.textViewLastNameValue.visibility = View.GONE
+            binding.editTextLastName.visibility = View.VISIBLE
+
+            binding.textViewAgeValue.visibility = View.GONE
+            binding.editTextAge.visibility = View.VISIBLE
+
+            binding.textViewBioValue.visibility = View.GONE
+            binding.editTextBio.visibility = View.VISIBLE
+
+            binding.textViewInstaValue.visibility = View.GONE
+            binding.editTextInsta.visibility = View.VISIBLE
+
+            binding.textViewFacebookValue.visibility = View.GONE
+            binding.editTextFacebook.visibility = View.VISIBLE
+
+            binding.textViewSexValue.visibility = View.GONE
+            binding.editTextSex.visibility = View.VISIBLE
+        }
+    }
 
 }
 /*

@@ -16,7 +16,8 @@ import com.clubin.com.fragment.profile.callbacks.CardBanFragmentCallback
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class CardBanFragment : BaseDataBindingFragment<CardBanFragmentDataBinding>(R.layout.fragment_card_ban),
+class CardBanFragment : BaseDataBindingFragment<CardBanFragmentDataBinding>
+    (R.layout.fragment_card_ban),
     CardBanFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
@@ -35,15 +36,12 @@ class CardBanFragment : BaseDataBindingFragment<CardBanFragmentDataBinding>(R.la
 
     override fun onDataBindingCreated() {
         binding.callback = this
-        /*  val button: Button = view.findViewById<View>(R.id.buttonSubmit) as Button
-        val pays: EditText = view.findViewById<View>(R.id.editTextTextPays) as EditText
-        val name: EditText = view.findViewById<View>(R.id.editTextTextName) as EditText
-        val country: EditText = view.findViewById<View>(R.id.editTextTextCountry) as EditText
-        val card: EditText = view.findViewById<View>(R.id.editTextTextCard) as EditText
-        val bic: EditText = view.findViewById<View>(R.id.editTextTextBIC) as EditText*/
 
+        binding.ivBack.setOnClickListener {
+            onBackPress();
+        }
         binding.buttonSubmit.setOnClickListener {
-            binding.buttonSubmit.setText("Sauvegarder");
+            binding.buttonSubmit.text = "Sauvegarder"
             binding.editTextTextPays.isEnabled = true
             binding.editTextTextName.isEnabled = true
             binding.editTextTextCountry.isEnabled = true

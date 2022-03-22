@@ -1,13 +1,9 @@
 package com.clubin.com.fragment.profile
 
-import android.content.Context
+
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.clubin.com.R
-import com.clubin.com.databinding.PreferencesFragmentDataBinding
 import com.clubin.com.databinding.ProfileDetailsFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
 import com.clubin.com.fragment.profile.callbacks.PreferencesFragmentCallback
@@ -31,12 +27,30 @@ class ProfileDetailsFragment : BaseDataBindingFragment<ProfileDetailsFragmentDat
     }
 
     override fun onDataBindingCreated() {
+        binding.imageViewCancel.setOnClickListener {
+            onBackPress();
+        }
+        binding.textViewProfileEdit.setOnClickListener {
+            fragmentChange(AccountEditFragment())
+
+        }
+        binding.tvVerify.setOnClickListener {
+            fragmentChange(AllVerifyFragment())
+        }
 
     }
 
     override fun injectDaggerComponent() {
 
     }
+
+    override fun onBackPress(): Boolean {
+        requireActivity().finish();
+
+        return true;
+    }
+
+
 }
 /*
 

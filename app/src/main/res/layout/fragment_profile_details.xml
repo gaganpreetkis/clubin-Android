@@ -8,360 +8,359 @@
             name="callback"
             type="com.clubin.com.fragment.profile.callbacks.ProfileDetailsFragmentCallback" />
     </data>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".fragment.profile.ProfileDetailsFragment">
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@color/black"
+        tools:context=".fragment.profile.ProfileDetailsFragment">
 
-        <LinearLayout
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/topView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_singer"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_instagram_symbol" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_facebook" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textViewName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_alternates_bold"
+                                android:text="ugo_l"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_22ssp" />
+
+                            <TextView
+                                android:id="@+id/textViewAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewName"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:drawableLeft="@drawable/ic_avatar_profile"
+                                android:drawableTint="@color/white"
+                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                android:text="Ugo Lafosse, 22"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_16ssp" />
+
+                            <TextView
+                                android:id="@+id/textViewProfileEdit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewAddress"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/solid_white"
+                                android:drawableRight="@drawable/ic_edit_pencil_icon"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Modifier mon profil "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <TextView
+                                android:id="@+id/tvVerify"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewProfileEdit"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/solid_dark_blue"
+                                android:drawableRight="@drawable/ic_note_icon"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:drawableTint="@color/white"
+                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Tâches restantes  "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <ImageView
+                                android:id="@+id/imageViewCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_close_delete_icon"
+                                app:tint="@color/white" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:text="BIO: Digital goodies designer @pixsellz. Everything is designed."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topView" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_10sdp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:orientation="vertical">
-
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/iv_singer"
-                            android:layout_width="@dimen/_80sdp"
-                            android:layout_height="@dimen/_80sdp"
-                            android:src="@mipmap/ic_launcher" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="@dimen/_20sdp"
-                                android:layout_height="@dimen/_20sdp"
-                                android:src="@drawable/ic_instagram_symbol" />
-
-                            <View
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1" />
-
-                            <ImageView
-                                android:layout_width="@dimen/_20sdp"
-                                android:layout_height="@dimen/_20sdp"
-                                android:src="@drawable/ic_facebook" />
-                        </LinearLayout>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBio">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_5sdp"
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/textViewName"
+                            android:id="@+id/textRating"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_bold"
-                            android:text="ugo_l"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_22ssp" />
-
-                        <TextView
-                            android:id="@+id/textViewAddress"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/textViewName"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:drawableTint="@color/white"
-                            android:drawableLeft="@drawable/ic_avatar_profile"
+                            android:layout_centerHorizontal="true"
+                            android:drawableRight="@drawable/ic_baseline_star"
                             android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:text="Ugo Lafosse, 22"
+                            android:text="4.6 "
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_16ssp" />
+                            android:textSize="@dimen/_20sdp"></TextView>
 
-                        <TextView
-                            android:id="@+id/textViewAddress2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/textViewAddress"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            android:background="@drawable/solid_white"
-                            android:drawableRight="@drawable/ic_edit_pencil_icon"
-                            android:drawablePadding="@dimen/_5sdp"
-                            android:drawableTint="@color/black"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:padding="@dimen/_5sdp"
-                            android:text="Modifier mon profil "
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_12ssp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/textViewAddress2"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            android:background="@drawable/solid_dark_blue"
-                            android:drawableRight="@drawable/ic_note_icon"
-                            android:drawablePadding="@dimen/_5sdp"
-                            android:drawableTint="@color/white"
+                            android:layout_below="@+id/textRating"
+                            android:layout_centerHorizontal="true"
                             android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:padding="@dimen/_5sdp"
-                            android:text="Tâches restantes  "
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_12ssp" />
-
-                        <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_5sdp"
-                            android:padding="@dimen/_5sdp"
-                            android:src="@drawable/ic_close_delete_icon"
-                            app:tint="@color/white" />
+                            android:text="Etoiles"
+                            android:textColor="@color/text_light_white"
+                            android:textSize="@dimen/_16sdp"></TextView>
                     </RelativeLayout>
 
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textOrg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:drawableRight="@drawable/ic_home_icon"
+                            android:drawableTint="@color/darkBlue"
+                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            android:text="20 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"></TextView>
+
+                        <!-- <ImageView
+                             android:id="@+id/starImageView"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:layout_marginLeft="@dimen/_10sdp"
+                             android:layout_toRightOf="@+id/textOrg"
+                             android:src="@drawable/home"
+                             app:tint="@color/darkBlue" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textOrg"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            android:text="Organisés"
+                            android:textColor="@color/text_light_white"
+                            android:textSize="@dimen/_16sdp"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textPart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:drawableRight="@drawable/ic_theater_icon"
+                            android:drawableTint="@color/pink_red_dark"
+                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            android:text="32 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"></TextView>
+
+                        <!--    <ImageView
+                                android:id="@+id/faceImageView"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_toRightOf="@+id/textPart"
+                                android:src="@drawable/theater"
+                                app:tint="@color/pink_red_dark" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textPart"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            android:text="Participés"
+                            android:textColor="@color/text_light_white"
+                            android:textSize="@dimen/_16sdp"></TextView>
+                    </RelativeLayout>
 
                 </LinearLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        android:gravity="start"
+                        android:text="Arrive bientôt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewMore1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        android:text="Voir plus d'évènements"
+                        android:textColor="@color/link_green"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:orientation="horizontal">
+                    android:layout_marginLeft="@dimen/_5sdp">
 
+                    <include layout="@layout/custom_row_event_review" />
+                </LinearLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        android:gravity="start"
+                        android:text="Organisés"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewMore2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        android:text="Voir plus d'évènements"
+                        android:textColor="@color/link_green"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <include layout="@layout/custom_row_event_review" />
                 </LinearLayout>
             </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
-            <TextView
-                android:id="@+id/textViewBio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
-                android:text="BIO: Digital goodies designer @pixsellz. Everything is designed."
-                android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/topView" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/textViewBio">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/textRating"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="4.6 "
-                        android:drawableRight="@drawable/ic_baseline_star"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_20sdp"></TextView>
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textRating"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="Etoiles"
-                        android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_16sdp"></TextView>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/textOrg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="20 "
-                        android:drawableRight="@drawable/ic_home_icon"
-                        android:textColor="@color/white"
-                        android:drawableTint="@color/darkBlue"
-                        android:textSize="@dimen/_20sdp"></TextView>
-
-                   <!-- <ImageView
-                        android:id="@+id/starImageView"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:layout_toRightOf="@+id/textOrg"
-                        android:src="@drawable/home"
-                        app:tint="@color/darkBlue" />-->
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textOrg"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="Organisés"
-                        android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_16sdp"></TextView>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/textPart"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="32 "
-                        android:drawableRight="@drawable/ic_theater_icon"
-                        android:drawableTint="@color/pink_red_dark"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_20sdp"></TextView>
-
-                <!--    <ImageView
-                        android:id="@+id/faceImageView"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:layout_toRightOf="@+id/textPart"
-                        android:src="@drawable/theater"
-                        app:tint="@color/pink_red_dark" />-->
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textPart"
-                        android:layout_centerHorizontal="true"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="Participés"
-                        android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_16sdp"></TextView>
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp">
-
-                <TextView
-                    android:id="@+id/textViewTitle1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:gravity="start"
-                    android:text="Arrive bientôt"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp"></TextView>
-
-                <TextView
-                    android:id="@+id/textViewMore1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Voir plus d'évènements"
-                    android:textColor="@color/link_green"
-                    android:textSize="@dimen/_12ssp" />
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_5sdp">
-
-                <include layout="@layout/custom_row_event_review" />
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp">
-
-                <TextView
-                    android:id="@+id/textViewTitle2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:gravity="start"
-                    android:text="Organisés"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_14ssp"></TextView>
-
-                <TextView
-                    android:id="@+id/textViewMore2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
-                    android:text="Voir plus d'évènements"
-                    android:textColor="@color/link_green"
-                    android:textSize="@dimen/_12ssp" />
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_5sdp">
-
-                <include layout="@layout/custom_row_event_review" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
