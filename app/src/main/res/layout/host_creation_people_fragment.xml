@@ -52,7 +52,7 @@
             android:fontFamily="@font/montserrat_alternates_bold"
             android:text="Combien de personnes souhaitez-vous inviter ?"
             android:textColor="@color/white"
-            android:textSize="28sp" />
+            android:textSize="26sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -30,6 +30,8 @@ class HostsFragment : Fragment(), View.OnClickListener {
     val TAG = this::class.java.simpleName
     private lateinit var vm: HostsViewModel
     lateinit var binding: HostsFragmentBinding
+    val activeTabColor: Int by lazy { ContextCompat.getColor(mContext, R.color.white) }
+    val inactiveTabColor: Int by lazy { ContextCompat.getColor(mContext, R.color.dull_white) }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -100,12 +102,18 @@ class HostsFragment : Fragment(), View.OnClickListener {
                 binding.createTabDivider.isVisible = true
                 binding.onlineContainer.isVisible = false
                 binding.onlineTabDivider.visibility = View.INVISIBLE
+
+                binding.createTabTxt.setTextColor(activeTabColor)
+                binding.onlineTabTxt.setTextColor(inactiveTabColor)
             }
             binding.onlineTab -> {
                 binding.createContainer.isVisible = false
                 binding.createTabDivider.visibility = View.INVISIBLE
                 binding.onlineContainer.isVisible = true
                 binding.onlineTabDivider.isVisible = true
+
+                binding.createTabTxt.setTextColor(inactiveTabColor)
+                binding.onlineTabTxt.setTextColor(activeTabColor)
             }
             binding.chooseThisDate -> {
                 (activity as TabBarActivity).let {

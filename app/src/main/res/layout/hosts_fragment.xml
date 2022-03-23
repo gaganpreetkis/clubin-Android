@@ -45,6 +45,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/createTabTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_semibold"
@@ -71,6 +72,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/onlineTabTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_semibold"
@@ -247,9 +249,9 @@
                     android:id="@+id/calendarView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     app:cv_dayViewResource="@layout/calendar_day_layout"
-                    app:cv_scrollMode="paged" />
+                    app:cv_scrollMode="paged"
+                    app:cv_orientation="horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"

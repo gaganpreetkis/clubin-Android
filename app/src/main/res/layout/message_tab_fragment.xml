@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mview"
+            type="com.clubin.com.fragment.message.viewmodel.MessageTabViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_background"
+        android:clickable="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Notre service de messagerie est en cours de développement."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/descriptionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En attendant, afin de communiquer avec les autres participants/Hôtes d'un évènement, vous recevrez un lien d'invitation Whatsapp pour rejoindre votre conversation de groupe associé."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_alternates_regular"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/messagesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
