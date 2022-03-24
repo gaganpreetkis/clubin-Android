@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.clubin.com.R
+import com.clubin.com.fragment.profile.views.*
 
 
 class ProfileFragment : Fragment() {

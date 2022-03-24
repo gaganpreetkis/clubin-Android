@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.clubin.com.R
+import com.clubin.com.fragment.profile.views.ProfileDetailsFragment
 
 class AccountEditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

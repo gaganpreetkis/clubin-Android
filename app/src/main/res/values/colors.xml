@@ -52,4 +52,7 @@
     <color name="grey_with_opacity">#161518</color>
     <color name="btn_pink">#D20062</color>
     <color name="btn_orange">#F13825</color>
+
+    <color name="black_light">#1F404D</color>
+    <color name="yellow_light">#806B05</color>
 </resources>

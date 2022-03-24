@@ -415,6 +415,7 @@ nous utilisons des informationn non sensibles de votre appareil (dont ID publici
            nous utilisons et les traitements que nous réalisons, vous pouvez consulter notre</font>
         <font color="#1D67CF">Politique de confidentialité.</font>
     </string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
 
 
 </resources>

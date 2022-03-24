@@ -26,7 +26,8 @@
     <style name="Theme.CLUBIN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut
+        </item>
     </style>
 
     <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
@@ -36,8 +37,9 @@
         <item name="cornerSizeBottomRight">5dp</item>
         <item name="cornerSizeBottomLeft">5dp</item>
     </style>
+
     <style name="MySearchViewTheme" parent="Widget.AppCompat.SearchView">
-<!--        <item name="android:background">@color/grey_dark</item>-->
+        <!--        <item name="android:background">@color/grey_dark</item>-->
         <!-- Changes icons color -->
         <item name="android:colorForeground">@color/white</item>
         <item name="android:tint">@color/white</item>
