@@ -416,6 +416,8 @@ nous utilisons des informationn non sensibles de votre appareil (dont ID publici
         <font color="#1D67CF">Politique de confidentialité.</font>
     </string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="votre_adresse">à <b>12 km</b> de votre adresse</string>
+    <string name="report_ad"><u>Signaler l\'annonce</u></string>
 
 
 </resources>

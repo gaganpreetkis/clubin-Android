@@ -55,4 +55,5 @@
 
     <color name="black_light">#1F404D</color>
     <color name="yellow_light">#806B05</color>
+    <color name="flag_red">#BF4D65</color>
 </resources>

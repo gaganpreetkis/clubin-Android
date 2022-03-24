@@ -19,6 +19,7 @@ import com.clubin.com.databinding.EventFragmentBinding
 import com.clubin.com.fragment.event.adapter.EventAdapter
 import com.clubin.com.fragment.event.model.EventModel
 import com.clubin.com.fragment.event.viewmodel.EventViewModel
+import com.clubin.com.fragment.eventdetail.view.EventDetailFragment
 import com.clubin.com.fragment.message.view.MessageMainFragment
 import com.clubin.com.tabbar.TabBarActivity
 import com.clubin.com.themeparty.view.ThemePartyActivity
@@ -66,7 +67,14 @@ class EventFragment : Fragment(), View.OnClickListener {
     }
 
     private fun setupRecyclerViews() {
-        val adapter = EventAdapter(mContext, list)
+        val adapter = EventAdapter(mContext, list, object : EventAdapter.EventClickListener{
+            override fun onEventClick(pos: Int) {
+                (activity as TabBarActivity)?.let {
+                    it.addFragment(EventDetailFragment(), false)
+                }
+            }
+
+        })
         var layoutManager = LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false)
 
         binding.populairesRecycler.layoutManager = layoutManager

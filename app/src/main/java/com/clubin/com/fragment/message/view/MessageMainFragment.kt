@@ -71,7 +71,7 @@ class MessageMainFragment : Fragment(), View.OnClickListener {
                 binding.invitationTabTxt.setTextColor(activeTabColor)
                 binding.notificationTabTxt.setTextColor(inactiveTabColor)
 
-                addFragment(MessageInvitationFragment(), false)
+                addFragment(InvitationTabFragment(), false)
             }
             binding.notificationsTab -> {
                 binding.messagesTabDivider.visibility = View.INVISIBLE
@@ -81,6 +81,8 @@ class MessageMainFragment : Fragment(), View.OnClickListener {
                 binding.messageTabTxt.setTextColor(inactiveTabColor)
                 binding.invitationTabTxt.setTextColor(inactiveTabColor)
                 binding.notificationTabTxt.setTextColor(activeTabColor)
+
+                addFragment(NotificationsTabFragment(), false)
             }
         }
     }

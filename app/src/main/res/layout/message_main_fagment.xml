@@ -21,40 +21,51 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:background="@drawable/green_background_round_gradient_vertical"
-                android:orientation="vertical"
                 android:paddingStart="10dp"
                 android:paddingTop="10dp">
 
                 <ImageView
+                    android:id="@+id/chartIcon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/circle_dull_gray"
                     android:padding="8dp"
                     android:src="@drawable/bar_chart" />
 
+                <ImageView
+                    android:id="@+id/addIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignTop="@id/chartIcon"
+                    android:layout_alignBottom="@id/chartIcon"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_dull_gray"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_baseline_add_24" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
+                    android:layout_below="@id/chartIcon"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:id="@+id/messagesTab"
-                        android:layout_width="90dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:gravity="center">
 
                         <TextView
                             android:id="@+id/messageTabTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
                             android:text="MESSAGES"
                             android:textColor="@color/white"
                             android:textSize="14sp" />
@@ -63,25 +74,26 @@
                             android:id="@+id/messagesTabDivider"
                             android:layout_width="match_parent"
                             android:layout_height="4dp"
+                            android:layout_below="@id/messageTabTxt"
+                            android:layout_alignStart="@id/messageTabTxt"
+                            android:layout_alignEnd="@id/messageTabTxt"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/rectangle_bright_green" />
 
-                    </LinearLayout>
+                    </RelativeLayout>
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:id="@+id/invitationTab"
-                        android:layout_width="110dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="12dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_marginStart="10dp"
+                        android:gravity="center">
 
                         <TextView
                             android:id="@+id/invitationTabTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
                             android:text="INVITATIONS"
                             android:textColor="@color/dull_white"
                             android:textSize="14sp" />
@@ -90,26 +102,27 @@
                             android:id="@+id/invitationTabDivider"
                             android:layout_width="match_parent"
                             android:layout_height="4dp"
+                            android:layout_below="@id/invitationTabTxt"
+                            android:layout_alignStart="@id/invitationTabTxt"
+                            android:layout_alignEnd="@id/invitationTabTxt"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/rectangle_bright_green"
                             android:visibility="invisible" />
 
-                    </LinearLayout>
+                    </RelativeLayout>
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:id="@+id/notificationsTab"
-                        android:layout_width="124dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="12dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_marginStart="10dp"
+                        android:gravity="center">
 
                         <TextView
                             android:id="@+id/notificationTabTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
                             android:text="NOTIFICATIONS"
                             android:textColor="@color/dull_white"
                             android:textSize="14sp" />
@@ -118,19 +131,22 @@
                             android:id="@+id/notificationsTabDivider"
                             android:layout_width="match_parent"
                             android:layout_height="4dp"
+                            android:layout_below="@id/notificationTabTxt"
+                            android:layout_alignStart="@id/notificationTabTxt"
+                            android:layout_alignEnd="@id/notificationTabTxt"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/rectangle_bright_green"
                             android:visibility="invisible" />
 
-                    </LinearLayout>
+                    </RelativeLayout>
                 </LinearLayout>
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <FrameLayout
                 android:id="@+id/messageMainContainer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </layout>

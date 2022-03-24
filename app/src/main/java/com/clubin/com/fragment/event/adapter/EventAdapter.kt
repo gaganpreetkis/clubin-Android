@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.clubin.com.R
 import com.clubin.com.fragment.event.model.EventModel
 
-class EventAdapter(val mContext: Context, val list: MutableList<EventModel>): RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
+class EventAdapter(val mContext: Context, val list: MutableList<EventModel>, val listener: EventClickListener): RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
     val inflater: LayoutInflater = LayoutInflater.from(mContext)
 
@@ -39,5 +39,13 @@ class EventAdapter(val mContext: Context, val list: MutableList<EventModel>): Re
         val concertButton = itemView.findViewById<CardView>(R.id.concertButton)
         val personImage = itemView.findViewById<CardView>(R.id.personImage)
 
+        init {
+            itemView.setOnClickListener { listener.onEventClick(bindingAdapterPosition) }
+        }
+
+    }
+
+    interface EventClickListener{
+        fun onEventClick(pos: Int)
     }
 }
