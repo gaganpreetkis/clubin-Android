@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ProfileFragmentDataBinding">
+
+        <variable
+            name="callback"
+            type="com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback" />
+    </data>
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
@@ -426,3 +437,4 @@
 
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
+</layout>

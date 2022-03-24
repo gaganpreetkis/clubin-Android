@@ -1,11 +1,14 @@
 package com.clubin.com.fragment.profile.views
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.clubin.com.R
+import com.clubin.com.auth.login.view.LoginActivity
+import com.clubin.com.auth.passwordreset.view.PasswordResetCodeActivity
 import com.clubin.com.databinding.NotificationFragmentDataBinding
 import com.clubin.com.databinding.PasswordChangeFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
@@ -32,8 +35,14 @@ class PasswordChangeFragment :  BaseDataBindingFragment<PasswordChangeFragmentDa
     }
 
     override fun onDataBindingCreated() {
+
         binding.ivBack.setOnClickListener {
             requireActivity().onBackPressed()
+        }
+
+        binding.llEmail.setOnClickListener {
+            var intent = Intent(requireActivity(), PasswordResetCodeActivity::class.java)
+            startActivity(intent)
         }
 
     }

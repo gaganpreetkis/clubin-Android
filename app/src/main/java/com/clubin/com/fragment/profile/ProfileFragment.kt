@@ -2,17 +2,18 @@ package com.clubin.com.fragment.profile
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.LinearLayout
 import com.clubin.com.R
+import com.clubin.com.databinding.ProfileFragmentDataBinding
+import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 import com.clubin.com.fragment.profile.views.*
 
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : BaseDataBindingFragment<ProfileFragmentDataBinding>
+    (R.layout.fragment_profile),
+    ContactUsFragmentCallback {
+    private var param1: String? = null
+    private var param2: String? = null
 
     private lateinit var mContext: Context
 
@@ -21,48 +22,35 @@ class ProfileFragment : Fragment() {
         this.mContext = context
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_profile, container, false)
-        val profileDetails: LinearLayout = view.findViewById<View>(R.id.ll_contactez) as LinearLayout
-        profileDetails.setOnClickListener {
+    override fun onDataBindingCreated() {
+
+        binding.llContactez.setOnClickListener {
             fragmentChange(ContactUsFragment())
-            //TabBarActivity.getInstance()!!.addFragment(ProfileDetailsFragment(),true);
         }
 
-        val profile: LinearLayout = view.findViewById<View>(R.id.ll_profile) as LinearLayout
-        profile.setOnClickListener {
-            //fragmentChange(ProfileDetailsFragment())
+        binding.llProfile.setOnClickListener {
             var intent = Intent(requireActivity().applicationContext, AccountEditActivity::class.java)
             startActivity(intent)
         }
-        val notification: LinearLayout = view.findViewById<View>(R.id.ll_notification) as LinearLayout
-        notification.setOnClickListener {
+        binding.llNotification.setOnClickListener {
             fragmentChange(NotificationFragment())
         }
-        val lock: LinearLayout = view.findViewById<View>(R.id.ll_lock) as LinearLayout
-        lock.setOnClickListener {
+        binding.llLock.setOnClickListener {
             fragmentChange(SecurityFragment())
         }
-        val payment: LinearLayout = view.findViewById<View>(R.id.ll_payment) as LinearLayout
-        payment.setOnClickListener {
+        binding.llPayment.setOnClickListener {
             fragmentChange(PaymentFragment())
         }
-        val control: LinearLayout = view.findViewById<View>(R.id.ll_center) as LinearLayout
-        control.setOnClickListener {
+        binding.llCenter.setOnClickListener {
             fragmentChange(ControlCenterFragment())
         }
-        val rate: LinearLayout = view.findViewById<View>(R.id.ll_noter) as LinearLayout
-        rate.setOnClickListener {
+        binding.llNoter.setOnClickListener {
             fragmentChange(RateReviewFragment())
         }
-        return view
     }
 
-   private fun fragmentChange(fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
-            .addToBackStack(null)
-            .commit()
+    override fun injectDaggerComponent() {
+
     }
 }
 

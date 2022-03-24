@@ -21,7 +21,7 @@
             android:id="@+id/textViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/montserrat_alternates_bold"
             android:text="@string/inscription_age_title"
@@ -32,9 +32,9 @@
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_below="@+id/textViewTitle"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/_10sdp"
             android:background="@drawable/edit_text_background"
             android:ems="10"
             android:hint="@string/inscription_age_placeholder"
@@ -43,10 +43,11 @@
 
         <TextView
             android:id="@+id/textViewDetails"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextTextEmailAddress"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_alternates_regular"
             android:text="@string/inscription_age_details"
             android:textSize="16dp" />
@@ -55,12 +56,11 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/_10sdp"
             android:backgroundTint="@color/green"
-            android:padding="10dp"
             android:text="@string/inscription_age_button"
             android:textAllCaps="false"
             android:textColor="@color/black" />

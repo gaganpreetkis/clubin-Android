@@ -10,7 +10,7 @@ import com.clubin.com.auth.onboarding.view.OnboardingActivity
 class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.inscription)
+        setContentView(R.layout.activity_welcome)
 
         val inscription: TextView = findViewById(R.id.inscription)
         inscription.setOnClickListener {

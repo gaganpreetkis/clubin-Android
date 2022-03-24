@@ -20,6 +20,7 @@
 
         <LinearLayout
             android:id="@+id/ll_title"
+            android:layout_margin="@dimen/_5sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -44,12 +45,12 @@
                 android:textSize="@dimen/_20ssp" />
 
             <ImageView
+                android:layout_gravity="center_vertical"
                 android:id="@+id/iv_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_5sdp"
                 android:src="@drawable/ic_close_delete_icon"
-                android:textSize="@dimen/_16ssp"
                 app:tint="@color/white" />
         </LinearLayout>
 
