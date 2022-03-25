@@ -2,7 +2,6 @@ package com.clubin.com.fragment.event.view
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,7 +24,7 @@ import com.clubin.com.tabbar.TabBarActivity
 import com.clubin.com.themeparty.view.ThemePartyActivity
 
 class EventFragment : Fragment(), View.OnClickListener {
-
+    var  backPressedListener : BackPressedListener? = null
     private lateinit var vm: EventViewModel
     private lateinit var mContext: Context
     private lateinit var binding: EventFragmentBinding
@@ -35,6 +34,14 @@ class EventFragment : Fragment(), View.OnClickListener {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
+        if (context is BackPressedListener) {
+            backPressedListener =  context as BackPressedListener
+        } else {
+            throw RuntimeException(context.toString() )
+        }
+    }
+    fun setOnEventListener(listener: BackPressedListener) {
+        this.backPressedListener = listener
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +54,10 @@ class EventFragment : Fragment(), View.OnClickListener {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.event_fragment, container, false)
         binding.mview = vm
+        binding.ivFilter.setOnClickListener {
+            backPressedListener?.onItemClick(1);
+        }
+
         return binding.root
     }
 
@@ -117,5 +128,9 @@ class EventFragment : Fragment(), View.OnClickListener {
                 }
             }
         }
+    }
+
+    interface BackPressedListener{
+        fun onItemClick(position: Int)
     }
 }

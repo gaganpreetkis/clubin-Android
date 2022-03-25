@@ -81,20 +81,32 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <androidx.appcompat.widget.SearchView
                         android:id="@+id/searchView"
                         android:layout_width="match_parent"
-                        android:theme="@style/MySearchViewTheme"
                         android:layout_height="40dp"
+                        android:layout_weight="1"
                         android:background="@null"
                         android:foregroundTint="@color/dull_white"
+                        android:theme="@style/MySearchViewTheme"
                         app:iconifiedByDefault="false"
                         app:queryHint="Recherche"
                         app:searchHintIcon="@android:drawable/ic_search_category_default"
                         app:tint="@color/dull_white" />
+
+                    <ImageView
+                        android:id="@+id/iv_filter"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/menu"
+                        app:tint="@color/bright_green" />
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -205,8 +217,7 @@
                     android:id="@+id/populairesRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
-                    android:layout_marginVertical="15dp"
-                     />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -220,8 +231,7 @@
                     android:id="@+id/arriveRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                     />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -235,8 +245,7 @@
                     android:id="@+id/milleRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                     />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -250,8 +259,7 @@
                     android:id="@+id/discoveriesRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                     />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -265,8 +273,7 @@
                     android:id="@+id/newHostsRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                     />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -280,8 +287,7 @@
                     android:id="@+id/goodVibesRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                    />
+                    android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -295,8 +301,7 @@
                     android:id="@+id/bestHostsRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="15dp"
-                    />
+                    android:layout_marginVertical="15dp" />
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

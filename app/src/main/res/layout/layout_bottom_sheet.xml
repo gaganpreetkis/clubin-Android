@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/tv_filter_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Trier - Filter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24ssp" />
+
+                <ImageView
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_close_delete_icon"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_filter_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_filter_title"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Trier par thèmes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_nights"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/tv_filter_sub_title"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/green_background_gradient"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Nights"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <ImageView
+                    android:id="@+id/iv_night_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_nights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_nights"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:visibility="gone"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Delivery"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip4"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Offer"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Selling"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_discovery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/ll_nights"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/golden_background_gradient"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Discovery"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <ImageView
+                    android:id="@+id/iv_dis_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_discovery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_nights"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:visibility="gone"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Delivery"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Offer"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Selling"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tv_filter_vibe_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_discovery"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Trier par style de musique"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_vibes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/tv_filter_vibe_title"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_red"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Vibes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <ImageView
+                    android:id="@+id/iv_vibes_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_vibe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_nights"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:visibility="gone"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Delivery"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Offer"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+
+                <com.google.android.material.chip.Chip
+
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Selling"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/black_background" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tv_lieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_vibes"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Lieu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/tv_lieu"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Appartement"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mase"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/ll_app"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Maison"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_lineux"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/ll_mase"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_alternates_bold"
+                    android:text="Lieux spéciaux"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/blue_light"
+            android:text="Appliquer"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
