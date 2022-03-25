@@ -28,7 +28,7 @@
                     android:id="@+id/imageSlider"
                     android:layout_width="match_parent"
                     android:layout_height="360dp"
-                    app:sliderAnimationDuration="600"
+                    app:sliderAnimationDuration="400"
                     app:sliderAutoCycleDirection="back_and_forth"
                     app:sliderAutoCycleEnabled="true"
                     app:sliderIndicatorAnimationDuration="600"
@@ -39,7 +39,7 @@
                     app:sliderIndicatorRadius="2dp"
                     app:sliderIndicatorSelectedColor="@color/white"
                     app:sliderIndicatorUnselectedColor="@color/dull_white"
-                    app:sliderScrollTimeInSec="1"
+                    app:sliderScrollTimeInSec="3"
                     app:sliderStartAutoCycle="true" />
 
                 <ImageView
@@ -51,7 +51,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/circle_dull_gray"
-                    android:padding="5dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_close_delete_icon"
                     app:tint="@color/white" />
 
@@ -65,7 +65,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/circle_dull_gray"
-                    android:padding="5dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_baseline_share_24"
                     app:tint="@color/white" />
 
@@ -75,6 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/imageSlider"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="EFFEIL PARTY"
                     android:textColor="@color/white"
@@ -115,10 +116,10 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/personImage"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="340dp"
+                    android:layout_marginTop="360dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginBottom="10dp"
                     app:cardCornerRadius="40dp">

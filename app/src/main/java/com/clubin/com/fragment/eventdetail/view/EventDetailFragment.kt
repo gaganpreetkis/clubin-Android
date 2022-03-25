@@ -14,6 +14,7 @@ import com.clubin.com.R
 import com.clubin.com.databinding.EventDetailFragmentBinding
 import com.clubin.com.fragment.eventdetail.adapter.PersonGoingAdapter
 import com.clubin.com.fragment.eventdetail.adapter.RatingAdapter
+import com.clubin.com.fragment.eventdetail.adapter.SliderAdapter
 import com.clubin.com.fragment.eventdetail.model.PersonGoingEventModel
 import com.clubin.com.fragment.eventdetail.viewmodel.EventDetailViewModel
 import java.lang.Exception
@@ -28,6 +29,10 @@ class EventDetailFragment : Fragment() {
     val personGoingEventList: MutableList<PersonGoingEventModel> = mutableListOf()
     var personGoingAdapter: PersonGoingAdapter? = null
     var ratingAdapter: RatingAdapter? = null
+    val sliderAdapter: SliderAdapter by lazy {
+        SliderAdapter(mContext)
+    }
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -61,6 +66,11 @@ class EventDetailFragment : Fragment() {
         ratingAdapter = RatingAdapter(mContext)
         binding.ratingRecyclerView.layoutManager = LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false)
         binding.ratingRecyclerView.adapter = ratingAdapter
+
+        binding.imageSlider.apply {
+            setSliderAdapter(this@EventDetailFragment.sliderAdapter)
+            startAutoCycle()
+        }
 
     }
 }
