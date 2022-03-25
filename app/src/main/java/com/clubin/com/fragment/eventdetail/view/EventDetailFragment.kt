@@ -17,9 +17,10 @@ import com.clubin.com.fragment.eventdetail.adapter.RatingAdapter
 import com.clubin.com.fragment.eventdetail.adapter.SliderAdapter
 import com.clubin.com.fragment.eventdetail.model.PersonGoingEventModel
 import com.clubin.com.fragment.eventdetail.viewmodel.EventDetailViewModel
+import com.clubin.com.tabbar.TabBarActivity
 import java.lang.Exception
 
-class EventDetailFragment : Fragment() {
+class EventDetailFragment : Fragment(), View.OnClickListener {
 
     private lateinit var mContext: Context
     val TAG = this::class.java.simpleName
@@ -72,5 +73,19 @@ class EventDetailFragment : Fragment() {
             startAutoCycle()
         }
 
+        arrayOf(binding.closeBtn, binding.shareBtn).forEach { it.setOnClickListener(this) }
+    }
+
+    override fun onClick(p0: View?) {
+        when(p0){
+            binding.closeBtn -> {
+                (activity as TabBarActivity)?.let {
+                    it.removeFragment()
+                }
+            }
+            binding.shareBtn -> {
+
+            }
+        }
     }
 }
