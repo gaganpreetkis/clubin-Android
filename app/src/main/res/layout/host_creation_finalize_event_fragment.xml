@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mview"
+            type="com.clubin.com.fragment.hosts.viewmodel.HostCreationFinalizeEventViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:rotation="180"
+                android:src="@drawable/right_arrow" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/closeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:rotation="180"
+                android:src="@drawable/ic_close_delete_icon"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Finaliser votre Event"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="Ajouter des photos"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Ne négligez pas cette étape, c'est la plus importantes : prenez des photos balblabla"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/rectangle_dark_green_round_corner">
+
+            <ImageView
+                android:id="@+id/placeholderImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/photo_on_rectangle"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/plusImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/placeholderImage"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="-34dp"
+                android:src="@drawable/plus_circle_fill"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/transparent_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="Sauvegarder cet Event ?"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="Oui"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow_2_squarepath"
+                app:tint="@color/green" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dull_white"
+            android:text="En selectionnant cette option, vous enregistrez les informations réutilisables de cette annonce afin de facilier le processus de création pour les fois prochaines."
+            android:textSize="12sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/montserrat_alternates_regular"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Voir votre annonce"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@drawable/btn_red_grad_with_wallet"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/montserrat_alternates_semibold"/>
+
+    </LinearLayout>
+</layout>
