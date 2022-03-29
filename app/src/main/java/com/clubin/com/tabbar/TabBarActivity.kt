@@ -125,7 +125,9 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.
         val trans = supportFragmentManager.beginTransaction()
 
         if (addToBackStack) {
-            trans.setCustomAnimations(R.anim.slide_in_from_right, R.anim.slide_out_to_right, R.anim.slide_in_from_right, R.anim.slide_out_to_right)
+            trans.setCustomAnimations(R.anim.slide_in_from_right,
+                R.anim.slide_out_to_right, R.anim.slide_in_from_right,
+                R.anim.slide_out_to_right)
             trans.add(R.id.container, frag)
         } else {
             trans.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)

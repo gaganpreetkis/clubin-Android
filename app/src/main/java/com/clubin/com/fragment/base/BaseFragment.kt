@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.clubin.com.R
 
 
@@ -18,7 +19,7 @@ abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragme
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         processArguments(arguments)
-       // injectDaggerComponent()
+        // injectDaggerComponent()
         registerBackPressListener()
 
     }
@@ -50,10 +51,16 @@ abstract class BaseFragment(@LayoutRes private val screenLayoutId: Int) : Fragme
     }
 
     protected fun fragmentChange(fragment: Fragment) {
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
+        val trans = requireActivity().supportFragmentManager.beginTransaction()
+        trans.setCustomAnimations(
+            R.anim.slide_in_from_right,
+            R.anim.slide_out_to_right,
+            R.anim.slide_in_from_right,
+            R.anim.slide_out_to_right)
+        trans.add(R.id.container, fragment)
             .addToBackStack(null)
             .commit()
+        requireActivity().supportFragmentManager.executePendingTransactions()
     }
     // region Navigation
     /**

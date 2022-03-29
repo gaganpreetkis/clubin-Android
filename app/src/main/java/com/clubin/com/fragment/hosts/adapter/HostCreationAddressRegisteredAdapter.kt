@@ -11,7 +11,7 @@ import com.clubin.com.R
 
 class HostCreationAddressRegisteredAdapter(val mContext: Context,
                                            val list: MutableList<String>,
-                                           val clickListener: (String, Int) -> Unit): RecyclerView.Adapter<HostCreationAddressRegisteredAdapter.ViewHolder>()
+                                           val listener: ItemClickListener): RecyclerView.Adapter<HostCreationAddressRegisteredAdapter.ViewHolder>()
  {
 
     val inflater = LayoutInflater.from(mContext)
@@ -24,7 +24,7 @@ class HostCreationAddressRegisteredAdapter(val mContext: Context,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
       //  val item = list[position]
         var item : String = list[position]
-        holder?.itemView?.setOnClickListener { clickListener(item, position) }
+
     }
 
 
@@ -35,6 +35,14 @@ class HostCreationAddressRegisteredAdapter(val mContext: Context,
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val bannerImage = itemView.findViewById<ImageView>(R.id.bannerImage)
         val addressTxt = itemView.findViewById<TextView>(R.id.addressTxt)
-
+        init {
+            itemView.setOnClickListener {
+                listener.onItemClickListener(bindingAdapterPosition)
+            }
+        }
     }
+
+     interface ItemClickListener{
+         fun onItemClickListener(pos: Int)
+     }
 }

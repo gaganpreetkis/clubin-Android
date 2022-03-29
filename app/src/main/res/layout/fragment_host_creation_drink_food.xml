@@ -103,9 +103,10 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/rl_boi1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/transparent_green"
                     android:padding="@dimen/_5sdp">
 
@@ -120,17 +121,31 @@
                         android:textColor="@color/green"
                         android:textSize="16sp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:drawableRight="@drawable/ic_close_delete_icon"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
-                        android:text="Autorisé "
-                        android:textColor="@color/green"
-                        android:textSize="16sp" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_boi_autorise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            android:text="Autorisé "
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bio1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_2_squarepath"
+                            app:tint="@color/green" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
                 </RelativeLayout>
 
                 <TextView
@@ -144,6 +159,7 @@
                     android:textSize="10sp" />
 
                 <RelativeLayout
+                    android:id="@+id/rl_boi2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -151,6 +167,7 @@
                     android:padding="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/tv_amener"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -160,20 +177,37 @@
                         android:textColor="@color/green"
                         android:textSize="16sp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:drawableRight="@drawable/ic_close_delete_icon"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
-                        android:text="Autorisé "
-                        android:textColor="@color/green"
-                        android:textSize="16sp" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_amener_autorisé"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            android:text="Autorisé "
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bio2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_2_squarepath"
+                            app:tint="@color/green" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/rl_boi3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -181,6 +215,7 @@
                     android:padding="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/tv_Career"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -190,17 +225,13 @@
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:drawableRight="@drawable/ic_close_delete_icon"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
-                        android:text=" "
-                        android:textColor="@color/green"
-                        android:textSize="16sp" />
+                        android:src="@drawable/circle_icon" />
                 </RelativeLayout>
 
                 <TextView
@@ -214,11 +245,13 @@
                     android:textSize="10sp" />
 
                 <RelativeLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp">
 
                     <TextView
+                        android:id="@+id/tv_Nourriture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_extrabold"
@@ -243,6 +276,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/rl_nour1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -250,29 +284,44 @@
                     android:padding="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/tv_nourriture_amener"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_5sdp"
                         android:fontFamily="@font/montserrat_alternates_extrabold"
                         android:text="Amener à manger"
                         android:textColor="@color/green"
                         android:textSize="16sp" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:drawableRight="@drawable/ic_close_delete_icon"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
-                        android:text="Autorisé "
-                        android:textColor="@color/green"
-                        android:textSize="16sp" />
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_nourriture_amener_autorisé"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            android:text="Autorisé "
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_nour1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_2_squarepath"
+                            app:tint="@color/green" />
+                    </LinearLayout>
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/rl_nour2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -280,6 +329,7 @@
                     android:padding="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/tv_career2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -289,17 +339,13 @@
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:drawableRight="@drawable/ic_close_delete_icon"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
-                        android:text=" "
-                        android:textColor="@color/green"
-                        android:textSize="16sp" />
+                        android:src="@drawable/circle_icon" />
                 </RelativeLayout>
 
                 <TextView
