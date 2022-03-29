@@ -9,7 +9,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.clubin.com.R
 
-class HostCreationAddressRegisteredAdapter(val mContext: Context, val list: MutableList<String>): RecyclerView.Adapter<HostCreationAddressRegisteredAdapter.ViewHolder>() {
+class HostCreationAddressRegisteredAdapter(val mContext: Context,
+                                           val list: MutableList<String>,
+                                           val clickListener: (String, Int) -> Unit): RecyclerView.Adapter<HostCreationAddressRegisteredAdapter.ViewHolder>()
+ {
 
     val inflater = LayoutInflater.from(mContext)
 
@@ -19,15 +22,19 @@ class HostCreationAddressRegisteredAdapter(val mContext: Context, val list: Muta
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val m = list[position]
+      //  val item = list[position]
+        var item : String = list[position]
+        holder?.itemView?.setOnClickListener { clickListener(item, position) }
     }
 
-    override fun getItemCount(): Int {
+
+     override fun getItemCount(): Int {
         return list.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val bannerImage = itemView.findViewById<ImageView>(R.id.bannerImage)
         val addressTxt = itemView.findViewById<TextView>(R.id.addressTxt)
+
     }
 }

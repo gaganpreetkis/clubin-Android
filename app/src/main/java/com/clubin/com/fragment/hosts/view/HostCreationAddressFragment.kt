@@ -2,6 +2,7 @@ package com.clubin.com.fragment.hosts.view
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ import com.clubin.com.databinding.HostCreationAddressFragmentBinding
 import com.clubin.com.fragment.hosts.adapter.HostCreationAddressRegisteredAdapter
 import com.clubin.com.fragment.hosts.adapter.HostCreationAddressResultAdapter
 import com.clubin.com.fragment.hosts.viewmodel.HostCreationAddressViewModel
+import com.clubin.com.tabbar.TabBarActivity
 
 class HostCreationAddressFragment : Fragment() {
 
@@ -52,16 +54,27 @@ class HostCreationAddressFragment : Fragment() {
         val searchText = binding.searchView.findViewById<View>(androidx.appcompat.R.id.search_src_text) as TextView
         searchText.typeface = tf
 
-
+        binding.closeBtn.setOnClickListener {
+            (activity as TabBarActivity).let {
+                it.addFragment(HostCreationPlaceTypeFragment(), true)
+            }
+        }
         list.add("11 rue de l'harmonie")
         list.add("6 rue de la salpetriere")
 
         registeredAdapter = HostCreationAddressRegisteredAdapter(mContext, list)
+        { name: String, position: Int ->
+            (activity as TabBarActivity).let {
+                it.addFragment(HostCreationPlaceTypeFragment(), true)
+            }
+        }
         binding.alreadyRegisteredRecycler.layoutManager = LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false)
         binding.alreadyRegisteredRecycler.adapter = registeredAdapter
 
         addressAdapter = HostCreationAddressResultAdapter(mContext, list)
         binding.addressRecycler.layoutManager = LinearLayoutManager(mContext)
         binding.addressRecycler.adapter = addressAdapter
+
+
     }
 }
