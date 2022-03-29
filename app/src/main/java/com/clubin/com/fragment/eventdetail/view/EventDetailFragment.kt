@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -33,7 +34,7 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
     val sliderAdapter: SliderAdapter by lazy {
         SliderAdapter(mContext)
     }
-
+    var showHeaderButtons = true
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -55,6 +56,11 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+            binding.closeBtn.isVisible = showHeaderButtons
+            binding.shareBtn.isVisible = showHeaderButtons
+
+
+        arrayOf(binding.closeBtn, binding.shareBtn).forEach { it.setOnClickListener(this) }
 
         personGoingEventList.add(PersonGoingEventModel("Paris", R.drawable.dummy_person))
         personGoingEventList.add(PersonGoingEventModel("Alex", R.drawable.dummy_person_1))
@@ -73,7 +79,6 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
             startAutoCycle()
         }
 
-        arrayOf(binding.closeBtn, binding.shareBtn).forEach { it.setOnClickListener(this) }
     }
 
     override fun onClick(p0: View?) {

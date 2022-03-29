@@ -11,6 +11,7 @@ import com.clubin.com.R
 import com.clubin.com.fragment.event.view.EventFragment
 import com.clubin.com.fragment.hosts.view.HostsFragment
 import com.clubin.com.fragment.profile.ProfileFragment
+import com.clubin.com.fragment.tickets.view.TicketsMainFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.chip.ChipGroup
@@ -106,6 +107,7 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.
             }
             billetsTab -> {
                 setupTabs(2)
+                addFragment(TicketsMainFragment(), false)
             }
             profileTab -> {
                 setupTabs(3)
@@ -224,5 +226,13 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.
 
     override fun onItemClick(position: Int) {
         bottomSheetShow()
+    }
+
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount != 0) {
+            removeFragment()
+        } else {
+            super.onBackPressed()
+        }
     }
 }

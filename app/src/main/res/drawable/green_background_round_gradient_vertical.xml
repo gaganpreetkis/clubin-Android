@@ -10,6 +10,6 @@
         android:width="250dp"
         android:height="400dp" />
     <corners
-        android:bottomLeftRadius="15dp"
-        android:bottomRightRadius="15dp" />
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp" />
 </shape>

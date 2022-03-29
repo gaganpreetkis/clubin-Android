@@ -58,5 +58,6 @@
     <color name="flag_red">#BF4D65</color>
     <color name="blue_light">#29889A</color>
     <color name="dark_red">#972823</color>
+    <color name="raspberry">#83699A</color>
 
 </resources>
