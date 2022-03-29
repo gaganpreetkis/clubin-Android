@@ -61,14 +61,21 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
 
             if (alcoolDisable) {
                 alcoolDisable = false;
-                binding.tvNourritureOui.setTextColor(resources.getColor(R.color.green))
+                binding.tvBoissonsOui.setTextColor(resources.getColor(R.color.green))
             } else {
                 alcoolDisable = true
-                binding.tvNourritureOui.setTextColor(resources.getColor(R.color.dark_red))
+                binding.tvBoissonsOui.setTextColor(resources.getColor(R.color.dark_red))
             }
         }
+        var NouritureDisable = false;
         binding.tvNourritureOui.setOnClickListener {
-
+            if (NouritureDisable) {
+                NouritureDisable = false;
+                binding.tvNourritureOui.setTextColor(resources.getColor(R.color.green))
+            } else {
+                NouritureDisable = true
+                binding.tvNourritureOui.setTextColor(resources.getColor(R.color.dark_red))
+            }
         }
     }
 }
