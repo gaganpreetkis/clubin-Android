@@ -10,7 +10,6 @@ import com.clubin.com.fragment.event.model.EventModel
 import com.clubin.com.fragment.profile.adapter.UserEventAdapter
 import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 
-
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 

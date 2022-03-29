@@ -203,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    app:cardBackgroundColor="@color/yellow_light"
+                    app:cardBackgroundColor="@color/golden"
                     app:cardCornerRadius="@dimen/_5sdp">
 
                     <TextView
@@ -220,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    app:cardBackgroundColor="@color/yellow_light"
+                    app:cardBackgroundColor="@color/golden"
                     app:cardCornerRadius="@dimen/_5sdp">
 
                     <TextView
@@ -281,7 +281,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    app:cardBackgroundColor="@color/yellow_light"
+                    app:cardBackgroundColor="@color/golden"
                     app:cardCornerRadius="@dimen/_5sdp">
 
                     <TextView
@@ -298,7 +298,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    app:cardBackgroundColor="@color/yellow_light"
+                    app:cardBackgroundColor="@color/golden"
                     app:cardCornerRadius="@dimen/_5sdp">
 
                     <TextView

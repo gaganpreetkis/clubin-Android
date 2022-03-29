@@ -2,9 +2,13 @@ package com.clubin.com.fragment.hosts.view
 
 import android.content.Context
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import com.clubin.com.R
 import com.clubin.com.databinding.HostCreationRulesDurationFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
+import com.clubin.com.fragment.hosts.adapter.HostCreationAddressRegisteredAdapter
+import com.clubin.com.fragment.hosts.adapter.HostCreationRuleAdapter
+import com.clubin.com.fragment.profile.adapter.UserEventAdapter
 import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback
 import com.clubin.com.tabbar.TabBarActivity
 
@@ -18,9 +22,16 @@ class HostCreationRulesDurationFragment : BaseDataBindingFragment<HostCreationRu
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var mContext: Context
+    val list: MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        list.add("Interdit aux animaux");
+        list.add("Interdit aux animaux");
+        list.add("Masque obligatoire");
+        list.add("Pass sanitaire obligatoire");
+        list.add("Autre Idée ?");
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -48,6 +59,7 @@ class HostCreationRulesDurationFragment : BaseDataBindingFragment<HostCreationRu
     }
 
     override fun onDataBindingCreated() {
+        addAdapter();
         binding.continueBtn.setOnClickListener {
             (activity as TabBarActivity).let {
                 it.addFragment(HostCreationDrinkFoodFragment(), true)
@@ -64,6 +76,21 @@ class HostCreationRulesDurationFragment : BaseDataBindingFragment<HostCreationRu
             }
         }
 
+    }
+
+    fun addAdapter() {
+        val adapter = HostCreationRuleAdapter(mContext, list, object : HostCreationRuleAdapter.ItemClickListener {
+            override fun onItemClickListener(pos: Int) {
+                (activity as TabBarActivity)?.let {
+                    // it.addFragment(HostCreationPlaceTypeFragment(), true)
+                }
+            }
+
+        })
+        var layoutManager = GridLayoutManager(mContext, 2)
+
+        binding.ruleRecycler.layoutManager = layoutManager
+        binding.ruleRecycler.adapter = adapter
     }
 }
 /*

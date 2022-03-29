@@ -3,7 +3,6 @@ package com.clubin.com.fragment.hosts.view
 import android.content.Context
 import android.os.Bundle
 import com.clubin.com.R
-import com.clubin.com.databinding.HostCreationPlaceTypeFragmentDataBinding
 import com.clubin.com.databinding.HostCreationTagSelectionFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
 import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback

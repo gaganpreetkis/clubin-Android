@@ -1,16 +1,10 @@
 package com.clubin.com.fragment.hosts.view
 
 import android.content.Context
-import android.graphics.Color
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.SeekBar
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.drawable.DrawableCompat
 import com.clubin.com.R
 import com.clubin.com.databinding.HostCreationDrinkFoodFragmentDataBinding
 import com.clubin.com.fragment.base.BaseDataBindingFragment
@@ -18,8 +12,6 @@ import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback
 import com.clubin.com.tabbar.TabBarActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.google.android.material.chip.ChipGroup
-
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"

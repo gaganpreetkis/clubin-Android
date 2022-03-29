@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data class="HostCreationPlaceTypeFragmentDataBinding">
 
         <variable
@@ -45,10 +46,10 @@
         </LinearLayout>
 
         <TextView
-            android:layout_marginLeft="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="15dp"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_alternates_bold"
             android:text="Définissez le type de lieu"
             android:textColor="@color/white"
@@ -68,72 +69,84 @@
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Appartement"
                 android:fontFamily="@font/montserrat_alternates_bold"
+                android:text="Appartement"
+                app:chipStrokeWidth="1dp"
                 android:textColor="@color/white"
+                app:chipStrokeColor="@color/white"
+                android:textSize="16sp"
                 app:chipBackgroundColor="@color/black_background" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipMaison"
-                android:fontFamily="@font/montserrat_alternates_bold"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
                 android:text="Maison"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/white"
                 android:textColor="@color/white"
+                android:textSize="16sp"
                 app:chipBackgroundColor="@color/black_background" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipVilla"
-                android:fontFamily="@font/montserrat_alternates_bold"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
                 android:text="Villa"
+                app:chipStrokeWidth="1dp"
                 android:textColor="@color/white"
+                app:chipStrokeColor="@color/white"
                 app:chipBackgroundColor="@color/black_background" />
 
             <com.google.android.material.chip.Chip
-                android:fontFamily="@font/montserrat_alternates_bold"
                 android:id="@+id/chipLieuexception"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_bold"
                 android:text="Lieu d/'exception"
                 android:textColor="@color/white"
+                app:chipStrokeColor="@color/white"
+                app:chipStrokeWidth="1dp"
+                android:textSize="16sp"
                 app:chipBackgroundColor="@color/black_background" />
         </com.google.android.material.chip.ChipGroup>
 
         <TextView
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_alternates_bold"
             android:text="Autres"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
         <EditText
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
             android:id="@+id/editTextAutres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Précisez"
-            android:fontFamily="@font/montserrat_alternates_medium"
-            android:textColor="@color/text_light_white"
-            android:inputType="textPersonName"/>
-
-        <TextView
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:hint="Précisez"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_light_white" />
+
+        <TextView
             android:id="@+id/continueBtn"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="30dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:background="@drawable/btn_red_grad_with_arrow"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:gravity="center"
