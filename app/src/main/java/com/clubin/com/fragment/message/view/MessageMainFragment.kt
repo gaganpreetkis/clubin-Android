@@ -12,7 +12,9 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.clubin.com.R
 import com.clubin.com.databinding.MessageMainFagmentBinding
+import com.clubin.com.fragment.event.view.EventFragment
 import com.clubin.com.fragment.message.viewmodel.MessageMainViewModel
+import com.clubin.com.tabbar.TabBarActivity
 
 class MessageMainFragment : Fragment(), View.OnClickListener {
 
@@ -44,7 +46,7 @@ class MessageMainFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        arrayOf(binding.messagesTab, binding.invitationTab, binding.notificationsTab).forEach { it.setOnClickListener(this) }
+        arrayOf(binding.messagesTab, binding.invitationTab, binding.notificationsTab, binding.chartIcon).forEach { it.setOnClickListener(this) }
 
         binding.messagesTab.performClick()
     }
@@ -83,6 +85,9 @@ class MessageMainFragment : Fragment(), View.OnClickListener {
                 binding.notificationTabTxt.setTextColor(activeTabColor)
 
                 addFragment(NotificationsTabFragment(), false)
+            }
+            binding.chartIcon -> {
+                (activity as TabBarActivity).let { it.addFragment(EventFragment(), false) }
             }
         }
     }

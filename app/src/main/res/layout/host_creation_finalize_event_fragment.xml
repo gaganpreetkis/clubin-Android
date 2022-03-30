@@ -90,7 +90,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_below="@id/placeholderImage"
-                android:layout_marginStart="250dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="-34dp"
                 android:src="@drawable/plus_circle_fill"
                 app:tint="@color/white" />
@@ -98,6 +98,7 @@
         </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/saveEventRow"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:background="@drawable/transparent_green"
@@ -105,6 +106,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/saveEventTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -119,6 +121,7 @@
                 android:layout_weight="1" />
 
             <TextView
+                android:id="@+id/saveEventValueTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -129,6 +132,7 @@
                 android:textSize="14sp" />
 
             <ImageView
+                android:id="@+id/toggleImage"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginRight="20dp"
@@ -149,6 +153,7 @@
 
 
         <TextView
+            android:id="@+id/previewButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

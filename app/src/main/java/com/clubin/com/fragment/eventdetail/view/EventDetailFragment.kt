@@ -31,10 +31,11 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
     val personGoingEventList: MutableList<PersonGoingEventModel> = mutableListOf()
     var personGoingAdapter: PersonGoingAdapter? = null
     var ratingAdapter: RatingAdapter? = null
-    val sliderAdapter: SliderAdapter by lazy {
+    private val sliderAdapter: SliderAdapter by lazy {
         SliderAdapter(mContext)
     }
     var showHeaderButtons = true
+    var showAdPreview = false
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -56,11 +57,13 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            binding.closeBtn.isVisible = showHeaderButtons
-            binding.shareBtn.isVisible = showHeaderButtons
+        arrayOf(binding.closeBtn, binding.shareBtn, binding.postBtn).forEach { it.setOnClickListener(this) }
+        binding.closeBtn.isVisible = showHeaderButtons
+        binding.shareBtn.isVisible = showHeaderButtons
 
+        binding.shareBtn.isVisible = !showAdPreview
+        binding.postBtn.isVisible = showAdPreview
 
-        arrayOf(binding.closeBtn, binding.shareBtn).forEach { it.setOnClickListener(this) }
 
         personGoingEventList.add(PersonGoingEventModel("Paris", R.drawable.dummy_person))
         personGoingEventList.add(PersonGoingEventModel("Alex", R.drawable.dummy_person_1))
@@ -78,17 +81,17 @@ class EventDetailFragment : Fragment(), View.OnClickListener {
             setSliderAdapter(this@EventDetailFragment.sliderAdapter)
             startAutoCycle()
         }
-
     }
 
     override fun onClick(p0: View?) {
-        when(p0){
+        when (p0) {
             binding.closeBtn -> {
-                (activity as TabBarActivity)?.let {
-                    it.removeFragment()
-                }
+                (activity as TabBarActivity).removeFragment()
             }
             binding.shareBtn -> {
+
+            }
+            binding.postBtn -> {
 
             }
         }

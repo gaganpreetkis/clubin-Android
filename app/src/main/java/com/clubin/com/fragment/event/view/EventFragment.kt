@@ -70,7 +70,6 @@ class EventFragment : Fragment(), View.OnClickListener {
         val tf = ResourcesCompat.getFont(mContext, R.font.montserrat_alternates_semibold)
         val searchText = binding.searchView.findViewById<View>(androidx.appcompat.R.id.search_src_text) as TextView
         searchText.typeface = tf
-
     }
 
     private fun setupClickListeners() {
@@ -81,7 +80,7 @@ class EventFragment : Fragment(), View.OnClickListener {
         val adapter = EventAdapter(mContext, list, object : EventAdapter.EventClickListener{
             override fun onEventClick(pos: Int) {
                 (activity as TabBarActivity)?.let {
-                    it.addFragment(EventDetailFragment(), false)
+                    it.addFragment(EventDetailFragment(), true)
                 }
             }
 

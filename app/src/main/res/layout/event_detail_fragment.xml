@@ -12,7 +12,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black_background"
+        android:background="@color/black"
         android:fillViewport="true">
 
         <LinearLayout
@@ -55,6 +55,7 @@
                     android:src="@drawable/ic_close_delete_icon"
                     app:tint="@color/white" />
 
+
                 <ImageView
                     android:id="@+id/shareBtn"
                     android:layout_width="40dp"
@@ -68,6 +69,23 @@
                     android:padding="10dp"
                     android:src="@drawable/ic_baseline_share_24"
                     app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/postBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    android:background="@drawable/rectangle_black_opaque_round_corner"
+                    android:text="Poster"
+                    android:visibility="gone"
+                    android:textColor="@color/link_green"/>
 
                 <TextView
                     android:id="@+id/partyName"
@@ -595,9 +613,9 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/ratingRecyclerView"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
 
                 <LinearLayout
                     android:id="@+id/termOfCancellation"
@@ -682,7 +700,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_baseline_outlined_flag_24"
-                        app:tint="@color/flag_red"/>
+                        app:tint="@color/flag_red" />
 
                     <TextView
                         android:layout_width="wrap_content"

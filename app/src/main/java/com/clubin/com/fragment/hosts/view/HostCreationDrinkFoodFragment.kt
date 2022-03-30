@@ -23,6 +23,8 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var mContext: Context
+    var alcoolDisable = false
+    var NouritureDisable = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,8 +55,6 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
     }
 
     override fun onDataBindingCreated() {
-        var alcoolDisable = false;
-        var NouritureDisable = false;
 
         binding.continueBtn.setOnClickListener {
             (activity as TabBarActivity).let {
@@ -75,10 +75,11 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
         binding.tvBoissonsOui.setOnClickListener {
 
             if (alcoolDisable) {
-                alcoolDisable = false;
+                alcoolDisable = false
                 binding.tvBoissonsOui.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvAlcool.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.green))
+                binding.tvBoiAutorise.text = "Autorisé "
 
                 binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
@@ -87,9 +88,9 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
 
                 binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
                 binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
-                binding.tvBoissonsOui.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
-                binding.rlBoi1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
-                binding.rlBoi2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
+                binding.tvBoissonsOui.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
+                binding.rlBoi1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
+                binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
             } else {
                 alcoolDisable = true
                 binding.tvBoissonsOui.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
@@ -98,70 +99,73 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
                 binding.tvCareer.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
+                binding.tvBoiAutorise.text = "Interdit "
 
                 binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.text_light_white))
-                binding.tvBoissonsOui.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_red))
-                binding.rlBoi1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_background))
-                binding.rlBoi2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_background))
+                binding.tvBoissonsOui.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_red)
+                binding.rlBoi1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
+                binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
 
 
             }
         }
 
-        var isAlcool = false;
+        var isAlcool = false
         binding.rlBoi1.setOnClickListener {
             if (!alcoolDisable) {
                 if (isAlcool) {
-                    isAlcool = false;
+                    isAlcool = false
                     binding.tvAlcool.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                     binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.green))
-                    binding.rlBoi1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
+                    binding.rlBoi1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
                     binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
+                    binding.tvBoiAutorise.text = "Autorisé "
                 } else {
-                    isAlcool = true;
-                    binding.rlBoi1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_red))
+                    isAlcool = true
+                    binding.rlBoi1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_red)
                     binding.tvAlcool.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.dark_red))
+                    binding.tvBoiAutorise.text = "Interdit "
                 }
             }
         }
-        var isAmeerBoi = false;
+        var isAmeerBoi = false
         binding.rlBoi2.setOnClickListener {
             if (!alcoolDisable) {
                 if (isAmeerBoi) {
-                    isAmeerBoi = false;
+                    isAmeerBoi = false
                     binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                     binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
-                    binding.rlBoi2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
+                    binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
                     binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
                 } else {
-                    isAmeerBoi = true;
+                    isAmeerBoi = true
                     binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
-                    binding.rlBoi2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_red))
+                    binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_red)
 
                 }
             }
         }
         binding.rlBoi3.setOnClickListener {
-            bottomSheetShow();
+            bottomSheetShow()
         }
 
         binding.tvNourritureOui.setOnClickListener {
             if (NouritureDisable) {
-                NouritureDisable = false;
+                NouritureDisable = false
                 binding.tvNourritureOui.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvNourritureAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvNourritureAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvCareer2.setTextColor(ContextCompat.getColor(mContext, R.color.white))
                 binding.ivNour1.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
 
-                binding.tvNourritureOui.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
-                binding.rlNour1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_green))
-                binding.rlNour2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_background))
+                binding.tvNourritureOui.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
+                binding.rlNour1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
+                binding.rlNour2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
             } else {
                 NouritureDisable = true
                 binding.tvNourritureOui.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
@@ -170,9 +174,9 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
                 binding.tvCareer2.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
 
                 binding.ivNour1.setColorFilter(ContextCompat.getColor(mContext, R.color.text_light_white))
-                binding.tvNourritureOui.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_red))
-                binding.rlNour1.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_background))
-                binding.rlNour2.setBackground(ContextCompat.getDrawable(mContext, R.drawable.transparent_background))
+                binding.tvNourritureOui.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_red)
+                binding.rlNour1.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
+                binding.rlNour2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
             }
         }
     }
@@ -190,7 +194,7 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
             dialog.dismiss()
         }
         val seekBar = view.findViewById<SeekBar>(R.id.seekBar)
-        seekBar.setProgress(10);
+        seekBar.progress = 10
         dialog.setCancelable(false)
         dialog.setContentView(view)
         dialog.show()

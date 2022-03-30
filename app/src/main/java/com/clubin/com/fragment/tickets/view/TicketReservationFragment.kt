@@ -54,7 +54,7 @@ class TicketReservationFragment : Fragment() {
         val adapter = EventAdapter(mContext, list, object : EventAdapter.EventClickListener {
             override fun onEventClick(pos: Int) {
                 (activity as TabBarActivity)?.let {
-                    it.addFragment(EventDetailFragment(), false)
+                    it.addFragment(EventDetailFragment(), true)
                 }
             }
         })

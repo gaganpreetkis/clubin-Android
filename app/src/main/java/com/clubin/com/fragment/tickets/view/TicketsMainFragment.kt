@@ -47,6 +47,8 @@ class TicketsMainFragment: Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arrayOf(binding.prochainTab, binding.reservationTab, binding.annulerBtn, binding.shareBtn).forEach { it.setOnClickListener(this) }
+
+        binding.prochainTab.performClick()
     }
 
     override fun onClick(p0: View?) {
