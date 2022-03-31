@@ -76,6 +76,7 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
 
             if (alcoolDisable) {
                 alcoolDisable = false
+                binding.tvBoissonsOui.text = "Oui"
                 binding.tvBoissonsOui.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvAlcool.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.green))
@@ -83,7 +84,7 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
 
                 binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
-
+                binding.tvAmenerAutoris.text = "Autorisé "
                 binding.tvCareer.setTextColor(ContextCompat.getColor(mContext, R.color.white))
 
                 binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
@@ -93,6 +94,7 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
                 binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
             } else {
                 alcoolDisable = true
+                binding.tvBoissonsOui.text = "Non"
                 binding.tvBoissonsOui.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                 binding.tvAlcool.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
@@ -100,6 +102,7 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
                 binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvBoiAutorise.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvBoiAutorise.text = "Interdit "
+                binding.tvAmenerAutoris.text = "Interdit "
 
                 binding.ivBio1.setColorFilter(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.text_light_white))
@@ -136,12 +139,14 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
             if (!alcoolDisable) {
                 if (isAmeerBoi) {
                     isAmeerBoi = false
+                    binding.tvAmenerAutoris.text = "Autorisé "
                     binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                     binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                     binding.rlBoi2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_green)
                     binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
                 } else {
                     isAmeerBoi = true
+                    binding.tvAmenerAutoris.text = "Interdit "
                     binding.ivBio2.setColorFilter(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.tvAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                     binding.tvAmener.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
@@ -157,9 +162,11 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
         binding.tvNourritureOui.setOnClickListener {
             if (NouritureDisable) {
                 NouritureDisable = false
+                binding.tvNourritureOui.text = "Oui"
                 binding.tvNourritureOui.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvNourritureAmener.setTextColor(ContextCompat.getColor(mContext, R.color.green))
                 binding.tvNourritureAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.green))
+                binding.tvNourritureAmenerAutoris.text = "Autorisé "
                 binding.tvCareer2.setTextColor(ContextCompat.getColor(mContext, R.color.white))
                 binding.ivNour1.setColorFilter(ContextCompat.getColor(mContext, R.color.green))
 
@@ -168,6 +175,8 @@ class HostCreationDrinkFoodFragment : BaseDataBindingFragment<HostCreationDrinkF
                 binding.rlNour2.background = ContextCompat.getDrawable(mContext, R.drawable.transparent_background)
             } else {
                 NouritureDisable = true
+                binding.tvNourritureOui.text = "Non";
+                binding.tvNourritureAmenerAutoris.text = "Interdit "
                 binding.tvNourritureOui.setTextColor(ContextCompat.getColor(mContext, R.color.dark_red))
                 binding.tvNourritureAmener.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                 binding.tvNourritureAmenerAutoris.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))

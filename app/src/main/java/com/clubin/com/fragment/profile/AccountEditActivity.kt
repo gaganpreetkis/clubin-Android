@@ -12,10 +12,10 @@ class AccountEditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_account_edit)
 
-        addFragment(ProfileDetailsFragment(),true)
+        addFragment(ProfileDetailsFragment(), true)
     }
 
-     private fun addFragment(frag: Fragment, addToBackStack: Boolean) {
+    private fun addFragment(frag: Fragment, addToBackStack: Boolean) {
         val trans = supportFragmentManager.beginTransaction()
 
         if (addToBackStack) {
@@ -32,5 +32,28 @@ class AccountEditActivity : AppCompatActivity() {
         supportFragmentManager.executePendingTransactions()
     }
 
+
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount != 1) {
+            removeFragment()
+        } else {
+            super.onBackPressed()
+        }
+    }
+
+    fun removeFragment() {
+        if (supportFragmentManager.backStackEntryCount > 0) {
+            supportFragmentManager.popBackStackImmediate()
+            val v = currentFragment()
+            //noinspection ConstantConditions
+            if (supportFragmentManager.backStackEntryCount > 0) {
+                v?.view?.requestFocus()
+            }
+        }
+    }
+
+    fun currentFragment(): Fragment? {
+        return supportFragmentManager.findFragmentById(R.id.container)
+    }
 
 }

@@ -81,7 +81,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:background="@drawable/rectangle_black_opaque_round_corner"
                     android:text="Poster"
                     android:visibility="gone"
@@ -94,7 +94,7 @@
                     android:layout_below="@id/imageSlider"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="30dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="EFFEIL PARTY"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
@@ -105,9 +105,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/partyName"
                     android:layout_alignStart="@id/partyName"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Ugo -"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -117,9 +116,8 @@
                     android:layout_below="@id/partyName"
                     android:layout_marginLeft="5dp"
                     android:layout_toRightOf="@id/organizerName"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="4.5"
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <ImageView
@@ -172,9 +170,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@id/tagIcon"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Thèmes de l'évènement :"
-                        android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <HorizontalScrollView
@@ -192,10 +189,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/rectangle_pink_round_corner"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:paddingHorizontal="2dp"
                                 android:text="POP"
-                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -203,10 +199,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
                                 android:background="@drawable/rectangle_pink_round_corner"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:paddingHorizontal="2dp"
                                 android:text="FUN"
-                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -214,7 +209,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
                                 android:background="@drawable/rectangle_pink_round_corner"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:paddingHorizontal="2dp"
                                 android:text="CONCERT"
                                 android:textColor="@color/white"
@@ -225,10 +220,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
                                 android:background="@drawable/rectangle_pink_round_corner"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:paddingHorizontal="2dp"
                                 android:text="ROCK"
-                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -236,10 +230,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
                                 android:background="@drawable/rectangle_pink_round_corner"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:paddingHorizontal="2dp"
                                 android:text="ROCK"
-                                android:textColor="@color/white"
                                 android:textSize="14sp" />
                         </LinearLayout>
                     </HorizontalScrollView>
@@ -269,7 +262,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_toEndOf="@id/clockIcon"
-                            android:fontFamily="@font/montserrat_alternates_regular"
+                            style="@style/regularTextView"
                             android:text="Durée :"
                             android:textColor="@color/white"
                             android:textSize="16sp" />
@@ -282,10 +275,9 @@
                             android:layout_alignStart="@id/clockIcon"
                             android:layout_alignEnd="@id/durationTxt"
                             android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:gravity="center"
                             android:text="12H à18H"
-                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </RelativeLayout>
 
@@ -308,9 +300,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_toEndOf="@id/dateIcon"
-                            android:fontFamily="@font/montserrat_alternates_regular"
+                            style="@style/regularTextView"
                             android:text="Date :"
-                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <TextView
@@ -320,10 +311,9 @@
                             android:layout_below="@id/dateIcon"
                             android:layout_alignStart="@id/dateIcon"
                             android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:gravity="center"
                             android:text="22-12-2020"
-                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </RelativeLayout>
 
@@ -346,9 +336,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_toEndOf="@id/locationIcon"
-                            android:fontFamily="@font/montserrat_alternates_regular"
+                            style="@style/regularTextView"
                             android:text="Lieu :  "
-                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <TextView
@@ -359,10 +348,9 @@
                             android:layout_alignStart="@id/locationIcon"
                             android:layout_alignEnd="@id/locationTxt"
                             android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:gravity="center"
                             android:text="à 12 km"
-                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -372,9 +360,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="S'y rendent déjà"
-                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -388,9 +375,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Description"
-                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <TextView
@@ -399,9 +385,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <LinearLayout
@@ -414,9 +399,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="NOURRITURE :"
-                        android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <View
@@ -427,7 +411,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Cagnotte collective"
                         android:textColor="@color/dull_green"
                         android:textSize="12sp" />
@@ -447,9 +431,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="- Pizzas"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -457,9 +440,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="- Biscuits apéritifs"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -467,9 +449,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="BOISSON :"
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <TextView
@@ -477,9 +458,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="- Whisky"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -487,9 +467,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="- Bières"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -497,9 +476,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="- Coca, Ice Tea"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -507,9 +485,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Règlement"
-                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <HorizontalScrollView
@@ -527,11 +504,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_dull_green_round_corner"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:paddingHorizontal="6dp"
                             android:paddingVertical="8dp"
                             android:text="NO PETS"
-                            android:textColor="@color/white"
                             android:textSize="14sp" />
 
                         <TextView
@@ -539,11 +515,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="6dp"
                             android:background="@drawable/rectangle_dull_green_round_corner"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:paddingHorizontal="6dp"
                             android:paddingVertical="8dp"
                             android:text="NO SMOKING"
-                            android:textColor="@color/white"
                             android:textSize="14sp" />
 
                         <TextView
@@ -551,11 +526,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="6dp"
                             android:background="@drawable/rectangle_dull_green_round_corner"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:paddingHorizontal="6dp"
                             android:paddingVertical="8dp"
                             android:text="MASK"
-                            android:textColor="@color/white"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -565,9 +539,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Localisation"
-                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <LinearLayout
@@ -587,7 +560,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="@string/votre_adresse"
                         android:textColor="@color/dull_green"
                         android:textSize="14sp" />
@@ -606,9 +579,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Avis"
-                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -630,9 +602,8 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="Conditions d'annulation"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_13ssp" />
 
                     <ImageView
@@ -654,9 +625,8 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="Informations concernant la Sécurité"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_13ssp" />
 
                     <ImageView
@@ -678,9 +648,8 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="CGV - CGU"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_13ssp" />
 
                     <ImageView
@@ -708,7 +677,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="@string/report_ad"
                         android:textColor="@color/flag_red"
                         android:textSize="@dimen/_13ssp" />

@@ -25,11 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:fontFamily="@font/montserrat_alternates_regular"
+        style="@style/regularTextView"
         android:maxLines="1"
         android:gravity="center"
         android:layout_marginTop="6dp"
         android:text="Paris"
-        android:textSize="12sp"
-        android:textColor="@color/white"/>
+        android:textSize="12sp" />
 </LinearLayout>

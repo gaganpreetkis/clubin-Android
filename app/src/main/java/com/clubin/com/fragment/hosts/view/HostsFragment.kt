@@ -20,6 +20,7 @@ import com.kizitonwose.calendarview.model.CalendarDay
 import com.kizitonwose.calendarview.model.DayOwner
 import com.kizitonwose.calendarview.ui.DayBinder
 import com.kizitonwose.calendarview.ui.ViewContainer
+import java.time.LocalDate
 import java.time.YearMonth
 import java.time.temporal.WeekFields
 import java.util.*
@@ -32,7 +33,8 @@ class HostsFragment : Fragment(), View.OnClickListener {
     lateinit var binding: HostsFragmentBinding
     val activeTabColor: Int by lazy { ContextCompat.getColor(mContext, R.color.white) }
     val inactiveTabColor: Int by lazy { ContextCompat.getColor(mContext, R.color.dull_white) }
-
+    private val selectedDates = mutableSetOf<LocalDate>()
+    private val today = LocalDate.now()
     override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
@@ -64,6 +66,20 @@ class HostsFragment : Fragment(), View.OnClickListener {
                 if (day.owner == DayOwner.THIS_MONTH) {
                     container.textView.setTextColor(ContextCompat.getColor(mContext, R.color.white))
                     container.textView.visibility = View.VISIBLE
+
+                    when {
+                        selectedDates.contains(day.date) -> {
+                            container.textView.setTextColor(ContextCompat.getColor(mContext, R.color.black))
+                            container.textView.setBackgroundResource(R.drawable.green_calendar_background)
+                        }
+                        today == day.date -> {
+                            container.textView.setTextColor(ContextCompat.getColor(mContext, R.color.white))
+                            container.textView.setBackgroundResource(R.drawable.calendar_today)
+                        }
+                        else -> {
+                            container.textView.background = null
+                        }
+                    }
                 } else {
                     container.textView.setTextColor(ContextCompat.getColor(mContext, R.color.text_light_white))
                     container.textView.visibility = View.INVISIBLE
@@ -91,9 +107,36 @@ class HostsFragment : Fragment(), View.OnClickListener {
         init {
             view.setOnClickListener {
                 Log.e(TAG, "Day click ${day.date}")
+                if (day.owner == DayOwner.THIS_MONTH) {
+                    if (selectedDates.contains(day.date)) {
+                        selectedDates.remove(day.date)
+                    } else {
+                        selectedDates.clear();
+                        selectedDates.add(day.date)
+                        textView.background = ContextCompat.getDrawable(mContext, R.drawable.green_calendar_background)
+                    }
+                    binding.calendarView.notifyDayChanged(day)
+                }
             }
         }
     }
+
+
+
+    /*    init {
+            view.setOnClickListener {
+                if (day.owner == DayOwner.THIS_MONTH) {
+                    if (selectedDates.contains(day.date)) {
+                        selectedDates.remove(day.date)
+                    } else {
+                        selectedDates.add(day.date)
+                    }
+                    binding.exOneCalendar.notifyDayChanged(day)
+                }
+            }
+        }*/
+
+
 
     override fun onClick(p0: View?) {
         when (p0) {

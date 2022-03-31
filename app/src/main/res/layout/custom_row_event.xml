@@ -35,9 +35,8 @@
                 android:id="@+id/dateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="22-12-2020"
-                android:textColor="@color/white"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -67,9 +66,8 @@
                     android:id="@+id/distanceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="12 km"
-                    android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -86,9 +84,8 @@
                 android:id="@+id/partyName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="EFFEIL PARTY"
-                android:textColor="@color/white"
                 android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -96,9 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/partyName"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Ugo -"
-                android:textColor="@color/white"
                 android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -108,9 +104,8 @@
                 android:layout_below="@id/partyName"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/organizerName"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="4.5"
-                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <ImageView
@@ -133,10 +128,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:paddingHorizontal="20dp"
                     android:text="CONCERT"
-                    android:textColor="@color/white"
                     android:textSize="10sp" />
             </androidx.cardview.widget.CardView>
 

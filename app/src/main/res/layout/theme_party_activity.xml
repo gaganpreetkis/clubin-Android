@@ -76,6 +76,7 @@
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
+                            android:id="@+id/ll_filter"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -112,6 +113,7 @@
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
+                            android:id="@+id/ll_clock"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"

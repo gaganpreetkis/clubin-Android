@@ -20,9 +20,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:layout_toRightOf="@id/personImage"
-        android:fontFamily="@font/montserrat_alternates_regular"
+        style="@style/regularTextView"
         android:text="Paul"
-        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <RatingBar
@@ -51,7 +50,7 @@
         android:layout_below="@id/personImage"
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
-        android:fontFamily="@font/montserrat_alternates_regular"
+        style="@style/regularTextView"
         android:text="Last time was Amazing! Alex knows how to organize good parties ! Don't Hesitate !"
         android:textColor="@color/dull_white"
         android:textSize="12sp" />

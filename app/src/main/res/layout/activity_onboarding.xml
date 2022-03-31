@@ -38,7 +38,7 @@
             android:paddingRight="@dimen/_25sdp"
             android:textSize="@dimen/_12ssp"
             android:background="@drawable/transparent_background"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             app:layout_constraintBottom_toBottomOf="@+id/dots_indicator"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="parent"

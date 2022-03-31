@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".auth.passwordreset.PasswordResetEmailActivity">
+        tools:context=".auth.passwordreset.view.PasswordResetEmailActivity">
 
 
         <TextView
@@ -24,10 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/extraBoldTextView"
             android:text="@string/inscription_email_title"
-            android:textColor="@color/white"
-            android:textSize="30dp" />
+          />
 
 
         <EditText
@@ -48,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextTextEmailAddress"
             android:layout_marginLeft="20dp"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:text="@string/inscription_email_correct"
             android:textColor="@color/white"
             android:textSize="16dp" />
@@ -63,8 +62,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:backgroundTint="@color/green"
             android:text="@string/inscription_email_button"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
+            style="@style/boldButton" />
     </RelativeLayout>
 
 </layout>

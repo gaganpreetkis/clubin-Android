@@ -10,7 +10,8 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 class ControlCenterFragment : BaseDataBindingFragment<ControlCenterFragmentDataBinding>
-    (R.layout.fragment_control_center), ControlCenterFragmentCallback {
+    (R.layout.fragment_control_center),
+    ControlCenterFragmentCallback {
     private var param1: String? = null
     private var param2: String? = null
 

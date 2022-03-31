@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.clubin.com.R
-import com.clubin.com.auth.passwordreset.PasswordResetEmailActivity
+import com.clubin.com.auth.passwordreset.view.PasswordResetEmailActivity
 import com.clubin.com.tabbar.TabBarActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -22,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         button.setOnClickListener {
             intent = Intent(applicationContext, TabBarActivity::class.java)
             startActivity(intent)
+            finishAffinity();
         }
     }
 }

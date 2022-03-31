@@ -27,6 +27,7 @@ class OnboardingPagerAdapter(context: Context, pagerList:ArrayList<ViewPagerDM>)
     }
     override fun instantiateItem(container: ViewGroup, position:Int):Any {
         val view = LayoutInflater.from(context).inflate(R.layout.onboarding_pager_item, container, false)
+
         val imageView = view.findViewById(R.id.iv_onboarding) as ImageView
         val mainContainer = view.findViewById(R.id.mainContainer) as ConstraintLayout
         val heading1 = view.findViewById(R.id.tv_heading) as TextView

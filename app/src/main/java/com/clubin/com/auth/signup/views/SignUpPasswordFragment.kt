@@ -44,6 +44,7 @@ class SignUpPasswordFragment : BaseDataBindingFragment<SignUpPasswordFragmentDat
         binding.button.setOnClickListener {
             var intent = Intent(requireActivity(), LoginActivity::class.java)
             startActivity(intent)
+            requireActivity().finishAffinity();
         }
     }
 }

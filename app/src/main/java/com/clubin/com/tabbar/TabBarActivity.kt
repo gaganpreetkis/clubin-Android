@@ -12,11 +12,9 @@ import com.clubin.com.fragment.event.view.EventFragment
 import com.clubin.com.fragment.hosts.view.HostsFragment
 import com.clubin.com.fragment.profile.ProfileFragment
 import com.clubin.com.fragment.tickets.view.TicketsMainFragment
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.google.android.material.chip.ChipGroup
 
-class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.BackPressedListener {
+
+class TabBarActivity : AppCompatActivity(), View.OnClickListener{
 
     lateinit var container: FrameLayout
 
@@ -44,6 +42,7 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.
         setupClickListeners()
 
         eventTab.performClick()
+
     }
 
     companion object {
@@ -163,72 +162,6 @@ class TabBarActivity : AppCompatActivity(), View.OnClickListener, EventFragment.
         return supportFragmentManager.findFragmentById(R.id.container)
     }
 
-    private fun bottomSheetShow() {
-        val dialog = BottomSheetDialog(this)
-
-        // on below line we are inflating a layout file which we have created.
-        val view = layoutInflater.inflate(R.layout.layout_bottom_sheet, null)
-
-        val btnClose = view.findViewById<ImageView>(R.id.iv_cancel)
-        btnClose.setOnClickListener {
-            dialog.dismiss()
-        }
-        val night = view.findViewById<LinearLayout>(R.id.ll_nights)
-        val chipNight = view.findViewById<ChipGroup>(R.id.chip_group_nights)
-        val nightArrow = view.findViewById<ImageView>(R.id.iv_night_arrow)
-        var nightChip = false
-        night.setOnClickListener {
-            if (nightChip) {
-                nightChip = false
-                chipNight.visibility = View.VISIBLE
-                nightArrow.setImageResource(R.drawable.ic_arrow_up)
-            } else {
-                nightChip = true
-                chipNight.visibility = View.GONE
-                nightArrow.setImageResource(R.drawable.ic_arrow_down)
-            }
-        }
-        val discovery = view.findViewById<LinearLayout>(R.id.ll_discovery)
-        val chipDisGroup = view.findViewById<ChipGroup>(R.id.chip_group_discovery)
-        val disArrow = view.findViewById<ImageView>(R.id.iv_dis_arrow)
-        var disChip = false
-        discovery.setOnClickListener {
-            if (disChip) {
-                disChip = false
-                chipDisGroup.visibility = View.VISIBLE
-                disArrow.setImageResource(R.drawable.ic_arrow_up)
-            } else {
-                disChip = true
-                chipDisGroup.visibility = View.GONE
-                disArrow.setImageResource(R.drawable.ic_arrow_down)
-            }
-        }
-
-        val vibes = view.findViewById<LinearLayout>(R.id.ll_vibes)
-        val chipVibesGroup = view.findViewById<ChipGroup>(R.id.chip_group_vibe)
-        val vibesArrow = view.findViewById<ImageView>(R.id.iv_vibes_arrow)
-        var vibesChip = false
-        vibes.setOnClickListener {
-            if (vibesChip) {
-                vibesChip = false
-                chipVibesGroup.visibility = View.VISIBLE
-                vibesArrow.setImageResource(R.drawable.ic_arrow_up)
-            } else {
-                vibesChip = true
-                chipVibesGroup.visibility = View.GONE
-                vibesArrow.setImageResource(R.drawable.ic_arrow_down)
-            }
-        }
-
-        dialog.setCancelable(false)
-        dialog.setContentView(view)
-        dialog.show()
-        dialog.behavior.state = BottomSheetBehavior.STATE_EXPANDED
-    }
-
-    override fun onItemClick(position: Int) {
-        bottomSheetShow()
-    }
 
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount != 0) {

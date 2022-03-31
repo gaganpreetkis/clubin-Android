@@ -42,23 +42,22 @@
 
                     <TextView
                         android:id="@+id/nameTxt"
+                        style="@style/regularTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:fontFamily="@font/montserrat_alternates_regular"
                         android:text="Cette semaine"
                         android:textColor="@color/dull_white"
                         android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/locationTxt"
+                        style="@style/boldTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/nameTxt"
                         android:layout_alignParentRight="true"
-                        android:fontFamily="@font/montserrat_alternates_bold"
                         android:text="22 rue jules michelet"
-                        android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -99,10 +98,12 @@
 
                     <ImageView
                         android:id="@+id/iv_filter"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_width="@dimen/_15sdp"
-                        android:layout_height="@dimen/_15sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
                         android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/circle_dull_gray"
+                        android:padding="@dimen/_5sdp"
                         android:src="@drawable/menu"
                         app:tint="@color/bright_green" />
                 </LinearLayout>
@@ -143,24 +144,22 @@
                             android:src="@drawable/theater" />
 
                         <TextView
+                            style="@style/semiBoldTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="6dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:text="Clubin"
-                            android:textColor="@color/white" />
+                            android:text="Clubin" />
 
                         <TextView
+                            style="@style/semiBoldTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="6dp"
                             android:layout_marginBottom="6dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:text="Nights"
-                            android:textColor="@color/white" />
+                            android:text="Nights" />
 
                     </RelativeLayout>
 
@@ -181,36 +180,33 @@
 
                         <TextView
                             android:id="@+id/clubin_discovery_txt"
+                            style="@style/semiBoldTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="6dp"
                             android:layout_marginBottom="6dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:text="Discovery"
-                            android:textColor="@color/white" />
+                            android:text="Discovery" />
 
                         <TextView
+                            style="@style/semiBoldTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignStart="@id/clubin_discovery_txt"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="6dp"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
-                            android:text="Clubin"
-                            android:textColor="@color/white" />
+                            android:text="Clubin" />
                     </RelativeLayout>
 
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Populaires"
-                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -220,11 +216,10 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Arrive bientôt"
-                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -234,9 +229,9 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Mille et Une Nuits"
                     android:textColor="@color/white"
                     android:textSize="22sp" />
@@ -248,9 +243,9 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Grandes découvertes"
                     android:textColor="@color/white"
                     android:textSize="22sp" />
@@ -262,11 +257,10 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Nouveau hôtes sur Clubin"
-                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -276,11 +270,10 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Bonnes ondes"
-                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -290,11 +283,10 @@
                     android:layout_marginVertical="15dp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/boldTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
                     android:text="Meilleurs hôtes"
-                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
                 <androidx.recyclerview.widget.RecyclerView

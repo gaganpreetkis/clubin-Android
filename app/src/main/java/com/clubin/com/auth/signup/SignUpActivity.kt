@@ -14,7 +14,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        addFragment(SignUpAgeFragment(),true)
+        addFragment(SignUpAgeFragment(), true)
     }
 
     private fun addFragment(frag: Fragment, addToBackStack: Boolean) {
@@ -32,6 +32,29 @@ class SignUpActivity : AppCompatActivity() {
 
         trans.commit()
         supportFragmentManager.executePendingTransactions()
+    }
+
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount != 1) {
+            removeFragment()
+        } else {
+            super.onBackPressed()
+        }
+    }
+
+    fun removeFragment() {
+        if (supportFragmentManager.backStackEntryCount > 0) {
+            supportFragmentManager.popBackStackImmediate()
+            val v = currentFragment()
+            //noinspection ConstantConditions
+            if (supportFragmentManager.backStackEntryCount > 0) {
+                v?.view?.requestFocus()
+            }
+        }
+    }
+
+    fun currentFragment(): Fragment? {
+        return supportFragmentManager.findFragmentById(R.id.container)
     }
 
 }

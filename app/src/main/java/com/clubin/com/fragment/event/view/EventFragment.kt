@@ -22,9 +22,10 @@ import com.clubin.com.fragment.eventdetail.view.EventDetailFragment
 import com.clubin.com.fragment.message.view.MessageMainFragment
 import com.clubin.com.tabbar.TabBarActivity
 import com.clubin.com.themeparty.view.ThemePartyActivity
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class EventFragment : Fragment(), View.OnClickListener {
-    var  backPressedListener : BackPressedListener? = null
+
     private lateinit var vm: EventViewModel
     private lateinit var mContext: Context
     private lateinit var binding: EventFragmentBinding
@@ -34,14 +35,7 @@ class EventFragment : Fragment(), View.OnClickListener {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
-        if (context is BackPressedListener) {
-            backPressedListener =  context as BackPressedListener
-        } else {
-            throw RuntimeException(context.toString() )
-        }
-    }
-    fun setOnEventListener(listener: BackPressedListener) {
-        this.backPressedListener = listener
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,9 +48,6 @@ class EventFragment : Fragment(), View.OnClickListener {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.event_fragment, container, false)
         binding.mview = vm
-        binding.ivFilter.setOnClickListener {
-            backPressedListener?.onItemClick(1);
-        }
 
         return binding.root
     }
@@ -73,11 +64,12 @@ class EventFragment : Fragment(), View.OnClickListener {
     }
 
     private fun setupClickListeners() {
-        arrayOf(binding.messageView, binding.clubinNights, binding.clubinDiscovery).forEach { it.setOnClickListener(this) }
+        arrayOf(binding.messageView, binding.clubinNights, binding.clubinDiscovery,
+            binding.ivFilter, binding.locationTxt).forEach { it.setOnClickListener(this) }
     }
 
     private fun setupRecyclerViews() {
-        val adapter = EventAdapter(mContext, list, object : EventAdapter.EventClickListener{
+        val adapter = EventAdapter(mContext, list, object : EventAdapter.EventClickListener {
             override fun onEventClick(pos: Int) {
                 (activity as TabBarActivity)?.let {
                     it.addFragment(EventDetailFragment(), true)
@@ -121,15 +113,25 @@ class EventFragment : Fragment(), View.OnClickListener {
                 val intent = Intent(mContext, ThemePartyActivity::class.java)
                 startActivity(intent)
             }
+            binding.ivFilter -> {
+                val frag = BottomSheetFilterFragment()
+                frag.show(childFragmentManager, frag::class.java.simpleName)
+               /* val behavior: BottomSheetBehavior<*> = BottomSheetBehavior.from<View>(frag)
+                behavior.state = BottomSheetBehavior.STATE_EXPANDED
+                behavior.setPeekHeight(0)*/
+
+            }
             binding.messageView -> {
                 (activity as TabBarActivity)?.let {
                     it.addFragment(MessageMainFragment(), true)
                 }
             }
-        }
-    }
+            binding.locationTxt -> {
+                val frag = BottomSheetClockFragment()
+                frag.show(childFragmentManager, frag::class.java.simpleName)
+                val behavior = BottomSheetBehavior.STATE_EXPANDED
 
-    interface BackPressedListener{
-        fun onItemClick(position: Int)
+            }
+        }
     }
 }

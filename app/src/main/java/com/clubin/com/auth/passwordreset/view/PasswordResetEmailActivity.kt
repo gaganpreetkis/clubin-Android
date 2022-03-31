@@ -1,11 +1,10 @@
-package com.clubin.com.auth.passwordreset
+package com.clubin.com.auth.passwordreset.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.clubin.com.R
-import com.clubin.com.auth.passwordreset.view.PasswordResetCodeActivity
 
 class PasswordResetEmailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,3 +18,4 @@ class PasswordResetEmailActivity : AppCompatActivity() {
         }
     }
 }
+

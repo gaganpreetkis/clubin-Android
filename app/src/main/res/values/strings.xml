@@ -2,6 +2,15 @@
     <string name="app_name">CLUBIN</string>
 
     <string name="to_join"><u>Se connecter</u></string>
+    <!-- Fonts -->
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+    <string name="extra_bold">CLUBIN</string>
+    <string name="bold">CLUBIN</string>
+    <string name="semi_bold">CLUBIN</string>
+    <string name="medium">CLUBIN</string>
+    <string name="regular">CLUBIN</string>
 
     <!-- Onboarding -->
     <string name="onboarding_one_title">Blueberry</string>

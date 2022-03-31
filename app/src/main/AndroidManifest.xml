@@ -27,22 +27,7 @@
             android:name="com.clubin.com.auth.onboarding.view.OnboardingActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
-        <activity
-            android:name="com.clubin.com.auth.signup.InscriptionPasswordActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CLUBIN.NoActionBar" />
-        <activity
-            android:name="com.clubin.com.auth.signup.InscriptionEmailActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CLUBIN.NoActionBar" />
-        <activity
-            android:name="com.clubin.com.auth.signup.InscriptionNameActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CLUBIN.NoActionBar" />
-        <activity
-            android:name="com.clubin.com.auth.signup.InscriptionAgeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CLUBIN.NoActionBar" />
+
         <activity
             android:name="com.clubin.com.auth.passwordreset.view.PasswordResetNewPasswordActivity"
             android:exported="false"
@@ -52,29 +37,29 @@
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name="com.clubin.com.auth.passwordreset.PasswordResetEmailActivity"
+            android:name="com.clubin.com.auth.passwordreset.view.PasswordResetEmailActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
             android:name=".WelcomeActivity"
             android:exported="true"
             android:theme="@style/Theme.CLUBIN.NoActionBar">
-            <!--<intent-filter>
+         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity
             android:name=".tabbar.TabBarActivity"
             android:exported="true"
             android:theme="@style/Theme.CLUBIN.NoActionBar">
 
-            <intent-filter>
+          <!--  <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity
             android:name=".themeparty.view.ThemePartyActivity"
