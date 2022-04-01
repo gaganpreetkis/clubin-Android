@@ -54,25 +54,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="15dp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Finaliser votre Event"
-                android:textColor="@color/white"
                 android:textSize="22sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Ajouter des photos"
-                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="Ne négligez pas cette étape, c'est la plus importantes : prenez des photos balblabla"
-                android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -115,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="Sauvegarder cet Event ?"
                     android:textColor="@color/green"
                     android:textSize="14sp" />
@@ -131,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="15dp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="Oui"
                     android:textColor="@color/green"
                     android:textSize="14sp" />
@@ -151,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="10dp"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="En selectionnant cette option, vous enregistrez les informations réutilisables de cette annonce afin de facilier le processus de création pour les fois prochaines."
                 android:textColor="@color/dull_white"
                 android:textSize="12sp" />
@@ -164,7 +161,7 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="10dp"
                 android:background="@drawable/btn_red_grad_with_wallet"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:gravity="center"
                 android:text="Voir votre annonce"
                 android:textColor="@color/black"

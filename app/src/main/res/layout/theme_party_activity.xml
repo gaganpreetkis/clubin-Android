@@ -45,18 +45,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Nights"
-                android:textColor="@color/white"
                 android:textSize="26sp" />
 
             <TextView
                 android:id="@+id/descriptionTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="Le show doit continuer - Queen"
-                android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <HorizontalScrollView
@@ -91,9 +89,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:text="Trier par catégories"
-                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                             <ImageView
@@ -129,9 +126,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:text="Cette semaine - Près de moi"
-                                android:textColor="@color/white"
                                 android:textSize="12sp" />
 
                             <ImageView

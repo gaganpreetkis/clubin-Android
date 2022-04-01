@@ -38,10 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Préférences"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -61,10 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:gravity="start"
                 android:text="Sur quel compte souhaitez-vous recevoir l'argent disponible ?"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <View
@@ -90,9 +88,8 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Compte bancaire (par défaut)"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />
 
                 <ImageView
@@ -121,9 +118,8 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Paypal (arrive bientôt)"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />
 
                 <ImageView

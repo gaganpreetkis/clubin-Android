@@ -48,10 +48,8 @@
                         android:id="@+id/createTabTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="CRÉER"
-                        android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        style="@style/semiBoldTextView"
+                        android:text="CRÉER" />
 
                     <View
                         android:id="@+id/createTabDivider"
@@ -75,10 +73,8 @@
                         android:id="@+id/onlineTabTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="EN LIGNE"
-                        android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        style="@style/semiBoldTextView"
+                        android:text="EN LIGNE" />
 
                     <View
                         android:id="@+id/onlineTabDivider"
@@ -102,10 +98,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="15dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
-                    android:text="Quand organisez-vous votre prochain évènement ?"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
+                    style="@style/boldTextView"
+                    android:text="Quand organisez-vous votre prochain évènement ?" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:layout_width="wrap_content"
@@ -130,9 +124,8 @@
                         android:id="@+id/monthTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
-                        android:text="April 2022"
-                        android:textColor="@color/white" />
+                        style="@style/semiBoldTextView"
+                        android:text="April 2022" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -178,7 +171,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="SUN"
                         android:textColor="@color/dull_white"
@@ -188,7 +181,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="MON"
                         android:textColor="@color/dull_white"
@@ -198,7 +191,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="TUE"
                         android:textColor="@color/dull_white"
@@ -208,7 +201,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="WED"
                         android:textColor="@color/dull_white"
@@ -218,7 +211,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="THU"
                         android:textColor="@color/dull_white"
@@ -228,7 +221,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="FRI"
                         android:textColor="@color/dull_white"
@@ -238,7 +231,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="center"
                         android:text="SAT"
                         android:textColor="@color/dull_white"
@@ -257,11 +250,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:paddingHorizontal="10dp"
-                    android:text="Votre event aura lieu le "
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:text="Votre event aura lieu le " />
 
                 <TextView
                     android:id="@+id/chooseThisDate"
@@ -270,11 +261,10 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginVertical="20dp"
                     android:background="@drawable/btn_red_grad_with_arrow"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:gravity="center"
                     android:text="Choisir cette date"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -289,10 +279,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="15dp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
-                    android:text="Online event"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
+                    style="@style/boldTextView"
+                    android:text="Online event" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

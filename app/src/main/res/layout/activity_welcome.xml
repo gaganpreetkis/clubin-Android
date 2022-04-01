@@ -40,18 +40,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:text="J'ai déjà un compte:"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/loginText"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:text="@string/to_join"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -64,10 +62,9 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/simple_button_bg"
-        android:fontFamily="@font/montserrat_alternates_bold"
+        style="@style/boldTextView"
         android:gravity="center"
         android:text="Inscription"
-        android:textColor="@color/white"
         android:textSize="18sp" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -76,9 +73,8 @@
         android:layout_above="@id/inscription"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:fontFamily="@font/montserrat_alternates_semibold"
+        style="@style/semiBoldTextView"
         android:text="La soirée rendu facile."
-        android:textColor="@color/white"
         android:textSize="20sp" />
 
 </RelativeLayout>

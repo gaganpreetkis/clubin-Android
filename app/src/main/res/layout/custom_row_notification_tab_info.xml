@@ -50,10 +50,9 @@
             android:layout_toRightOf="@id/imgViewCard"
             android:layout_marginTop="5dp"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:maxLines="1"
             android:text="Clubin V2.0 disponible"
-            android:textColor="@color/white"
             android:textSize="14sp" />
 
         <TextView
@@ -64,7 +63,7 @@
             android:layout_alignStart="@id/titleTxt"
             android:layout_toLeftOf="@id/nxtIcon"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:gravity="center_vertical"
             android:maxLines="1"
             android:text="Effectuez la mise à jour"

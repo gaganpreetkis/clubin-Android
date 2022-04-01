@@ -17,9 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="30/12/2021"
-            android:textColor="@color/white"
             android:textSize="@dimen/_16ssp" />
 
         <TextView
@@ -28,9 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="18 $"
-            android:textColor="@color/white"
             android:textSize="@dimen/_16ssp" />
 
     </RelativeLayout>
@@ -44,9 +42,8 @@
             android:id="@+id/textViewCountry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:text="paris"
-            android:textColor="@color/white"
             android:textSize="@dimen/_14ssp" />
 
         <TextView
@@ -55,9 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/_25sdp"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:text="1"
-            android:textColor="@color/white"
             android:textSize="@dimen/_14ssp" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

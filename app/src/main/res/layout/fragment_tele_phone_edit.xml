@@ -37,10 +37,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text=""
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <ImageView
@@ -65,9 +64,8 @@
                 android:id="@+id/textViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Ajouter mon numéro"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_22ssp" />
 
             <TextView
@@ -76,9 +74,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewTitle"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="Entrez votre téléphone à associer à ce compte pour recevoir votre code de validation"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp" />
 
             <EditText

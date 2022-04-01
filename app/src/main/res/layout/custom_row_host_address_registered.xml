@@ -25,9 +25,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
             android:background="@color/black_background"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:text="11 rue de l'harmonie"
-            android:textColor="@color/white"
             android:textSize="14sp" />
 
 

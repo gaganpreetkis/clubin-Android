@@ -59,18 +59,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_bold"
-                    android:text="Décrivez votre évènement"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
+                    style="@style/boldTextView"
+                    android:text="Décrivez votre évènement" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Nom"
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <EditText
@@ -78,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:hint="Soirée DJ - Cocktails"
                     android:inputType="text"
                     android:textColor="@color/text_light_white" />
@@ -87,9 +84,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Description"
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <EditText
@@ -97,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:hint="Evènement privé avec un zefnjkgkznbkebfjbzkfjbkjzbkjbkjzbfkbfkefzbkjbkzbjkfbkzbfzkfbkjbfzezebfjkfbzfbze"
                     android:inputType="text"
                     android:textColor="@color/text_light_white" />
@@ -106,16 +102,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Selectionnez vos tags(min:1 - max:5)"
-                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/editTextTagDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:text="Quels tags correspondent le mieux au(x) thème(s) de votre Event ?"
                     android:textColor="@color/text_light_white"
                     android:textSize="12sp" />
@@ -130,10 +125,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:padding="@dimen/_3sdp"
                         android:text="CLUBIN NIGHT"
-                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -147,10 +141,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:padding="@dimen/_2sdp"
                         android:text="ces thèmes sont accèes sur la soirée ect blabbla"
-                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -228,10 +221,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:padding="@dimen/_3sdp"
                         android:text="CLUBIN VIBES"
-                        android:textColor="@color/white"
                         android:textSize="14sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -245,10 +237,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:padding="@dimen/_2sdp"
                         android:text="ces thèmes sont accèes sur la soirée ect blabbla"
-                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -325,10 +316,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:padding="@dimen/_3sdp"
                         android:text="CLUBIN DISCOVERY"
-                        android:textColor="@color/white"
                         android:textSize="14sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -342,10 +332,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:padding="@dimen/_2sdp"
                         android:text="ces thèmes sont accèes sur la soirée ect blabbla"
-                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -421,7 +410,7 @@
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/btn_red_grad_with_arrow"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:gravity="center"
                     android:text="Continuer"
                     android:textColor="@color/black"

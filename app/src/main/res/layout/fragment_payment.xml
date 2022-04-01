@@ -38,10 +38,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Paiement"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -75,7 +74,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Virements"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp" />
@@ -110,9 +109,8 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Historique des paiements"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp" />
 
                 <ImageView
@@ -146,9 +144,8 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:text="Préférences de paiement / RIB"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp" />
 
                 <ImageView

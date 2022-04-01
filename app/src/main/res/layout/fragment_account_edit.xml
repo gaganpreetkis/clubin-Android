@@ -43,10 +43,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:gravity="center_horizontal"
                     android:text=""
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_20ssp" />
 
                 <ImageView
@@ -93,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Modifier les informations"
                 android:textColor="@color/darkBlue"
                 android:textSize="@dimen/_15ssp" />
@@ -111,9 +110,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_15sdp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Général"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />
 
                 <View
@@ -134,9 +132,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Nom d'utilisateur"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <EditText
@@ -147,10 +144,9 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="start"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/white" />
+                        android:inputType="textPersonName" />
 
                     <TextView
                         android:id="@+id/textView_firstNameValue"
@@ -159,10 +155,9 @@
                         android:layout_alignBaseline="@+id/textView_firstName"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="alex_b"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
 
@@ -186,9 +181,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Nom et prénom"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -198,10 +192,9 @@
                         android:layout_alignBaseline="@+id/textView_lastName"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="Alexandre Baysset"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -211,10 +204,9 @@
                         android:layout_below="@+id/textView_lastName"
                         android:layout_gravity="start"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/white" />
+                        android:inputType="textPersonName" />
 
                 </RelativeLayout>
 
@@ -236,9 +228,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Age"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -248,10 +239,9 @@
                         android:layout_alignBaseline="@+id/textView_age"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="22"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -260,9 +250,8 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView_age"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
-                        android:inputType="text"
-                        android:textColor="@color/white" />
+                        style="@style/mediumTextView"
+                        android:inputType="text" />
 
                 </RelativeLayout>
 
@@ -284,9 +273,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Bio"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -296,10 +284,9 @@
                         android:layout_alignBaseline="@+id/textView_bio"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="Digital goodies designer @pixsellz Everything is designed."
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -310,9 +297,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
-                        android:inputType="text"
-                        android:textColor="@color/white" />
+                        style="@style/mediumTextView"
+                        android:inputType="text" />
 
                 </RelativeLayout>
 
@@ -322,9 +308,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_15sdp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Réseaux"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />
 
                 <View
@@ -345,9 +330,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Instagram"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -357,10 +341,9 @@
                         android:layout_alignBaseline="@+id/textView_insta"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="instagram.com/brandon_f"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -371,9 +354,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
-                        android:inputType="text"
-                        android:textColor="@color/white" />
+                        style="@style/mediumTextView"
+                        android:inputType="text" />
 
                 </RelativeLayout>
 
@@ -395,9 +377,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Facebook"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -407,10 +388,9 @@
                         android:layout_alignBaseline="@+id/textView_facebook"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="facebook.com/BrandonFang"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -421,9 +401,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
-                        android:inputType="text"
-                        android:textColor="@color/white" />
+                        style="@style/mediumTextView"
+                        android:inputType="text" />
 
                 </RelativeLayout>
 
@@ -433,9 +412,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/_15sdp"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="Informations privés - contact"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />
 
                 <View
@@ -455,9 +433,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:fontFamily="@font/montserrat_alternates_medium"
                         android:text="E-mail"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -467,8 +443,7 @@
                         android:layout_alignBaseline="@+id/textView_email"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
-
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="mailto:jacob.west@gmail.com"
                         android:textColor="@color/text_light_white"
@@ -496,9 +471,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Téléphone"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -508,7 +482,7 @@
                         android:layout_alignBaseline="@+id/textView_telephone"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:gravity="end"
                         android:text="+1 202 555 0147"
                         android:textColor="@color/text_light_white"
@@ -535,9 +509,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:text="Sexe"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -547,10 +520,9 @@
                         android:layout_alignBaseline="@+id/textView_sex"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:gravity="end"
                         android:text="Homme"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_11ssp" />
 
                     <EditText
@@ -561,10 +533,9 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:fontFamily="@font/montserrat_alternates_medium"
+                        style="@style/mediumTextView"
                         android:hint="Homme"
-                        android:inputType="text"
-                        android:textColor="@color/white" />
+                        android:inputType="text" />
 
                 </RelativeLayout>
 

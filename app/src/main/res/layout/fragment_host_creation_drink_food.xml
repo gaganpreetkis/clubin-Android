@@ -60,15 +60,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:fontFamily="@font/montserrat_alternates_extrabold"
+                    style="@style/extraBoldTextView"
                     android:text="Que y'aura t'il à votre évènement ?"
-                    android:textColor="@color/white"
                     android:textSize="28sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:text="En cochant Non, vous empechez toute présence de l'élément en question."
                     android:textColor="@color/text_light_white"
                     android:textSize="12sp" />
@@ -81,7 +80,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Boissons"
                         android:textColor="@color/white"
                         android:textSize="28sp" />
@@ -92,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/transparent_green"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:paddingLeft="@dimen/_10sdp"
                         android:paddingTop="@dimen/_5sdp"
                         android:paddingRight="@dimen/_10sdp"
@@ -116,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Alcool"
                         android:textColor="@color/green"
                         android:textSize="16sp" />
@@ -132,7 +131,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            style="@style/extraBoldTextView"
                             android:text="Autorisé "
                             android:textColor="@color/green"
                             android:textSize="16sp" />
@@ -153,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:fontFamily="@font/montserrat_alternates_regular"
+                    style="@style/regularTextView"
                     android:text="Nous vous rappelons que toute consommation de boisson alcoolisé est strictement prohibé par la loi pour les personnes de moins de 18 ans et implique la responsabilité du consommateur."
                     android:textColor="@color/text_light_white"
                     android:textSize="10sp" />
@@ -172,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Amener sa boisson"
                         android:textColor="@color/green"
                         android:textSize="16sp" />
@@ -189,7 +188,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_5sdp"
-                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            style="@style/extraBoldTextView"
                             android:text="Autorisé "
                             android:textColor="@color/green"
                             android:textSize="16sp" />
@@ -220,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Créer une cagnotte"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -239,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:text="Créer une cagnotte signifie blabla lnaoianoeinf description a faire par alex."
                     android:textColor="@color/text_light_white"
                     android:textSize="10sp" />
@@ -254,7 +253,7 @@
                         android:id="@+id/tv_Nourriture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Nourriture"
                         android:textColor="@color/white"
                         android:textSize="28sp" />
@@ -265,7 +264,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:background="@drawable/transparent_green"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:paddingLeft="@dimen/_10sdp"
                         android:paddingTop="@dimen/_5sdp"
                         android:paddingRight="@dimen/_10sdp"
@@ -288,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Amener à manger"
                         android:textColor="@color/green"
                         android:textSize="16sp" />
@@ -304,7 +303,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="@dimen/_5sdp"
-                            android:fontFamily="@font/montserrat_alternates_extrabold"
+                            style="@style/extraBoldTextView"
                             android:text="Autorisé "
                             android:textColor="@color/green"
                             android:textSize="16sp" />
@@ -334,9 +333,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_extrabold"
+                        style="@style/extraBoldTextView"
                         android:text="Créer une cagnotte"
-                        android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -353,7 +351,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/montserrat_alternates_medium"
+                    style="@style/mediumTextView"
                     android:text="Créer une cagnotte signifie blabla lnaoianoeinf description a faire par alex."
                     android:textColor="@color/text_light_white"
                     android:textSize="10sp" />
@@ -367,7 +365,7 @@
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/btn_red_grad_with_arrow"
-                    android:fontFamily="@font/montserrat_alternates_semibold"
+                    style="@style/semiBoldTextView"
                     android:gravity="center"
                     android:text="Continuer"
                     android:textColor="@color/black"

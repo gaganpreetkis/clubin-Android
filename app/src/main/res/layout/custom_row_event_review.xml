@@ -32,9 +32,8 @@
                 android:id="@+id/partyName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Pool PARTY"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -42,9 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/partyName"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="21/12/2021"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <LinearLayout
@@ -60,9 +58,8 @@
                     android:layout_below="@id/partyName"
                     android:layout_marginLeft="5dp"
                     android:layout_toRightOf="@id/organizerName"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:text="4.5"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_10ssp" />
 
                 <ImageView

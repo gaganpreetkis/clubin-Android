@@ -37,10 +37,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Virements"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -59,17 +58,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Où est mon argent ?"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Votre argent a été envoyé. Il arrivera sur votre compte bancaire dans les 5 jours ouvrés."
                 android:textColor="@color/text_light_white"

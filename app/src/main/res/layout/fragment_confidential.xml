@@ -37,10 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Confidentialité"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -74,19 +73,17 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:gravity="start"
                         android:text="@string/message_1"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:gravity="start"
                         android:text="@string/message_2"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
                 </LinearLayout>
 
@@ -112,9 +109,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:text="Localisation"
-                            android:textColor="@color/white"
                             android:textSize="@dimen/_14ssp" />
 
                         <ImageView
@@ -130,7 +126,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="Pour activer/désactiver la localisation, rendez-vous dans Réglages > Clubin > Notifications."
                         android:textColor="@color/link_green"
                         android:textSize="@dimen/_12ssp" />
@@ -141,7 +137,7 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="EN ACTIVANT LA LOCALISATION VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
                         android:textSize="@dimen/_12ssp" />
@@ -159,9 +155,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="L'utilisation des données de géolocalisation précise"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp" />
 
 
@@ -189,9 +184,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:text="Data"
-                            android:textColor="@color/white"
                             android:textSize="@dimen/_14ssp" />
 
                         <ImageView
@@ -209,7 +203,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
                         android:textSize="@dimen/_12ssp" />
@@ -226,9 +220,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Analysez activement les caractéristiques du terminal pour l'identification"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                     <View
@@ -243,9 +236,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Créer un profil pour afficher un contenu personnalisé"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                     <View
@@ -260,9 +252,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Stocker et/ou accéder accéder à des informations sur un terminal"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                 </LinearLayout>
@@ -289,9 +280,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_weight="1"
-                            android:fontFamily="@font/montserrat_alternates_semibold"
+                            style="@style/semiBoldTextView"
                             android:text="Marketing"
-                            android:textColor="@color/white"
                             android:textSize="@dimen/_14ssp" />
 
                         <ImageView
@@ -309,7 +299,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_semibold"
+                        style="@style/semiBoldTextView"
                         android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
                         android:textSize="@dimen/_12ssp" />
@@ -326,9 +316,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Développer et améliorer les produits"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                     <View
@@ -343,9 +332,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Mesurer les performances du contenu"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                     <View
@@ -360,9 +348,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/montserrat_alternates_regular"
+                        style="@style/regularTextView"
                         android:text="Sélectionner du contenu personnalisé"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
 
                 </LinearLayout>

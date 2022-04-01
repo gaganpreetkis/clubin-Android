@@ -38,10 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text=""
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <ImageView
@@ -85,10 +84,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="11 Events"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -120,10 +118,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="4.6 - moyenne"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_14ssp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.cardview.widget.CardView>

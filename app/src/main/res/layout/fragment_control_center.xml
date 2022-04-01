@@ -40,10 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Centre de contrôle"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -74,10 +73,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="Ressources et Conseils"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_18ssp" />
                 </LinearLayout>
 
@@ -105,10 +103,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_bold"
+                                style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Gestes de premiers secours"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_18ssp" />
                         </LinearLayout>
 
@@ -124,19 +121,17 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_bold"
+                                style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Vol - Casse ?"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_18ssp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_medium"
+                                style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Que faire en cas de Vol ou Casse ?"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
 
@@ -159,19 +154,17 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_bold"
+                                style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Incendie"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_18ssp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_medium"
+                                style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Les mesures à suivre"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
 
                         </LinearLayout>
@@ -188,19 +181,17 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_bold"
+                                style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Litiges / Violence"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_18ssp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/montserrat_alternates_medium"
+                                style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Que faire en cas de problème avec une/des personnes dans la soirée ?"
-                                android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
 
@@ -219,10 +210,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_alternates_bold"
+                        style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="Centre de sécurité"
-                        android:textColor="@color/white"
                         android:textSize="@dimen/_18ssp" />
 
                     <LinearLayout
@@ -238,19 +228,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_bold"
+                            style="@style/boldTextView"
                             android:gravity="center"
                             android:text="La Sécurité selon Clubin"
-                            android:textColor="@color/white"
                             android:textSize="@dimen/_18ssp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_alternates_medium"
+                            style="@style/mediumTextView"
                             android:gravity="start"
                             android:text="Obtenez l’assistance, les outils et les informations dont vous avez besoin"
-                            android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
                     </LinearLayout>
                     <View

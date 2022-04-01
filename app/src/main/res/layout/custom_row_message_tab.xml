@@ -59,10 +59,9 @@
             android:layout_toLeftOf="@id/nxtIcon"
             android:layout_toRightOf="@id/attachmentIcon"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:maxLines="1"
             android:text="Big Event"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <TextView
@@ -75,7 +74,7 @@
             android:layout_marginTop="2dp"
             android:layout_toLeftOf="@id/nxtIcon"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:maxLines="1"
             android:text="Voici votre lien vers la conversation Whatsapp"
             android:textColor="@color/dull_white"

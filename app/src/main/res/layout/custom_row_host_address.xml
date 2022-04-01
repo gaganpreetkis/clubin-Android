@@ -21,9 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:layout_weight="1"
-        android:fontFamily="@font/montserrat_alternates_semibold"
+        style="@style/semiBoldTextView"
         android:text="11 rue de l'harmonie"
-        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <ImageView

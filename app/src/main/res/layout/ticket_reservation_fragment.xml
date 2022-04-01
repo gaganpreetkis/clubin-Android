@@ -24,10 +24,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="En attente"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                style="@style/boldTextView"
+                android:text="En attente" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/waitingRecycler"
@@ -39,10 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="Réservés"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                style="@style/boldTextView"
+                android:text="Réservés" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/reserveRecycler"
@@ -54,10 +50,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="Evènements terminés"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                style="@style/boldTextView"
+                android:text="Evènements terminés" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/endedEventsRecycler"

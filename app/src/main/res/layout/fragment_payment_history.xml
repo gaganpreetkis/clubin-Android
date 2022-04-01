@@ -38,10 +38,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
                 android:gravity="center_horizontal"
                 android:text="Paiements"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -60,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Retrouvez ici toutes vos réservations, ainsi que vos remboursements déjà effectués et en cours, de cette années."
                 android:textColor="@color/text_light_white"

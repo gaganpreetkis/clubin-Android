@@ -32,9 +32,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/montserrat_alternates_extrabold"
+                    style="@style/extraBoldTextView"
                     android:text="Définir un budget boisson"
-                    android:textColor="@color/white"
                     android:textSize="28sp" />
 
                 <ImageView
@@ -66,10 +65,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="10 € / personne"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                style="@style/boldTextView"
+                android:text="10 € / personne" />
 
 
             <TextView
@@ -79,9 +76,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="- Ce prix sera ajouté au prix total du billet de chaque participants"
-                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <TextView
@@ -92,9 +88,8 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="- Veuillez faire en sorte que ce prix reflète réellement celui des achats que vous ferez."
-                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <TextView
@@ -104,10 +99,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
-                android:text="Quels genre de boissons ?"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                style="@style/boldTextView"
+                android:text="Quels genre de boissons ?" />
 
 
             <com.google.android.material.chip.ChipGroup
@@ -162,9 +155,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Autres"
-                android:textColor="@color/white"
                 android:textSize="16sp" />
 
             <EditText
@@ -173,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:ems="10"
-                android:fontFamily="@font/montserrat_alternates_medium"
+                style="@style/mediumTextView"
                 android:hint="Précisez"
                 android:inputType="text"
                 android:textColor="@color/text_light_white" />
@@ -195,7 +187,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_margin="@dimen/_10sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_extrabold"
+                style="@style/extraBoldTextView"
                 android:text="Annuler"
                 android:textAllCaps="false"
                 android:textColor="@color/dark_red" />
@@ -207,7 +199,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_margin="@dimen/_10sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_extrabold"
+                style="@style/extraBoldTextView"
                 android:text="Valider"
                 android:textAllCaps="false"
                 android:textColor="@color/darkBlue" />

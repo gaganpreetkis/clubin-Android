@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Envoyer"
                 android:textColor="@color/green"
                 android:textSize="@dimen/_16ssp" />
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:text="Toucher des étoiles pour noter"
             android:textColor="@color/text_light_white"
             android:textSize="@dimen/_10ssp" />
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:text="Laisser nous un commentaire (facultatif)"
             android:textColor="@color/text_light_white"
             android:textSize="@dimen/_16ssp" />
@@ -91,7 +91,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:ems="10"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:hint="Titre"
             android:inputType="text"
             android:textSize="@dimen/_18ssp" />
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:ems="10"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:hint="Commentaire"
             android:inputType="text"
             android:textSize="@dimen/_18ssp" />

@@ -48,10 +48,9 @@
             android:layout_toLeftOf="@id/nxtIcon"
             android:layout_toRightOf="@id/imgViewCard"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:maxLines="1"
             android:text="Paris"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <TextView
@@ -63,7 +62,7 @@
             android:layout_marginTop="2dp"
             android:layout_toLeftOf="@id/nxtIcon"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:gravity="center_vertical"
             android:maxLines="2"
             android:text="Vous avez recu une demande d'amis"

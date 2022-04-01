@@ -22,25 +22,23 @@
                 android:id="@+id/textViewCountry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="Paris"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp" />
 
             <TextView
                 android:id="@+id/textViewEvent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Best wine party ever"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_13ssp" />
 
             <TextView
                 android:id="@+id/textViewEventDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="20/12/2021"
                 android:textColor="@color/text_light_white"
                 android:textSize="@dimen/_11ssp" />
@@ -57,16 +55,15 @@
                 android:id="@+id/textViewAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:text="18 $"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp" />
 
             <TextView
                 android:id="@+id/textViewDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="20/12/2021"
                 android:textColor="@color/text_light_white"
                 android:textSize="@dimen/_11ssp" />

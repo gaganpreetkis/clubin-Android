@@ -18,13 +18,12 @@
 
     <TextView
         android:id="@+id/textViewName"
+        style="@style/semiBoldTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_5sdp"
-        android:fontFamily="@font/montserrat_alternates_semibold"
         android:text="Name Name"
-        android:textColor="@color/white"
         app:layout_constraintLeft_toRightOf="@+id/iv_profile"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,12 +68,11 @@
 
     <TextView
         android:id="@+id/textViewReview"
+        style="@style/semiBoldTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
-        android:fontFamily="@font/montserrat_alternates_semibold"
         android:text="I bought this book to understand about the thought process in Ansel's mind. But was disappointed to see that all that has been explained is about the stories behind those photographs."
-        android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
 </androidx.constraintlayout.widget.ConstraintLayout>

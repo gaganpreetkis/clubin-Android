@@ -44,10 +44,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_alternates_bold"
+                    style="@style/boldTextView"
                     android:gravity="center_horizontal"
                     android:text="Tâches restantes"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/_20ssp" />
 
                 <ImageView
@@ -64,10 +63,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:gravity="start"
                 android:text="Ajoutez les *informations importantes* relatives à votre compte pour établir une relation de confiance avec la communauté Clubin."
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <LinearLayout
@@ -109,7 +107,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/_5sdp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:gravity="start"
                                 android:text="Vérifier votre téléphone"
                                 android:textColor="@color/black"
@@ -146,7 +144,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/_5sdp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:gravity="start"
                                 android:text="Vérifier votre Email"
                                 android:textColor="@color/black"
@@ -189,7 +187,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/_5sdp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:gravity="start"
                                 android:text="Vérifier vos infos"
                                 android:textColor="@color/black"
@@ -228,7 +226,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/_5sdp"
-                                android:fontFamily="@font/montserrat_alternates_semibold"
+                                style="@style/semiBoldTextView"
                                 android:gravity="start"
                                 android:text="Vérification d'identité"
                                 android:textColor="@color/black"

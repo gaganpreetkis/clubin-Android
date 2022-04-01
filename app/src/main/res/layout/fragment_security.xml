@@ -37,10 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Données et Sécurité"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -74,9 +73,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Confidentialité"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp" />
 
             <ImageView
@@ -115,9 +113,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_semibold"
+                style="@style/semiBoldTextView"
                 android:text="Changer de mot de passe"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp" />
 
             <ImageView
@@ -143,9 +140,9 @@
                 android:layout_gravity="start"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="Supprimer mon compte"
-                android:textColor="#A3322D"
+                android:textColor="@color/dark_red"
                 android:textSize="@dimen/_16ssp" />
 
             <TextView
@@ -155,9 +152,8 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_regular"
+                style="@style/regularTextView"
                 android:text="En faisant cela, Clubin supprimera définitivement toutes informations vous concernant."
-                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
         </LinearLayout>
     </LinearLayout>

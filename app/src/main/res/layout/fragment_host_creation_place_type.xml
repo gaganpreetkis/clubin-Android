@@ -50,9 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="15dp"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="Définissez le type de lieu"
-            android:textColor="@color/white"
             android:textSize="22sp" />
 
         <com.google.android.material.chip.ChipGroup
@@ -122,9 +121,8 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="Autres"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <EditText
@@ -134,7 +132,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:ems="10"
-            android:fontFamily="@font/montserrat_alternates_medium"
+            style="@style/mediumTextView"
             android:hint="Précisez"
             android:inputType="textPersonName"
             android:textColor="@color/text_light_white" />
@@ -148,7 +146,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:background="@drawable/btn_red_grad_with_arrow"
-            android:fontFamily="@font/montserrat_alternates_semibold"
+            style="@style/semiBoldTextView"
             android:gravity="center"
             android:text="Continuer"
             android:textColor="@color/black"

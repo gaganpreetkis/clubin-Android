@@ -38,10 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="center_horizontal"
                 android:text="Mon RIB"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
             <View
@@ -60,10 +59,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Pays de domiciliation bancaire"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <EditText
@@ -82,10 +80,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Titulaire du compte"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <EditText
@@ -104,10 +101,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="Nom de l'agence"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <EditText
@@ -128,10 +124,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:enabled="false"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="IBAN"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <EditText
@@ -151,10 +146,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:fontFamily="@font/montserrat_alternates_bold"
+                style="@style/boldTextView"
                 android:gravity="start"
                 android:text="BIC"
-                android:textColor="@color/white"
                 android:textSize="@dimen/_11ssp" />
 
             <EditText

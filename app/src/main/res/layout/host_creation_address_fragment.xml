@@ -49,18 +49,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="15dp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="Choisissez l'adresse de\nvotre Event"
-            android:textColor="@color/white"
             android:textSize="22sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="15dp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:text="Déjà enregistrés"
-            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <androidx.recyclerview.widget.RecyclerView

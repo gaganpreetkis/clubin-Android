@@ -48,10 +48,9 @@
             android:layout_toLeftOf="@id/nxtIcon"
             android:layout_toRightOf="@id/imgViewCard"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            style="@style/boldTextView"
             android:maxLines="1"
             android:text="Big Event"
-            android:textColor="@color/white"
             android:textSize="18sp" />
 
         <androidx.cardview.widget.CardView
@@ -84,7 +83,7 @@
             android:layout_alignBottom="@id/personImgViewCard"
             android:gravity="center_vertical"
             android:ellipsize="end"
-            android:fontFamily="@font/montserrat_alternates_regular"
+            style="@style/regularTextView"
             android:maxLines="1"
             android:text="vous invite à cet évènement"
             android:textColor="@color/dull_white"
