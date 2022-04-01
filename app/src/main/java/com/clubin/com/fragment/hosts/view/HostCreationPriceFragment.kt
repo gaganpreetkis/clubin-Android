@@ -17,7 +17,7 @@ class HostCreationPriceFragment : BaseDataBindingFragment<com.clubin.com.databin
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var mContext: Context
-
+    private var count: Int? = 7
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -29,6 +29,7 @@ class HostCreationPriceFragment : BaseDataBindingFragment<com.clubin.com.databin
     override fun injectDaggerComponent() {
 
     }
+
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
@@ -56,6 +57,19 @@ class HostCreationPriceFragment : BaseDataBindingFragment<com.clubin.com.databin
                 it.removeFragment()
             }
         }
+        binding.ivAdd.setOnClickListener {
+            if (count!! < 8) {
+                count = count!! + 1
+            }
+            binding.tvPrize.text = count.toString() + " €"
+        }
+        binding.ivRemove.setOnClickListener {
+            if (count!! > 2) {
+                count = count!! - 1
+            }
+            binding.tvPrize.text = count.toString() + " €"
+        }
+
     }
 }
 /*

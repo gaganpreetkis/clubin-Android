@@ -13,7 +13,6 @@ import com.clubin.com.fragment.hosts.view.HostsFragment
 import com.clubin.com.fragment.profile.ProfileFragment
 import com.clubin.com.fragment.tickets.view.TicketsMainFragment
 
-
 class TabBarActivity : AppCompatActivity(), View.OnClickListener{
 
     lateinit var container: FrameLayout

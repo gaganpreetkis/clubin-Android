@@ -8,7 +8,6 @@ import com.clubin.com.fragment.base.BaseDataBindingFragment
 import com.clubin.com.fragment.profile.callbacks.ContactUsFragmentCallback
 import com.clubin.com.fragment.profile.views.*
 
-
 class ProfileFragment : BaseDataBindingFragment<ProfileFragmentDataBinding>
     (R.layout.fragment_profile),
     ContactUsFragmentCallback {

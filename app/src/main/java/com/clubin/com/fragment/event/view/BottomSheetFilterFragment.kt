@@ -52,7 +52,7 @@ class BottomSheetFilterFragment : BottomSheetDialogFragment() {
             dialog?.dismiss()
         }
 
-        var nightChip = false
+        var nightChip = true
         binding.llNights.setOnClickListener {
             if (nightChip) {
                 nightChip = false
@@ -65,7 +65,7 @@ class BottomSheetFilterFragment : BottomSheetDialogFragment() {
             }
         }
 
-        var disChip = false
+        var disChip = true
         binding.llDiscovery.setOnClickListener {
             if (disChip) {
                 disChip = false
@@ -78,7 +78,7 @@ class BottomSheetFilterFragment : BottomSheetDialogFragment() {
             }
         }
 
-        var vibesChip = false
+        var vibesChip = true
         binding.llVibes.setOnClickListener {
             if (vibesChip) {
                 vibesChip = false

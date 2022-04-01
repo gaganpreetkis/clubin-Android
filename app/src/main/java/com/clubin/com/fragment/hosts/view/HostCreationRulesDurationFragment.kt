@@ -1,7 +1,9 @@
 package com.clubin.com.fragment.hosts.view
 
+import android.app.TimePickerDialog
 import android.content.Context
 import android.os.Bundle
+import android.widget.TimePicker
 import androidx.recyclerview.widget.GridLayoutManager
 import com.clubin.com.R
 import com.clubin.com.databinding.HostCreationRulesDurationFragmentDataBinding
@@ -11,6 +13,7 @@ import com.clubin.com.fragment.hosts.adapter.HostCreationRuleAdapter
 import com.clubin.com.fragment.profile.adapter.UserEventAdapter
 import com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback
 import com.clubin.com.tabbar.TabBarActivity
+import java.util.*
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -75,7 +78,64 @@ class HostCreationRulesDurationFragment : BaseDataBindingFragment<HostCreationRu
                 it.removeFragment()
             }
         }
+        binding.tvStartingTime.setOnClickListener {
+            showTimePicker(1)
+        }
+        binding.tvEndingTime.setOnClickListener {
+            showTimePicker(2)
+        }
 
+    }
+
+    private fun showTimePicker(type: Int) {
+        val mTimePicker: TimePickerDialog
+        val mCurrentTime = Calendar.getInstance()
+        val hour = mCurrentTime.get(Calendar.HOUR_OF_DAY)
+        val minute = mCurrentTime.get(Calendar.MINUTE)
+
+        mTimePicker = TimePickerDialog(requireActivity(), object : TimePickerDialog.OnTimeSetListener {
+            override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
+
+                val formattedTime: String = when {
+                    hourOfDay == 0 -> {
+                        if (minute < 10) {
+                            "${hourOfDay + 12}:0${minute} AM"
+                        } else {
+                            "${hourOfDay + 12}:${minute} AM"
+                        }
+                    }
+                    hourOfDay > 12 -> {
+                        if (minute < 10) {
+                            "${hourOfDay - 12}:0${minute} PM"
+                        } else {
+                            "${hourOfDay - 12}:${minute} PM"
+                        }
+                    }
+                    hourOfDay == 12 -> {
+                        if (minute < 10) {
+                            "${hourOfDay}:0${minute} PM"
+                        } else {
+                            "${hourOfDay}:${minute} PM"
+                        }
+                    }
+                    else -> {
+                        if (minute < 10) {
+                            "${hourOfDay}:${minute} AM"
+                        } else {
+                            "${hourOfDay}:${minute} AM"
+                        }
+                    }
+                }
+
+                if (type == 1) {
+                    binding.tvStartingTime.text = formattedTime
+
+                } else {
+                    binding.tvEndingTime.text = formattedTime
+                }
+            }
+        }, hour, minute, false)
+        mTimePicker.show()
     }
 
     fun addAdapter() {

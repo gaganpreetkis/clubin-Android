@@ -91,12 +91,12 @@
 
                 <ImageView
                     android:id="@+id/plusImage"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_below="@id/placeholderImage"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="-30dp"
-                    android:layout_marginEnd="@dimen/_100sdp"
+                    android:layout_marginEnd="@dimen/_85sdp"
                     android:src="@drawable/plus_circle_fill"
                     app:tint="@color/white" />
 

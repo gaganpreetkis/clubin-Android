@@ -19,7 +19,7 @@ class HostCreationPeopleFragment : Fragment(), View.OnClickListener {
     val TAG = this::class.java.simpleName
     private lateinit var vm: HostCreationPeopleViewModel
     lateinit var binding: HostCreationPeopleFragmentBinding
-
+    private var peopleCount: Int? = 2
     override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
@@ -40,7 +40,8 @@ class HostCreationPeopleFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        arrayOf(binding.backBtn, binding.closeBtn, binding.continueBtn).forEach { it.setOnClickListener(this) }
+        arrayOf(binding.backBtn, binding.closeBtn, binding.continueBtn,
+            binding.ivAdd, binding.ivRemove).forEach { it.setOnClickListener(this) }
     }
 
     override fun onClick(p0: View?) {
@@ -55,6 +56,18 @@ class HostCreationPeopleFragment : Fragment(), View.OnClickListener {
                 (activity as TabBarActivity).let {
                     it.addFragment(HostCreationAddressFragment(), true)
                 }
+            }
+            binding.ivAdd -> {
+                if (peopleCount!! < 10) {
+                    peopleCount = peopleCount!! + 1
+                }
+                binding.placesNumTxt.text = peopleCount.toString()
+            }
+            binding.ivRemove -> {
+                if (peopleCount!! > 2) {
+                    peopleCount = peopleCount!! - 1
+                }
+                binding.placesNumTxt.text = peopleCount.toString()
             }
         }
     }

@@ -61,9 +61,8 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_height="@dimen/_110sdp"
                 android:layout_gravity="center">
-
 
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -71,21 +70,19 @@
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/dummy_people" />
 
                 <ImageView
-                    android:visibility="gone"
                     android:id="@+id/iv_edit"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
                     android:src="@drawable/ic_edit_round"
-                    android:textSize="@dimen/_16ssp"
+                    android:visibility="visible"
                     app:tint="@color/darkBlue" />
 
             </RelativeLayout>
@@ -105,6 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
                 android:orientation="vertical">
 
                 <TextView
@@ -143,14 +141,14 @@
 
                     <EditText
                         android:id="@+id/editTextFirstName"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView_firstName"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:gravity="start"
                         android:fontFamily="@font/montserrat_alternates_medium"
+                        android:gravity="start"
                         android:inputType="textPersonName"
                         android:textColor="@color/white" />
 
@@ -213,8 +211,8 @@
                         android:layout_below="@+id/textView_lastName"
                         android:layout_gravity="start"
                         android:ems="10"
-                        android:gravity="end"
                         android:fontFamily="@font/montserrat_alternates_medium"
+                        android:gravity="end"
                         android:inputType="textPersonName"
                         android:textColor="@color/white" />
 
@@ -264,8 +262,7 @@
                         android:ems="10"
                         android:fontFamily="@font/montserrat_alternates_medium"
                         android:inputType="text"
-                        android:textColor="@color/white"
-                         />
+                        android:textColor="@color/white" />
 
                 </RelativeLayout>
 
@@ -311,9 +308,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView_bio"
                         android:layout_gravity="start"
-                        android:fontFamily="@font/montserrat_alternates_medium"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
+                        android:fontFamily="@font/montserrat_alternates_medium"
                         android:inputType="text"
                         android:textColor="@color/white" />
 
@@ -374,8 +371,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:inputType="text"
                         android:fontFamily="@font/montserrat_alternates_medium"
+                        android:inputType="text"
                         android:textColor="@color/white" />
 
                 </RelativeLayout>
@@ -424,8 +421,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:inputType="text"
                         android:fontFamily="@font/montserrat_alternates_medium"
+                        android:inputType="text"
                         android:textColor="@color/white" />
 
                 </RelativeLayout>
@@ -529,8 +526,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp">
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
 
                     <TextView
                         android:id="@+id/textView_sex"
@@ -564,8 +561,8 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:ems="10"
-                        android:hint="Homme"
                         android:fontFamily="@font/montserrat_alternates_medium"
+                        android:hint="Homme"
                         android:inputType="text"
                         android:textColor="@color/white" />
 

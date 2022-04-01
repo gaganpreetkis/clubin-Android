@@ -11,8 +11,8 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:background="@color/black"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,10 +115,10 @@
                     android:id="@+id/editTextTagDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
                     android:fontFamily="@font/montserrat_alternates_medium"
                     android:text="Quels tags correspondent le mieux au(x) thème(s) de votre Event ?"
-                    android:textColor="@color/text_light_white" />
+                    android:textColor="@color/text_light_white"
+                    android:textSize="12sp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -159,44 +159,63 @@
                     android:id="@+id/chip_group"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    app:singleSelection="true">
+                    android:visibility="visible">
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Appartement"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Appartement" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Maison"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Maison" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Villa"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Villa" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Lieu d/'exception"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Lieu d/'exception" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Appartement" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Maison" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Villa" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Lieu d/'exception" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <androidx.cardview.widget.CardView
@@ -237,44 +256,63 @@
                     android:id="@+id/chip_group_vibe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    app:singleSelection="true">
+                    android:visibility="visible">
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Appartement"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Appartement" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Maison"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Maison" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Villa"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Villa" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Lieu d/'exception"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Lieu d/'exception" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Appartement" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Maison" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Villa" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Lieu d/'exception" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <androidx.cardview.widget.CardView
@@ -315,54 +353,73 @@
                     android:id="@+id/chip_group_discovery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    app:singleSelection="true">
+                    android:visibility="visible">
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Appartement"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Appartement" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Maison"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Maison" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Villa"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Villa" />
 
                     <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        style="@style/chip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_alternates_bold"
-                        android:text="Lieu d/'exception"
-                        android:textColor="@color/white"
-                        app:chipBackgroundColor="@color/black_background" />
+                        android:text="Lieu d/'exception" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Appartement" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Maison" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Villa" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_alternates_bold"
+                        android:text="Lieu d/'exception" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
                     android:id="@+id/continueBtn"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginVertical="30dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/btn_red_grad_with_arrow"
                     android:fontFamily="@font/montserrat_alternates_semibold"
                     android:gravity="center"

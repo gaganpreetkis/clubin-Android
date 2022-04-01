@@ -48,7 +48,7 @@
                                 android:id="@+id/iv_singer"
                                 android:layout_width="@dimen/_80sdp"
                                 android:layout_height="@dimen/_80sdp"
-                                android:src="@mipmap/ic_launcher" />
+                                android:src="@drawable/dummy_people" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -128,7 +128,7 @@
                                 android:layout_marginTop="@dimen/_5sdp"
                                 android:layout_marginRight="@dimen/_10sdp"
                                 android:background="@drawable/solid_dark_blue"
-                                android:drawableRight="@drawable/ic_note_icon"
+                                android:drawableRight="@drawable/ic_sticky_note"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:drawableTint="@color/white"
                                 android:fontFamily="@font/montserrat_alternates_semibold"
@@ -425,7 +425,6 @@
                     android:layout_height="wrap_content">
 
                     <include layout="@layout/custom_row_review" />
-
 
                 </LinearLayout>
             </LinearLayout>

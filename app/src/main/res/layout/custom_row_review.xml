@@ -9,18 +9,19 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profile"
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/dummy_people"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/montserrat_alternates_semibold"
         android:text="Name Name"
         android:textColor="@color/white"

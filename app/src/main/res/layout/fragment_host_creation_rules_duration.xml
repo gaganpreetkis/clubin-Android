@@ -89,6 +89,7 @@
                         app:cardCornerRadius="@dimen/_5sdp">
 
                         <TextView
+                            android:id="@+id/tv_starting_time"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -126,6 +127,7 @@
                         app:cardCornerRadius="@dimen/_5sdp">
 
                         <TextView
+                            android:id="@+id/tv_ending_time"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

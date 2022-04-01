@@ -72,6 +72,7 @@
                     android:layout_marginVertical="@dimen/_10sdp">
 
                     <ImageView
+                        android:id="@+id/iv_remove"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
@@ -80,6 +81,7 @@
                         app:tint="@color/ColorLimeLight" />
 
                     <TextView
+                        android:id="@+id/tv_prize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -90,6 +92,7 @@
                         android:textSize="70sp" />
 
                     <ImageView
+                        android:id="@+id/iv_add"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
