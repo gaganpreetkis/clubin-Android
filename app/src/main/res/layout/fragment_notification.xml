@@ -197,6 +197,7 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:text="Places"
+                        style="@style/semiBoldTextView"
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
@@ -283,7 +284,7 @@
                             android:layout_gravity="start"
                             android:layout_weight="1"
                             style="@style/semiBoldTextView"
-                            android:text="sms"
+                            android:text="Sms"
                             android:textSize="@dimen/_14ssp" />
 
                         <ImageView

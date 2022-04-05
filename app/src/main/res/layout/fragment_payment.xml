@@ -76,8 +76,7 @@
                     android:layout_weight="1"
                     style="@style/semiBoldTextView"
                     android:text="Virements"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_16ssp" />
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -111,7 +110,7 @@
                     android:layout_weight="1"
                     style="@style/semiBoldTextView"
                     android:text="Historique des paiements"
-                    android:textSize="@dimen/_16ssp" />
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -131,7 +130,7 @@
             <LinearLayout
                 android:id="@+id/ll_préférences"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_40sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:background="@color/black_background"
@@ -146,7 +145,7 @@
                     android:layout_weight="1"
                     style="@style/semiBoldTextView"
                     android:text="Préférences de paiement / RIB"
-                    android:textSize="@dimen/_16ssp" />
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"

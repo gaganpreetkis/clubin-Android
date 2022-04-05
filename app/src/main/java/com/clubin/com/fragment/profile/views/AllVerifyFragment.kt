@@ -70,7 +70,9 @@ title: Tâches restantes
 Ajoutez les *informations importantes* relatives à votre compte pour établir une relation de confiance avec la communauté Clubin.
 --------style: .Medium, ofSize: 12
 
-1. image: "phone", text: "Vérifier votre téléphone",  foregroundColor: Color.black, backgroundColor: Color.white, width: 120, height: 110, font: .SemiBold
+1. image: "phone", text: "Vérifier votre téléphone",
+ foregroundColor: Color.black, backgroundColor: Color.white,
+ width: 120, height: 110, font: .SemiBold
 -----onclick : AccountVerificationSMSView
 ----fontSize: CGFloat = 16
 2. image: "paperplane", text: "Vérifier votre Email",  foregroundColor: Color.black, backgroundColor: Color.white, width: 120, height: 110, font: .SemiBold

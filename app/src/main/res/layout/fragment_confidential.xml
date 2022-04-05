@@ -30,17 +30,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:src="@drawable/ic_arrow_back_white"
-                android:textSize="@dimen/_16ssp" />
+                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
-                style="@style/boldTextView"
+                style="@style/extraBoldTextView"
                 android:gravity="center_horizontal"
                 android:text="Confidentialité"
-                android:textSize="@dimen/_20ssp" />
+                android:textSize="28sp" />
 
             <View
                 android:layout_width="@dimen/_30sdp"
@@ -73,18 +73,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/semiBoldTextView"
+                        style="@style/mediumTextView"
                         android:gravity="start"
                         android:text="@string/message_1"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:gravity="start"
                         android:text="@string/message_2"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -109,9 +109,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_weight="1"
-                            style="@style/semiBoldTextView"
+                            style="@style/mediumTextView"
                             android:text="Localisation"
-                            android:textSize="@dimen/_14ssp" />
+                            android:textSize="15sp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -126,10 +126,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        style="@style/semiBoldTextView"
+                        style="@style/mediumTextView"
                         android:text="Pour activer/désactiver la localisation, rendez-vous dans Réglages > Clubin > Notifications."
                         android:textColor="@color/link_green"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -137,10 +137,10 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_weight="1"
-                        style="@style/semiBoldTextView"
+                        style="@style/mediumTextView"
                         android:text="EN ACTIVANT LA LOCALISATION VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -155,9 +155,9 @@
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_weight="1"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="L'utilisation des données de géolocalisation précise"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
 
 
                 </LinearLayout>
@@ -186,7 +186,7 @@
                             android:layout_weight="1"
                             style="@style/semiBoldTextView"
                             android:text="Data"
-                            android:textSize="@dimen/_14ssp" />
+                            android:textSize="15sp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -203,10 +203,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/semiBoldTextView"
+                        style="@style/mediumTextView"
                         android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -220,9 +220,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Analysez activement les caractéristiques du terminal pour l'identification"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -236,9 +236,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Créer un profil pour afficher un contenu personnalisé"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -252,9 +252,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Stocker et/ou accéder accéder à des informations sur un terminal"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -282,7 +282,7 @@
                             android:layout_weight="1"
                             style="@style/semiBoldTextView"
                             android:text="Marketing"
-                            android:textSize="@dimen/_14ssp" />
+                            android:textSize="15sp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -299,10 +299,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/semiBoldTextView"
+                        style="@style/mediumTextView"
                         android:text="EN ACCEPTANT NOTRE RGPD VOUS AUTORISEZ"
                         android:textColor="@color/text_light_white"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -316,9 +316,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Développer et améliorer les produits"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -332,9 +332,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Mesurer les performances du contenu"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -348,9 +348,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/_10sdp"
-                        style="@style/regularTextView"
+                        style="@style/mediumTextView"
                         android:text="Sélectionner du contenu personnalisé"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 

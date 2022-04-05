@@ -85,9 +85,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         style="@style/boldTextView"
-                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
                         android:text="11 Events"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="14sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.cardview.widget.CardView>
@@ -119,9 +119,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         style="@style/boldTextView"
-                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
                         android:text="4.6 - moyenne"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="14sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.cardview.widget.CardView>
         </androidx.appcompat.widget.LinearLayoutCompat>

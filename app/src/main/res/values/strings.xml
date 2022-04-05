@@ -328,9 +328,9 @@
     <string name="password_reset_link">Centre d\'aide</string>
     <string name="password_reset_details">
        <font color="#FFFFFF">Vous n\'avez plus accès à cet e-mail ?</font>
-       <font color="#3C3C3C">\nMerci de contacter notre</font>
-       <font color="#ffffff">Service Client</font>
-       <font color="#3C3C3C">depuis le</font>
+       <font color="#FFFFFF">\nMerci de contacter notre</font>
+       <font color="#FFFFFF">Service Client</font>
+       <font color="#FFFFFF">depuis le</font>
        <font color="#4C9FBE">\nCentre d\'aide</font>
     </string>
     <string name="password_reset_placeholder">Nouveau mot de passe</string>
@@ -341,7 +341,7 @@
     <string name="password_code_message">Un code de reinitialisation vous a etait envoye par email.</string>
     <string name="password_code_details">
            <font color="#FFFFFF">Vous n\'avez pas reçu de code ?</font>
-       <font color="#3C3C3C"> \nEssayer d\'actualiser votre boite mail et de vérifier vos spams.
+       <font color="#FFFFFF"> \nEssayer d\'actualiser votre boite mail et de vérifier vos spams.
            \nSi le problème persiste, merci de contacter notre.</font>
     <font color="#4C9FBE">\nCentre d\'aide</font></string>
     <string name="password_code_placeholder">Code</string>

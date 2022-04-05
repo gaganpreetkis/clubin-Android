@@ -72,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="12sp"
         android:text="I bought this book to understand about the thought process in Ansel's mind. But was disappointed to see that all that has been explained is about the stories behind those photographs."
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_profile" />

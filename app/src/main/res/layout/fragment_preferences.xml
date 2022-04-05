@@ -90,7 +90,7 @@
                     android:layout_weight="1"
                     style="@style/semiBoldTextView"
                     android:text="Compte bancaire (par défaut)"
-                    android:textSize="@dimen/_15ssp" />
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
                     android:layout_weight="1"
                     style="@style/semiBoldTextView"
                     android:text="Paypal (arrive bientôt)"
-                    android:textSize="@dimen/_15ssp" />
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"

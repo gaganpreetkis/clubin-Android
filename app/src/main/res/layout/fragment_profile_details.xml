@@ -87,7 +87,7 @@
                                 android:layout_height="wrap_content"
                                 style="@style/boldTextView"
                                 android:text="ugo_l"
-                                android:textSize="@dimen/_22ssp" />
+                                android:textSize="22sp" />
 
                             <TextView
                                 android:id="@+id/textViewAddress"
@@ -99,7 +99,7 @@
                                 android:drawableTint="@color/white"
                                 style="@style/semiBoldTextView"
                                 android:text="Ugo Lafosse, 22"
-                                android:textSize="@dimen/_16ssp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:id="@+id/textViewProfileEdit"
@@ -116,7 +116,7 @@
                                 android:padding="@dimen/_8sdp"
                                 android:text="Modifier mon profil "
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/_12ssp" />
+                                android:textSize="12sp" />
 
                             <TextView
                                 android:id="@+id/tvVerify"
@@ -132,7 +132,7 @@
                                 style="@style/semiBoldTextView"
                                 android:padding="@dimen/_8sdp"
                                 android:text="Tâches restantes  "
-                                android:textSize="@dimen/_12ssp" />
+                                android:textSize="12sp" />
 
                             <ImageView
                                 android:id="@+id/imageViewCancel"
@@ -167,7 +167,7 @@
                     android:layout_margin="@dimen/_5sdp"
                     style="@style/semiBoldTextView"
                     android:text="BIO: Digital goodies designer @pixsellz. Everything is designed."
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/topView" />
@@ -296,17 +296,17 @@
                         style="@style/semiBoldTextView"
                         android:gravity="start"
                         android:text="Arrive bientôt"
-                        android:textSize="@dimen/_14ssp"/>
+                        android:textSize="16sp"/>
 
                     <TextView
                         android:id="@+id/textViewMore1"
+                        style="@style/semiBoldTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        style="@style/semiBoldTextView"
                         android:text="Voir plus d'évènements"
                         android:textColor="@color/link_green"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -329,17 +329,17 @@
                         style="@style/semiBoldTextView"
                         android:gravity="start"
                         android:text="Organisés"
-                        android:textSize="@dimen/_14ssp"/>
+                        android:textSize="16sp"/>
 
                     <TextView
                         android:id="@+id/textViewMore2"
+                        style="@style/semiBoldTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        style="@style/semiBoldTextView"
                         android:text="Voir plus d'évènements"
                         android:textColor="@color/link_green"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -363,7 +363,7 @@
                         style="@style/semiBoldTextView"
                         android:gravity="start"
                         android:text="Participés"
-                        android:textSize="@dimen/_14ssp"/>
+                        android:textSize="16sp"/>
 
                     <TextView
                         android:id="@+id/textViewMore3"
@@ -373,7 +373,7 @@
                         style="@style/semiBoldTextView"
                         android:text="Voir plus d'évènements"
                         android:textColor="@color/link_green"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -396,7 +396,7 @@
                         style="@style/semiBoldTextView"
                         android:gravity="start"
                         android:text="Avis"
-                        android:textSize="@dimen/_14ssp"/>
+                        android:textSize="16sp"/>
 
                     <TextView
                         android:id="@+id/textViewMore4"
@@ -406,7 +406,7 @@
                         style="@style/semiBoldTextView"
                         android:text="Voir plus d'évènements"
                         android:textColor="@color/link_green"
-                        android:textSize="@dimen/_12ssp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
                 <LinearLayout

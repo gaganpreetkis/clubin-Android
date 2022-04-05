@@ -9,7 +9,7 @@ import com.clubin.com.R
 class PasswordResetCodeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_password_reset_code_actitvity);
+        setContentView(R.layout.activity_password_reset_code);
 
         val button: Button = findViewById(R.id.button)
         button.setOnClickListener {

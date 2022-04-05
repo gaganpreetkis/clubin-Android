@@ -33,7 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:src="@drawable/ic_arrow_back_white"
-                android:textSize="@dimen/_16ssp" />
+                 />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                         style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="Ressources et Conseils"
-                        android:textSize="@dimen/_18ssp" />
+                        android:textSize="22sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -104,9 +104,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 style="@style/boldTextView"
-                                android:gravity="start"
+                                android:gravity="center"
                                 android:text="Gestes de premiers secours"
-                                android:textSize="@dimen/_18ssp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -124,7 +124,7 @@
                                 style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Vol - Casse ?"
-                                android:textSize="@dimen/_18ssp" />
+                                android:textSize="20sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
                                 style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Que faire en cas de Vol ou Casse ?"
-                                android:textSize="@dimen/_12ssp" />
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -157,7 +157,7 @@
                                 style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Incendie"
-                                android:textSize="@dimen/_18ssp" />
+                                android:textSize="20sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -165,7 +165,7 @@
                                 style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Les mesures à suivre"
-                                android:textSize="@dimen/_12ssp" />
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -184,7 +184,7 @@
                                 style="@style/boldTextView"
                                 android:gravity="start"
                                 android:text="Litiges / Violence"
-                                android:textSize="@dimen/_18ssp" />
+                                android:textSize="20sp"  />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                                 style="@style/mediumTextView"
                                 android:gravity="start"
                                 android:text="Que faire en cas de problème avec une/des personnes dans la soirée ?"
-                                android:textSize="@dimen/_12ssp" />
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -213,7 +213,7 @@
                         style="@style/boldTextView"
                         android:gravity="center_horizontal"
                         android:text="Centre de sécurité"
-                        android:textSize="@dimen/_18ssp" />
+                        android:textSize="22sp" />
 
                     <LinearLayout
                         android:layout_width="@dimen/_130sdp"
@@ -231,7 +231,7 @@
                             style="@style/boldTextView"
                             android:gravity="center"
                             android:text="La Sécurité selon Clubin"
-                            android:textSize="@dimen/_18ssp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -239,7 +239,7 @@
                             style="@style/mediumTextView"
                             android:gravity="start"
                             android:text="Obtenez l’assistance, les outils et les informations dont vous avez besoin"
-                            android:textSize="@dimen/_12ssp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
                     <View
                         android:layout_width="match_parent"
