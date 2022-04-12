@@ -8,14 +8,14 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.NotificationFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.NotificationFragmentCallback" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".fragment.profile.NotificationFragment">
+        tools:context=".ui.fragment.profile.NotificationFragment">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"

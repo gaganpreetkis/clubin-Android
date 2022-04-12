@@ -6,7 +6,7 @@
 
         <variable
             name="ViewModel"
-            type="com.clubin.com.auth.signup.viewmodel.SignupViewModel" />
+            type="com.clubin.com.ui.auth.signup.viewmodel.SignupVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

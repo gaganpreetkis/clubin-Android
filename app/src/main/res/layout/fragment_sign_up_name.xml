@@ -8,14 +8,14 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".auth.passwordreset.view.PasswordResetEmailActivity">
+        tools:context=".ui.auth.passwordreset.view.PasswordResetEmailActivity">
 
 
         <TextView

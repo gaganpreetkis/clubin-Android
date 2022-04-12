@@ -5,7 +5,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.fragment.tickets.viewmodel.TicketReservationViewModel" />
+            type="com.clubin.com.ui.fragment.tickets.viewmodel.TicketReservationViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView

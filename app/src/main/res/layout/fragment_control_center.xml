@@ -8,14 +8,14 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.ControlCenterFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.ControlCenterFragmentCallback" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".fragment.profile.NotificationFragment">
+        tools:context=".ui.fragment.profile.NotificationFragment">
 
         <LinearLayout
             android:id="@+id/view_title"

@@ -8,14 +8,14 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.PaymentHistoryFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.PaymentHistoryFragmentCallback" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".fragment.profile.views.ConfidentialFragment">
+        tools:context=".ui.fragment.profile.views.ConfidentialFragment">
 
         <LinearLayout
             android:id="@+id/ll_title"

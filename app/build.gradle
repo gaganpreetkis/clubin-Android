@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+
 }
 
 android {
@@ -62,10 +65,27 @@ dependencies {
     implementation "com.tbuonomo:dotsindicator:$dotIndicatorVersion"
     //circle image
     implementation "de.hdodenhof:circleimageview:$circleImageViewVersion"
-//    implementation 'com.applandeo:material-calendar-view:1.7.0'
 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    //calendar
     implementation 'com.github.kizitonwose:CalendarView:1.0.4'
-
+    //image slider
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$retrofitInterceptorVersion"
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$project.retrofitVersion"
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+
+    //share preference
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+    
+    // hilt
+    implementation 'com.google.dagger:hilt-android:2.41'
+    kapt 'com.google.dagger:hilt-compiler:2.41'
+
 }

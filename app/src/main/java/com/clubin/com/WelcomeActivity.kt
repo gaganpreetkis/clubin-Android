@@ -4,9 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import com.clubin.com.auth.login.view.LoginActivity
-import com.clubin.com.auth.onboarding.view.OnboardingActivity
+import com.clubin.com.ui.auth.login.view.LoginActivity
+import com.clubin.com.ui.auth.onboarding.view.OnboardingActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

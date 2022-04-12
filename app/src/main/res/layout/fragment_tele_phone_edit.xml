@@ -8,7 +8,7 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.AccountEditFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback" />
     </data>
 
     <LinearLayout

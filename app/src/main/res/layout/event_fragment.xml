@@ -6,7 +6,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.fragment.event.viewmodel.EventViewModel" />
+            type="com.clubin.com.ui.fragment.event.viewmodel.EventViewModel" />
     </data>
 
     <LinearLayout

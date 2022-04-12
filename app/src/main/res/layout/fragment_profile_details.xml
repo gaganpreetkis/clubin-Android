@@ -6,14 +6,14 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.ProfileDetailsFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.ProfileDetailsFragmentCallback" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".fragment.profile.ProfileDetailsFragment">
+        tools:context=".ui.fragment.profile.ProfileDetailsFragment">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.fragment.hosts.model.HostCreationAddressDetailsViewModel" />
+            type="com.clubin.com.ui.fragment.hosts.model.HostCreationAddressDetailsViewModel" />
     </data>
 
     <LinearLayout

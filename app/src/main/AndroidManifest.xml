@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.clubin.com">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,38 +13,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CLUBIN">
         <activity
-            android:name="com.clubin.com.auth.signup.SignUpActivity"
+            android:name="com.clubin.com.ui.auth.signup.SignUpActivity"
             android:exported="false"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".fragment.profile.AccountEditActivity"
+            android:name="com.clubin.com.ui.fragment.profile.AccountEditActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name="com.clubin.com.auth.login.view.LoginActivity"
+            android:name="com.clubin.com.ui.auth.login.view.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name="com.clubin.com.auth.onboarding.view.OnboardingActivity"
+            android:name="com.clubin.com.ui.auth.onboarding.view.OnboardingActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
 
         <activity
-            android:name="com.clubin.com.auth.passwordreset.view.PasswordResetNewPasswordActivity"
+            android:name="com.clubin.com.ui.auth.passwordreset.view.PasswordResetNewPasswordActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name="com.clubin.com.auth.passwordreset.view.PasswordResetCodeActivity"
+            android:name="com.clubin.com.ui.auth.passwordreset.view.PasswordResetCodeActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name="com.clubin.com.auth.passwordreset.view.PasswordResetEmailActivity"
+            android:name="com.clubin.com.ui.auth.passwordreset.view.PasswordResetEmailActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.clubin.com.WelcomeActivity"
             android:exported="true"
             android:theme="@style/Theme.CLUBIN.NoActionBar">
          <intent-filter>
@@ -51,7 +54,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tabbar.TabBarActivity"
+            android:name="com.clubin.com.ui.tabbar.TabBarActivity"
             android:exported="true"
             android:theme="@style/Theme.CLUBIN.NoActionBar">
 
@@ -62,7 +65,7 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".themeparty.view.ThemePartyActivity"
+            android:name="com.clubin.com.ui.themeparty.view.ThemePartyActivity"
             android:exported="false"
             android:theme="@style/Theme.CLUBIN.NoActionBar" />
     </application>

@@ -7,7 +7,7 @@
 
         <variable
             name="callback"
-            type="com.clubin.com.fragment.profile.callbacks.RateReviewFragmentCallback" />
+            type="com.clubin.com.ui.fragment.profile.callbacks.RateReviewFragmentCallback" />
     </data>
 
     <LinearLayout
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:background="@color/black"
         android:orientation="vertical"
-        tools:context=".fragment.profile.RateReviewFragment">
+        tools:context=".ui.fragment.profile.RateReviewFragment">
 
 
         <LinearLayout

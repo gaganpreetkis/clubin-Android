@@ -6,7 +6,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.fragment.hosts.viewmodel.HostCreationFinalizeEventViewModel" />
+            type="com.clubin.com.ui.fragment.hosts.viewmodel.HostCreationFinalizeEventViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView

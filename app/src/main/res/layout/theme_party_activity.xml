@@ -6,7 +6,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.themeparty.viewmodel.ThemePartyViewModel" />
+            type="com.clubin.com.ui.themeparty.viewmodel.ThemePartyViewModel" />
     </data>
 
     <RelativeLayout

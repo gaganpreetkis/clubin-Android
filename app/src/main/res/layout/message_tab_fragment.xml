@@ -6,7 +6,7 @@
 
         <variable
             name="mview"
-            type="com.clubin.com.fragment.message.viewmodel.MessageTabViewModel" />
+            type="com.clubin.com.ui.fragment.message.viewmodel.MessageTabViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
