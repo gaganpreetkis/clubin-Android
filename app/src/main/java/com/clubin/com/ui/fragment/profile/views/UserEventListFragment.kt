@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.clubin.com.R
 import com.clubin.com.databinding.UserEventListFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.event.model.EventModel
 import com.clubin.com.ui.fragment.profile.adapter.UserEventAdapter
 import com.clubin.com.ui.fragment.profile.callbacks.ContactUsFragmentCallback

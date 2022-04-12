@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import com.clubin.com.R
 import com.clubin.com.databinding.ProfileFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.ContactUsFragmentCallback
 import com.clubin.com.ui.fragment.profile.views.*
 

@@ -1,4 +1,4 @@
-package com.clubin.com.responses
+package com.clubin.com.ui.auth.login.model
 
 data class TokenResponse(
     val access_token: String?,

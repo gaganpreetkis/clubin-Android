@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.clubin.com.R
 import com.clubin.com.databinding.UserReviewFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.event.model.EventModel
 import com.clubin.com.ui.fragment.profile.adapter.UserReviewAdapter
 import com.clubin.com.ui.fragment.profile.callbacks.ContactUsFragmentCallback

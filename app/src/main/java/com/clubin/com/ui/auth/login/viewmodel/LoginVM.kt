@@ -3,11 +3,11 @@ package com.clubin.com.ui.auth.login.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.clubin.com.ui.base.BaseViewModel
+import com.clubin.com.base.BaseViewModel
 import com.clubin.com.network.Resource
-import com.clubin.com.repository.AuthRepository
-import com.clubin.com.responses.LoginResponse
-import dagger.hilt.android.AndroidEntryPoint
+import com.clubin.com.ui.auth.signup.model.repo.RegisterRepository
+import com.clubin.com.ui.auth.login.model.LoginResponse
+import com.clubin.com.ui.auth.login.model.repo.AuthRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

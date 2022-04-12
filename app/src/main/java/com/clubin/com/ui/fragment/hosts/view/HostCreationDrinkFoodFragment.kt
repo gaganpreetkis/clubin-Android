@@ -7,7 +7,7 @@ import android.widget.SeekBar
 import androidx.core.content.ContextCompat
 import com.clubin.com.R
 import com.clubin.com.databinding.HostCreationDrinkFoodFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback
 import com.clubin.com.ui.tabbar.TabBarActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior

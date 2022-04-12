@@ -1,4 +1,4 @@
-package com.clubin.com.ui.base
+package com.clubin.com.base
 
 import android.app.Dialog
 import android.os.Bundle

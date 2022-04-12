@@ -3,7 +3,7 @@ package com.clubin.com.ui.fragment.profile.views
 import android.os.Bundle
 import com.clubin.com.R
 import com.clubin.com.databinding.ControlCenterFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.ControlCenterFragmentCallback
 
 private const val ARG_PARAM1 = "param1"

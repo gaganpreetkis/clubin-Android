@@ -42,10 +42,10 @@ class LoginActivity : AppCompatActivity() {
             when (it) {
                 is Resource.Success -> {
                     lifecycleScope.launch {
-                        viewModel.saveAccessTokens(
+                      /*  viewModel.saveAccessTokens(
                             it.value.user.access_token!!,
                             it.value.user.refresh_token!!
-                        )
+                        )*/
                         // requireActivity().startNewActivity(HomeActivity::class.java)
                     }
                 }

@@ -1,8 +1,8 @@
 package com.clubin.com.network
 
 import android.content.Context
-import com.clubin.com.repository.BaseRepository
-import com.clubin.com.responses.TokenResponse
+import com.clubin.com.base.BaseRepository
+import com.clubin.com.ui.auth.login.model.TokenResponse
 import com.clubin.com.utills.UserPreferences
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking

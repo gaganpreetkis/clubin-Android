@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.clubin.com.R
 import com.clubin.com.databinding.AccountEditFragmentOnlyDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback
 
 

@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.clubin.com.R
 import com.clubin.com.ui.auth.passwordreset.view.PasswordResetCodeActivity
 import com.clubin.com.databinding.PasswordChangeFragmentDataBinding
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.PasswordChangeFragmentCallback
 
 private const val ARG_PARAM1 = "param1"

@@ -1,4 +1,4 @@
-package com.clubin.com.repository
+package com.clubin.com.base
 
 import com.clubin.com.network.BaseApi
 import com.clubin.com.network.SafeApiCall

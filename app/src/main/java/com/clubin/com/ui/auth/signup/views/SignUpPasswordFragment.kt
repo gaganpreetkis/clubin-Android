@@ -10,7 +10,7 @@ import com.clubin.com.R
 import com.clubin.com.databinding.SignUpPasswordFragmentDataBinding
 import com.clubin.com.network.Resource
 import com.clubin.com.ui.auth.login.model.User
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback
 import com.clubin.com.ui.auth.login.view.LoginActivity
 import com.clubin.com.ui.auth.signup.viewmodel.SignupVM
@@ -45,7 +45,7 @@ class SignUpPasswordFragment : BaseDataBindingFragment<SignUpPasswordFragmentDat
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.registerResponse.observe(viewLifecycleOwner, Observer {
-           // binding.progressbar.visible(it is Resource.Loading)
+            // binding.progressbar.visible(it is Resource.Loading)
             when (it) {
                 is Resource.Success -> {
                     lifecycleScope.launch {
@@ -70,11 +70,10 @@ class SignUpPasswordFragment : BaseDataBindingFragment<SignUpPasswordFragmentDat
 
     override fun onDataBindingCreated() {
 
-
         binding.button.setOnClickListener {
             var password = binding.editTextPassword.text.toString().trim()
             user?.let { it1 ->
-                viewModel.register(it1.first_name + it1.last_name,
+                viewModel.register(it1.first_name + " " + it1.last_name,
                     it1.age, it1.email, password)
             }
 

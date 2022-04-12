@@ -1,7 +1,6 @@
-package com.clubin.com.ui.base
+package com.clubin.com.base
 
 import androidx.lifecycle.ViewModel
-import com.clubin.com.repository.BaseRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

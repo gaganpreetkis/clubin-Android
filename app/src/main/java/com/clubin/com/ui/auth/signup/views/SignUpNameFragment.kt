@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.clubin.com.R
 import com.clubin.com.databinding.SignUpNameFragmentDataBinding
 import com.clubin.com.ui.auth.login.model.User
-import com.clubin.com.ui.base.BaseDataBindingFragment
+import com.clubin.com.base.BaseDataBindingFragment
 import com.clubin.com.ui.fragment.profile.callbacks.AccountEditFragmentCallback
 import dagger.hilt.android.AndroidEntryPoint
 

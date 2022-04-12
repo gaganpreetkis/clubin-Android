@@ -1,7 +1,7 @@
 package com.clubin.com.network
 
-import com.clubin.com.responses.LoginResponse
-import com.clubin.com.responses.TokenResponse
+import com.clubin.com.ui.auth.login.model.LoginResponse
+import com.clubin.com.ui.auth.login.model.TokenResponse
 import com.clubin.com.ui.auth.signup.model.RegisterResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
